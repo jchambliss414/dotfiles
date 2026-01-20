@@ -1,0 +1,30 @@
+# Secrets and credentials
+*.secret
+*credentials*
+*password*
+.env
+.env.*
+
+# SSH keys
+id_rsa
+id_ed25519
+*.pem
+
+# Local machine-specific overrides
+*.local
+
+# Swap/temp files
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Tmux plugins (managed by TPM)
+**/tmux/plugins/
+
+# Neovim generated files
+**/nvim/.luarc.json
+**/nvim/spell/*.add.spl

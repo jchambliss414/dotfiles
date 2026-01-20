@@ -1,0 +1,31 @@
+session_name: CONFIGS
+windows:
+  - focus: "true"
+    layout: c380,148x26,0,0,3
+    options: {}
+    panes:
+      - focus: "true"
+        shell_command:
+    start_directory: /home/django
+    window_name: bash
+  - layout: c37e,148x26,0,0,1
+    options: {}
+    panes:
+      - focus: "true"
+        shell_command: nvim /home/django/.config/nvim/lua/plugins/vimwiki.lua
+    start_directory: /home/django/.config/nvim/lua/plugins/
+    window_name: VIMWIKI Config
+  - layout: c37d,148x26,0,0,0
+    options: {}
+    panes:
+      - focus: "true"
+        shell_command: nvim
+    start_directory: /home/django
+    window_name: VIMWIKI HELP
+  - layout: c37f,148x26,0,0,2
+    options: {}
+    panes:
+      - focus: "true"
+        shell_command: nvim /home/django/.config/nvim/lua/plugins/render-markdown.lua
+    start_directory: /home/django/.config/nvim/lua/plugins/
+    window_name: RENDER-MARKDOWN CONFIG

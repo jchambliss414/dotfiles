@@ -1,0 +1,1 @@
+/home/django/.task/hooks/on-add-tour.py
