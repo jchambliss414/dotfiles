@@ -599,8 +599,18 @@ end, { desc = "[P]Unfold all headings level 2 or above" })
 -- This deletes all marks in the current buffer, including lowercase, uppercase, and numbered marks
 -- Fix should be applied on April 2024
 -- https://github.com/chentoast/marks.nvim/issues/13
-vim.keymap.set("n", "<leader>md", function()
+vim.keymap.set("n", "<leader>mD", function()
 	-- Delete all marks in the current buffer
 	vim.cmd("delmarks!")
 	print("All marks deleted.")
 end, { desc = "Delete all marks" })
+
+vim.keymap.set("n", "<leader>md", ":delmarks ", { desc = "Delete mark" })
+
+-- TaskWiki Grid View with Filter
+vim.keymap.set("n", "<leader>t<C-g>", function()
+	local filter = vim.fn.input("Task filter: ")
+	if filter ~= "" then
+		vim.cmd("!task " .. filter)
+	end
+end, { desc = "Task grid with filter" })

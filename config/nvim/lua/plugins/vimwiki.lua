@@ -180,6 +180,16 @@ local function is_valid_url(str)
 	return str:match("^https?://") ~= nil
 end
 
+-- Percent-encode characters that break markdown link syntax
+local function encode_url_for_markdown(url)
+	local encoded = url:gsub("%(", "%%28")
+	encoded = encoded:gsub("%)", "%%29")
+	encoded = encoded:gsub(" ", "%%20")
+	encoded = encoded:gsub("%[", "%%5B")
+	encoded = encoded:gsub("%]", "%%5D")
+	return encoded
+end
+
 local function link_word_to_clipboard_url()
 	local word = vim.fn.expand("<cword>")
 	if word == "" then
@@ -193,7 +203,8 @@ local function link_word_to_clipboard_url()
 		return
 	end
 
-	local link = string.format("[%s](%s)", word, clipboard)
+	local encoded_url = encode_url_for_markdown(clipboard)
+	local link = string.format("[%s](%s)", word, encoded_url)
 	vim.fn.setreg("z", link)
 	vim.cmd('normal! viw"zp')
 	vim.notify("Linked → " .. clipboard:sub(1, 50) .. (clipboard:len() > 50 and "..." or ""), vim.log.levels.INFO)
@@ -218,7 +229,8 @@ local function link_selection_to_clipboard_url()
 		return
 	end
 
-	local link = string.format("[%s](%s)", text, clipboard)
+	local encoded_url = encode_url_for_markdown(clipboard)
+	local link = string.format("[%s](%s)", text, encoded_url)
 	vim.fn.setreg("z", link)
 	vim.cmd('normal! gv"zp')
 	vim.notify("Linked → " .. clipboard:sub(1, 50) .. (clipboard:len() > 50 and "..." or ""), vim.log.levels.INFO)

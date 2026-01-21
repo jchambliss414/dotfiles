@@ -2555,3 +2555,239 @@ time 1768569858
 old [description:"Recieved Tech Pack" entry:"1768297071" modified:"1768557781" project:"tour.tmck.folly_theater.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"36a51411-2982-44e2-bd86-efcf40568882"]
 new [description:"Recieved Tech Pack" end:"1768569858" entry:"1768297071" modified:"1768569858" project:"tour.tmck.folly_theater.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"36a51411-2982-44e2-bd86-efcf40568882"]
 ---
+time 1768958397
+new [description:"Check in with Elliot about what I noted below" due:"1768975200" entry:"1768958397" modified:"1768958397" project:"tour.panic_en_la_playa" status:"pending" tags:"panic_en_la_playa,tour,work" tags_panic_en_la_playa:"x" tags_tour:"x" tags_work:"x" uuid:"8e942c34-b8f5-49f9-bedc-e911e5060d0e"]
+---
+time 1768958397
+new [dep_8e942c34-b8f5-49f9-bedc-e911e5060d0e:"x" depends:"8e942c34-b8f5-49f9-bedc-e911e5060d0e" description:"Add whatever relevant info I have to MT" due:"1768975200" entry:"1768958397" modified:"1768958397" project:"tour.panic_en_la_playa" status:"pending" tags:"panic_en_la_playa,tour,work" tags_panic_en_la_playa:"x" tags_tour:"x" tags_work:"x" uuid:"19cce4f0-5943-41f4-aad2-fdd3b1f3ac4e"]
+---
+time 1768960173
+old [description:"Merch Seller" entry:"1768297072" modified:"1768557781" project:"tour.tmck.folly_theater.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"45643a72-5d4b-405c-b895-46347787109e"]
+new [description:"Merch Seller" end:"1768960173" entry:"1768297072" modified:"1768960173" project:"tour.tmck.folly_theater.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"45643a72-5d4b-405c-b895-46347787109e"]
+---
+time 1768960173
+old [description:"Showers" entry:"1768297071" modified:"1768557781" project:"tour.tmck.folly_theater.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"c583fd78-6005-4dd9-94f9-96668a11bb17"]
+new [description:"Showers" end:"1768960173" entry:"1768297071" modified:"1768960173" project:"tour.tmck.folly_theater.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"c583fd78-6005-4dd9-94f9-96668a11bb17"]
+---
+time 1768960173
+old [description:"Parking Instructions" entry:"1768297072" modified:"1768557781" project:"tour.tmck.folly_theater.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"ec2e0cf3-890f-43b4-a0c3-0b84ecd88cb9"]
+new [description:"Parking Instructions" end:"1768960173" entry:"1768297072" modified:"1768960173" project:"tour.tmck.folly_theater.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"ec2e0cf3-890f-43b4-a0c3-0b84ecd88cb9"]
+---
+time 1768960173
+old [description:"Shore Power\/Generator Restrictions" entry:"1768297072" modified:"1768557781" project:"tour.tmck.folly_theater.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"c8f92dc0-61d1-4616-9581-66b306c006a5"]
+new [description:"Shore Power\/Generator Restrictions" end:"1768960173" entry:"1768297072" modified:"1768960173" project:"tour.tmck.folly_theater.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"c8f92dc0-61d1-4616-9581-66b306c006a5"]
+---
+time 1768960173
+old [dep_c8f92dc0-61d1-4616-9581-66b306c006a5:"x" dep_ec2e0cf3-890f-43b4-a0c3-0b84ecd88cb9:"x" depends:"c8f92dc0-61d1-4616-9581-66b306c006a5,ec2e0cf3-890f-43b4-a0c3-0b84ecd88cb9" description:"Bus Info" entry:"1768297072" modified:"1768557781" project:"tour.tmck.folly_theater.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"43cd5e93-bd01-49bc-8d03-8b8f958e70b6"]
+new [dep_c8f92dc0-61d1-4616-9581-66b306c006a5:"x" dep_ec2e0cf3-890f-43b4-a0c3-0b84ecd88cb9:"x" depends:"c8f92dc0-61d1-4616-9581-66b306c006a5,ec2e0cf3-890f-43b4-a0c3-0b84ecd88cb9" description:"Bus Info" end:"1768960173" entry:"1768297072" modified:"1768960173" project:"tour.tmck.folly_theater.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"43cd5e93-bd01-49bc-8d03-8b8f958e70b6"]
+---
+time 1768962239
+old [description:"Parking Instructions" entry:"1768300407" modified:"1768557783" project:"tour.tmck.the_englert_theatre.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"ce30b3bb-5683-4a65-8361-5478ad771044"]
+new [description:"Parking Instructions" end:"1768962239" entry:"1768300407" modified:"1768962239" project:"tour.tmck.the_englert_theatre.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"ce30b3bb-5683-4a65-8361-5478ad771044"]
+---
+time 1768962239
+old [description:"Shore Power\/Generator Restrictions" entry:"1768300407" modified:"1768557783" project:"tour.tmck.the_englert_theatre.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"f80304c8-b519-40b4-9739-83dc4b40211e"]
+new [description:"Shore Power\/Generator Restrictions" end:"1768962239" entry:"1768300407" modified:"1768962239" project:"tour.tmck.the_englert_theatre.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"f80304c8-b519-40b4-9739-83dc4b40211e"]
+---
+time 1768962239
+old [description:"Merch Seller" entry:"1768300407" modified:"1768557783" project:"tour.tmck.the_englert_theatre.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"826822b6-73a6-4bb6-95e3-2bb31d424333"]
+new [description:"Merch Seller" end:"1768962239" entry:"1768300407" modified:"1768962239" project:"tour.tmck.the_englert_theatre.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"826822b6-73a6-4bb6-95e3-2bb31d424333"]
+---
+time 1768962239
+old [description:"Runner" entry:"1768300407" modified:"1768557783" project:"tour.tmck.the_englert_theatre.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"7f9f9642-2192-44dd-ad4e-f740799e8c5d"]
+new [description:"Runner" end:"1768962239" entry:"1768300407" modified:"1768962239" project:"tour.tmck.the_englert_theatre.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"7f9f9642-2192-44dd-ad4e-f740799e8c5d"]
+---
+time 1768962239
+old [description:"Showers" entry:"1768300407" modified:"1768557783" project:"tour.tmck.the_englert_theatre.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"9f5c390b-0117-47c8-8df9-a1ab22784a46"]
+new [description:"Showers" end:"1768962239" entry:"1768300407" modified:"1768962239" project:"tour.tmck.the_englert_theatre.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"9f5c390b-0117-47c8-8df9-a1ab22784a46"]
+---
+time 1768962239
+old [description:"Dinner" entry:"1768300407" modified:"1768557783" project:"tour.tmck.the_englert_theatre.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"9394d73b-6096-4856-8aaf-bd394dc916a2"]
+new [description:"Dinner" end:"1768962239" entry:"1768300407" modified:"1768962239" project:"tour.tmck.the_englert_theatre.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"9394d73b-6096-4856-8aaf-bd394dc916a2"]
+---
+time 1768962239
+old [description:"Schedule Confirmed" entry:"1768300407" modified:"1768557783" project:"tour.tmck.the_englert_theatre.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"8112c5d9-7dc4-431b-b874-4524bf1aea6d"]
+new [description:"Schedule Confirmed" end:"1768962239" entry:"1768300407" modified:"1768962239" project:"tour.tmck.the_englert_theatre.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"8112c5d9-7dc4-431b-b874-4524bf1aea6d"]
+---
+time 1768962239
+old [description:"Received Tech Pack" entry:"1768300407" modified:"1768557783" project:"tour.tmck.the_englert_theatre.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"7cf457c8-52ef-4139-b7d6-2b9ac6ea2097"]
+new [description:"Received Tech Pack" end:"1768962239" entry:"1768300407" modified:"1768962239" project:"tour.tmck.the_englert_theatre.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"7cf457c8-52ef-4139-b7d6-2b9ac6ea2097"]
+---
+time 1768962239
+old [dep_ce30b3bb-5683-4a65-8361-5478ad771044:"x" dep_f80304c8-b519-40b4-9739-83dc4b40211e:"x" depends:"ce30b3bb-5683-4a65-8361-5478ad771044,f80304c8-b519-40b4-9739-83dc4b40211e" description:"Bus Info" entry:"1768300407" modified:"1768557783" project:"tour.tmck.the_englert_theatre.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"9e45e467-9d95-4541-ac19-9033c6a1ba6e"]
+new [dep_ce30b3bb-5683-4a65-8361-5478ad771044:"x" dep_f80304c8-b519-40b4-9739-83dc4b40211e:"x" depends:"ce30b3bb-5683-4a65-8361-5478ad771044,f80304c8-b519-40b4-9739-83dc4b40211e" description:"Bus Info" end:"1768962239" entry:"1768300407" modified:"1768962239" project:"tour.tmck.the_englert_theatre.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"9e45e467-9d95-4541-ac19-9033c6a1ba6e"]
+---
+time 1768962239
+old [dep_7f9f9642-2192-44dd-ad4e-f740799e8c5d:"x" dep_826822b6-73a6-4bb6-95e3-2bb31d424333:"x" depends:"7f9f9642-2192-44dd-ad4e-f740799e8c5d,826822b6-73a6-4bb6-95e3-2bb31d424333" description:"Personnel" entry:"1768300407" modified:"1768557783" project:"tour.tmck.the_englert_theatre.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"3acf3365-7ca1-491f-bc9e-e7e527aa6dd5"]
+new [dep_7f9f9642-2192-44dd-ad4e-f740799e8c5d:"x" dep_826822b6-73a6-4bb6-95e3-2bb31d424333:"x" depends:"7f9f9642-2192-44dd-ad4e-f740799e8c5d,826822b6-73a6-4bb6-95e3-2bb31d424333" description:"Personnel" end:"1768962239" entry:"1768300407" modified:"1768962239" project:"tour.tmck.the_englert_theatre.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"3acf3365-7ca1-491f-bc9e-e7e527aa6dd5"]
+---
+time 1768962240
+old [dep_9394d73b-6096-4856-8aaf-bd394dc916a2:"x" dep_9f5c390b-0117-47c8-8df9-a1ab22784a46:"x" depends:"9394d73b-6096-4856-8aaf-bd394dc916a2,9f5c390b-0117-47c8-8df9-a1ab22784a46" description:"Hospitality" entry:"1768300407" modified:"1768557783" project:"tour.tmck.the_englert_theatre.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"0e334e5c-87ec-4b6a-adcc-fe906ca391c1"]
+new [dep_9394d73b-6096-4856-8aaf-bd394dc916a2:"x" dep_9f5c390b-0117-47c8-8df9-a1ab22784a46:"x" depends:"9394d73b-6096-4856-8aaf-bd394dc916a2,9f5c390b-0117-47c8-8df9-a1ab22784a46" description:"Hospitality" end:"1768962239" entry:"1768300407" modified:"1768962240" project:"tour.tmck.the_englert_theatre.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"0e334e5c-87ec-4b6a-adcc-fe906ca391c1"]
+---
+time 1768978120
+old [description:"Runner" entry:"1768300310" modified:"1768557783" project:"tour.tmck.the_pageant.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"07b24af7-de9c-4c14-abe4-8e1d9f47de75"]
+new [description:"Runner" end:"1768978120" entry:"1768300310" modified:"1768978120" project:"tour.tmck.the_pageant.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"07b24af7-de9c-4c14-abe4-8e1d9f47de75"]
+---
+time 1768978120
+old [description:"Merch Seller" entry:"1768300310" modified:"1768557783" project:"tour.tmck.the_pageant.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"c0993ece-463e-4cdd-9e76-1ee1544c7514"]
+new [description:"Merch Seller" end:"1768978120" entry:"1768300310" modified:"1768978120" project:"tour.tmck.the_pageant.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"c0993ece-463e-4cdd-9e76-1ee1544c7514"]
+---
+time 1768978120
+old [description:"Recieved Tech Pack" entry:"1768300310" modified:"1768557783" project:"tour.tmck.the_pageant.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"ddc95f43-cec8-4fd8-8fc2-b1171a788482"]
+new [description:"Recieved Tech Pack" end:"1768978120" entry:"1768300310" modified:"1768978120" project:"tour.tmck.the_pageant.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"ddc95f43-cec8-4fd8-8fc2-b1171a788482"]
+---
+time 1768978120
+old [description:"Showers" entry:"1768300310" modified:"1768557783" project:"tour.tmck.the_pageant.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"81aff79e-724b-4cbf-ac85-f27a7a581bcb"]
+new [description:"Showers" end:"1768978120" entry:"1768300310" modified:"1768978120" project:"tour.tmck.the_pageant.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"81aff79e-724b-4cbf-ac85-f27a7a581bcb"]
+---
+time 1768978120
+old [description:"Dinner" entry:"1768300310" modified:"1768557783" project:"tour.tmck.the_pageant.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"b2a08e9b-deb7-495d-94df-fba86851aca3"]
+new [description:"Dinner" end:"1768978120" entry:"1768300310" modified:"1768978120" project:"tour.tmck.the_pageant.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"b2a08e9b-deb7-495d-94df-fba86851aca3"]
+---
+time 1768978120
+old [description:"Shore Power\/Generator Restrictions" entry:"1768300310" modified:"1768557784" project:"tour.tmck.the_pageant.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"108a39b5-ce2a-4343-8098-94d53f6b7400"]
+new [description:"Shore Power\/Generator Restrictions" end:"1768978120" entry:"1768300310" modified:"1768978120" project:"tour.tmck.the_pageant.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"108a39b5-ce2a-4343-8098-94d53f6b7400"]
+---
+time 1768978120
+old [description:"Parking Instructions" entry:"1768300310" modified:"1768557783" project:"tour.tmck.the_pageant.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"1ebcff7f-fab1-480c-b42e-3fcc198cd0fa"]
+new [description:"Parking Instructions" end:"1768978120" entry:"1768300310" modified:"1768978120" project:"tour.tmck.the_pageant.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"1ebcff7f-fab1-480c-b42e-3fcc198cd0fa"]
+---
+time 1768978120
+old [description:"Schedule Confirmed" entry:"1768300310" modified:"1768557784" project:"tour.tmck.the_pageant.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"72995538-f474-442f-800a-218ec9f91ec9"]
+new [description:"Schedule Confirmed" end:"1768978120" entry:"1768300310" modified:"1768978120" project:"tour.tmck.the_pageant.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"72995538-f474-442f-800a-218ec9f91ec9"]
+---
+time 1768978120
+old [dep_07b24af7-de9c-4c14-abe4-8e1d9f47de75:"x" dep_c0993ece-463e-4cdd-9e76-1ee1544c7514:"x" depends:"07b24af7-de9c-4c14-abe4-8e1d9f47de75,c0993ece-463e-4cdd-9e76-1ee1544c7514" description:"Personnel" entry:"1768300310" modified:"1768557784" project:"tour.tmck.the_pageant.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"cf7e4132-7837-4f3a-acc7-204743b1bea8"]
+new [dep_07b24af7-de9c-4c14-abe4-8e1d9f47de75:"x" dep_c0993ece-463e-4cdd-9e76-1ee1544c7514:"x" depends:"07b24af7-de9c-4c14-abe4-8e1d9f47de75,c0993ece-463e-4cdd-9e76-1ee1544c7514" description:"Personnel" end:"1768978120" entry:"1768300310" modified:"1768978120" project:"tour.tmck.the_pageant.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"cf7e4132-7837-4f3a-acc7-204743b1bea8"]
+---
+time 1768978120
+old [dep_81aff79e-724b-4cbf-ac85-f27a7a581bcb:"x" dep_b2a08e9b-deb7-495d-94df-fba86851aca3:"x" depends:"81aff79e-724b-4cbf-ac85-f27a7a581bcb,b2a08e9b-deb7-495d-94df-fba86851aca3" description:"Hospitality" entry:"1768300310" modified:"1768557784" project:"tour.tmck.the_pageant.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"30aaa9e5-6751-4c61-a70d-3cfe77aabf70"]
+new [dep_81aff79e-724b-4cbf-ac85-f27a7a581bcb:"x" dep_b2a08e9b-deb7-495d-94df-fba86851aca3:"x" depends:"81aff79e-724b-4cbf-ac85-f27a7a581bcb,b2a08e9b-deb7-495d-94df-fba86851aca3" description:"Hospitality" end:"1768978120" entry:"1768300310" modified:"1768978120" project:"tour.tmck.the_pageant.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"30aaa9e5-6751-4c61-a70d-3cfe77aabf70"]
+---
+time 1768978121
+old [dep_108a39b5-ce2a-4343-8098-94d53f6b7400:"x" dep_1ebcff7f-fab1-480c-b42e-3fcc198cd0fa:"x" depends:"108a39b5-ce2a-4343-8098-94d53f6b7400,1ebcff7f-fab1-480c-b42e-3fcc198cd0fa" description:"Bus Info" entry:"1768300310" modified:"1768557784" project:"tour.tmck.the_pageant.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"8da16945-41bd-4f48-ab97-cd4a6241e871"]
+new [dep_108a39b5-ce2a-4343-8098-94d53f6b7400:"x" dep_1ebcff7f-fab1-480c-b42e-3fcc198cd0fa:"x" depends:"108a39b5-ce2a-4343-8098-94d53f6b7400,1ebcff7f-fab1-480c-b42e-3fcc198cd0fa" description:"Bus Info" end:"1768978120" entry:"1768300310" modified:"1768978121" project:"tour.tmck.the_pageant.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"8da16945-41bd-4f48-ab97-cd4a6241e871"]
+---
+time 1768979967
+old [description:"Schedule Confirmed" entry:"1768309971" modified:"1768557782" project:"tour.tmck.hopkins_center_for_the_arts.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"e935362d-b5b2-45ea-b77c-6e748c78009b"]
+new [description:"Schedule Confirmed" end:"1768979967" entry:"1768309971" modified:"1768979967" project:"tour.tmck.hopkins_center_for_the_arts.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"e935362d-b5b2-45ea-b77c-6e748c78009b"]
+---
+time 1768981592
+old [description:"Schedule Confirmed" entry:"1768309971" modified:"1768557782" project:"tour.tmck.poplar_hall.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"92a85c9e-3284-4d39-86c6-8549ccd8caa8"]
+new [description:"Schedule Confirmed" end:"1768981592" entry:"1768309971" modified:"1768981592" project:"tour.tmck.poplar_hall.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"92a85c9e-3284-4d39-86c6-8549ccd8caa8"]
+---
+time 1768981592
+old [description:"Merch Seller" entry:"1768309971" modified:"1768557782" project:"tour.tmck.poplar_hall.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"178d254f-580d-480a-b945-e919ccc462bc"]
+new [description:"Merch Seller" end:"1768981592" entry:"1768309971" modified:"1768981592" project:"tour.tmck.poplar_hall.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"178d254f-580d-480a-b945-e919ccc462bc"]
+---
+time 1768981592
+old [description:"Showers" entry:"1768309971" modified:"1768557782" project:"tour.tmck.poplar_hall.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"609f55eb-cd94-495f-b660-d4f0c9dc96ac"]
+new [description:"Showers" end:"1768981592" entry:"1768309971" modified:"1768981592" project:"tour.tmck.poplar_hall.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"609f55eb-cd94-495f-b660-d4f0c9dc96ac"]
+---
+time 1768981592
+old [description:"Dinner" entry:"1768309971" modified:"1768557782" project:"tour.tmck.poplar_hall.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"07a57c32-79d9-438f-a390-76b6258381d7"]
+new [description:"Dinner" end:"1768981592" entry:"1768309971" modified:"1768981592" project:"tour.tmck.poplar_hall.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"07a57c32-79d9-438f-a390-76b6258381d7"]
+---
+time 1768981592
+old [description:"Parking Instructions" entry:"1768309971" modified:"1768557782" project:"tour.tmck.poplar_hall.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"c09dea03-4cb3-4807-ad64-27b35d9b0047"]
+new [description:"Parking Instructions" end:"1768981592" entry:"1768309971" modified:"1768981592" project:"tour.tmck.poplar_hall.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"c09dea03-4cb3-4807-ad64-27b35d9b0047"]
+---
+time 1768981592
+old [dep_07a57c32-79d9-438f-a390-76b6258381d7:"x" dep_609f55eb-cd94-495f-b660-d4f0c9dc96ac:"x" depends:"07a57c32-79d9-438f-a390-76b6258381d7,609f55eb-cd94-495f-b660-d4f0c9dc96ac" description:"Hospitality" entry:"1768309973" modified:"1768557782" project:"tour.tmck.poplar_hall.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"e900dca8-3b99-4e5d-8965-3e51899faff6"]
+new [dep_07a57c32-79d9-438f-a390-76b6258381d7:"x" dep_609f55eb-cd94-495f-b660-d4f0c9dc96ac:"x" depends:"07a57c32-79d9-438f-a390-76b6258381d7,609f55eb-cd94-495f-b660-d4f0c9dc96ac" description:"Hospitality" end:"1768981592" entry:"1768309973" modified:"1768981592" project:"tour.tmck.poplar_hall.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"e900dca8-3b99-4e5d-8965-3e51899faff6"]
+---
+time 1768987856
+new [description:"Advance Sent  #989b515" end:"1768987856" entry:"1768987856" modified:"1768987856" project:"tour.tmck.space" status:"completed" tags:"tmck,tour,work" tags_tmck:"x" tags_tour:"x" tags_work:"x" uuid:"1d7ed1d2-ad53-4bc1-b0ba-87f5454db021"]
+---
+time 1768987856
+new [description:"Follow up sent" end:"1768987856" entry:"1768987856" modified:"1768987856" project:"tour.tmck.space" status:"completed" tags:"tmck,tour,work" tags_tmck:"x" tags_tour:"x" tags_work:"x" uuid:"ccae9514-1dbb-46df-88e0-aebd9b19d924"]
+---
+time 1768989433
+old [description:"Received Tech Pack" entry:"1768309972" modified:"1768557780" project:"tour.tmck.brown_county_music_center.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"742ff85c-9a2a-43c4-8552-2b3e9e0bc7e8"]
+new [description:"Received Tech Pack" end:"1768989433" entry:"1768309972" modified:"1768989433" project:"tour.tmck.brown_county_music_center.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"742ff85c-9a2a-43c4-8552-2b3e9e0bc7e8"]
+---
+time 1768989433
+old [description:"Schedule Confirmed" entry:"1768309972" modified:"1768557780" project:"tour.tmck.brown_county_music_center.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"77fe0d38-0224-4d3e-af37-8cd6cb303f15"]
+new [description:"Schedule Confirmed" end:"1768989433" entry:"1768309972" modified:"1768989433" project:"tour.tmck.brown_county_music_center.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"77fe0d38-0224-4d3e-af37-8cd6cb303f15"]
+---
+time 1768989433
+old [description:"Dinner" entry:"1768309972" modified:"1768557780" project:"tour.tmck.brown_county_music_center.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"54ee55d1-e11b-45ed-8136-0533384e4a92"]
+new [description:"Dinner" end:"1768989433" entry:"1768309972" modified:"1768989433" project:"tour.tmck.brown_county_music_center.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"54ee55d1-e11b-45ed-8136-0533384e4a92"]
+---
+time 1768989433
+old [description:"Showers" entry:"1768309972" modified:"1768557780" project:"tour.tmck.brown_county_music_center.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"853698e3-968b-4368-a4a8-cb55a234f909"]
+new [description:"Showers" end:"1768989433" entry:"1768309972" modified:"1768989433" project:"tour.tmck.brown_county_music_center.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"853698e3-968b-4368-a4a8-cb55a234f909"]
+---
+time 1768989433
+old [description:"Shore Power\/Generator Restrictions" entry:"1768309972" modified:"1768557780" project:"tour.tmck.brown_county_music_center.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"f5f51a2e-ecac-4f05-a476-a033e382ef4d"]
+new [description:"Shore Power\/Generator Restrictions" end:"1768989433" entry:"1768309972" modified:"1768989433" project:"tour.tmck.brown_county_music_center.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"f5f51a2e-ecac-4f05-a476-a033e382ef4d"]
+---
+time 1768989433
+old [description:"Parking Instructions" entry:"1768309972" modified:"1768557780" project:"tour.tmck.brown_county_music_center.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"b25335c6-fafc-47d8-8836-950721b83adc"]
+new [description:"Parking Instructions" end:"1768989433" entry:"1768309972" modified:"1768989433" project:"tour.tmck.brown_county_music_center.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"b25335c6-fafc-47d8-8836-950721b83adc"]
+---
+time 1768989433
+old [description:"Runner" entry:"1768309972" modified:"1768557780" project:"tour.tmck.brown_county_music_center.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"824f9599-e2ff-4a58-afa4-e87819dab2ae"]
+new [description:"Runner" end:"1768989433" entry:"1768309972" modified:"1768989433" project:"tour.tmck.brown_county_music_center.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"824f9599-e2ff-4a58-afa4-e87819dab2ae"]
+---
+time 1768989433
+old [description:"Merch Seller" entry:"1768309972" modified:"1768557780" project:"tour.tmck.brown_county_music_center.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"b10d1edc-cb29-42eb-8425-2e954201efc9"]
+new [description:"Merch Seller" end:"1768989433" entry:"1768309972" modified:"1768989433" project:"tour.tmck.brown_county_music_center.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"b10d1edc-cb29-42eb-8425-2e954201efc9"]
+---
+time 1768989433
+old [dep_54ee55d1-e11b-45ed-8136-0533384e4a92:"x" dep_853698e3-968b-4368-a4a8-cb55a234f909:"x" depends:"54ee55d1-e11b-45ed-8136-0533384e4a92,853698e3-968b-4368-a4a8-cb55a234f909" description:"Hospitality" entry:"1768309973" modified:"1768557780" project:"tour.tmck.brown_county_music_center.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"2e80cf70-e028-4b45-8340-abecce078550"]
+new [dep_54ee55d1-e11b-45ed-8136-0533384e4a92:"x" dep_853698e3-968b-4368-a4a8-cb55a234f909:"x" depends:"54ee55d1-e11b-45ed-8136-0533384e4a92,853698e3-968b-4368-a4a8-cb55a234f909" description:"Hospitality" end:"1768989433" entry:"1768309973" modified:"1768989433" project:"tour.tmck.brown_county_music_center.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"2e80cf70-e028-4b45-8340-abecce078550"]
+---
+time 1768989433
+old [dep_b25335c6-fafc-47d8-8836-950721b83adc:"x" dep_f5f51a2e-ecac-4f05-a476-a033e382ef4d:"x" depends:"b25335c6-fafc-47d8-8836-950721b83adc,f5f51a2e-ecac-4f05-a476-a033e382ef4d" description:"Bus Info" entry:"1768309973" modified:"1768557780" project:"tour.tmck.brown_county_music_center.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"7e2f1a45-c88d-4cae-8957-d1c9cb0c84ec"]
+new [dep_b25335c6-fafc-47d8-8836-950721b83adc:"x" dep_f5f51a2e-ecac-4f05-a476-a033e382ef4d:"x" depends:"b25335c6-fafc-47d8-8836-950721b83adc,f5f51a2e-ecac-4f05-a476-a033e382ef4d" description:"Bus Info" end:"1768989433" entry:"1768309973" modified:"1768989433" project:"tour.tmck.brown_county_music_center.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"7e2f1a45-c88d-4cae-8957-d1c9cb0c84ec"]
+---
+time 1768989433
+old [dep_824f9599-e2ff-4a58-afa4-e87819dab2ae:"x" dep_b10d1edc-cb29-42eb-8425-2e954201efc9:"x" depends:"824f9599-e2ff-4a58-afa4-e87819dab2ae,b10d1edc-cb29-42eb-8425-2e954201efc9" description:"Personnel" entry:"1768309973" modified:"1768557780" project:"tour.tmck.brown_county_music_center.advance" status:"pending" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"84f232c9-d186-4151-9d13-cec972f8be42"]
+new [dep_824f9599-e2ff-4a58-afa4-e87819dab2ae:"x" dep_b10d1edc-cb29-42eb-8425-2e954201efc9:"x" depends:"824f9599-e2ff-4a58-afa4-e87819dab2ae,b10d1edc-cb29-42eb-8425-2e954201efc9" description:"Personnel" end:"1768989433" entry:"1768309973" modified:"1768989433" project:"tour.tmck.brown_county_music_center.advance" status:"completed" tags:"tmck,tour,tour.advance,work" tags_tmck:"x" tags_tour:"x" tags_tour.advance:"x" tags_work:"x" uuid:"84f232c9-d186-4151-9d13-cec972f8be42"]
+---
+time 1768989664
+new [description:"Follow Up Sent" end:"1768989664" entry:"1768989664" modified:"1768989664" project:"tour.tmck.flagstar_strand_theatre" status:"completed" tags:"tmck,tour,work" tags_tmck:"x" tags_tour:"x" tags_work:"x" uuid:"8154b8a9-07e9-4003-b9ce-b9c62d3c7d8e"]
+---
+time 1768989716
+new [description:"Follow Up sent" end:"1768989716" entry:"1768989716" modified:"1768989716" project:"tour.tmck.blue_gate_pac" status:"completed" tags:"tmck,tour,work" tags_tmck:"x" tags_tour:"x" tags_work:"x" uuid:"15457551-cb61-4739-87d6-71d8d8134e8c"]
+---
+time 1769003626
+new [description:"1 Driver and 2-3 Clean Up Rooms" entry:"1769003626" modified:"1769003626" status:"pending" uuid:"e29defa7-e058-40dd-9e1e-1e3fc7bcd18d"]
+---
+time 1769003626
+new [description:"Check for other options project:tour.tmck.off_day_feb_18 +work" entry:"1769003626" modified:"1769003626" status:"pending" uuid:"cc040e07-6c4f-4967-8bb0-d4251365ed32"]
+---
+time 1769003626
+old [dep_0b1d51d2-d5a2-4758-92be-8c686f829245:"x" dep_c7454764-24de-4c36-9222-06b177bbc540:"x" dep_f4fac69e-c621-452a-a191-71db722f8021:"x" depends:"0b1d51d2-d5a2-4758-92be-8c686f829245,c7454764-24de-4c36-9222-06b177bbc540,f4fac69e-c621-452a-a191-71db722f8021" description:"Clean Up Rooms" entry:"1768300407" modified:"1768557783" project:"tour.tmck.the_englert_theatre.logistics" status:"pending" tags:"tmck,tour,tour.logistics,work" tags_tmck:"x" tags_tour:"x" tags_tour.logistics:"x" tags_work:"x" uuid:"b7834504-5bbd-4c6c-bb06-4f336c4d760a"]
+new [dep_0b1d51d2-d5a2-4758-92be-8c686f829245:"x" dep_c7454764-24de-4c36-9222-06b177bbc540:"x" dep_f4fac69e-c621-452a-a191-71db722f8021:"x" depends:"0b1d51d2-d5a2-4758-92be-8c686f829245,c7454764-24de-4c36-9222-06b177bbc540,f4fac69e-c621-452a-a191-71db722f8021" description:"1 Driver and 2 Clean Up Rooms at the Graduate by Hilton Iowa City" entry:"1768300407" modified:"1769003626" project:"tour.tmck.the_englert_theatre.logistics" status:"pending" tags:"tmck,tour,tour.logistics,work" tags_tmck:"x" tags_tour:"x" tags_tour.logistics:"x" tags_work:"x" uuid:"b7834504-5bbd-4c6c-bb06-4f336c4d760a"]
+---
+time 1769003626
+old [dep_18fb2a8c-4b62-4a72-9d4a-99ad2d7f92f7:"x" dep_37c36c61-137a-4fbc-91f6-33723caef245:"x" dep_4f761ed5-4c77-4731-8c44-cce21d999925:"x" depends:"18fb2a8c-4b62-4a72-9d4a-99ad2d7f92f7,37c36c61-137a-4fbc-91f6-33723caef245,4f761ed5-4c77-4731-8c44-cce21d999925" description:"Clean Up Rooms" entry:"1768309973" modified:"1768557783" project:"tour.tmck.space.logistics" status:"pending" tags:"tmck,tour,tour.logistics,work" tags_tmck:"x" tags_tour:"x" tags_tour.logistics:"x" tags_work:"x" uuid:"6c0cebe1-7cc6-4e74-a2d0-7def2b4e9001"]
+new [dep_18fb2a8c-4b62-4a72-9d4a-99ad2d7f92f7:"x" dep_37c36c61-137a-4fbc-91f6-33723caef245:"x" dep_4f761ed5-4c77-4731-8c44-cce21d999925:"x" depends:"18fb2a8c-4b62-4a72-9d4a-99ad2d7f92f7,37c36c61-137a-4fbc-91f6-33723caef245,4f761ed5-4c77-4731-8c44-cce21d999925" description:"1 Driver Rooms" entry:"1768309973" modified:"1769003626" project:"tour.tmck.space.logistics" status:"pending" tags:"tmck,tour,tour.logistics,work" tags_tmck:"x" tags_tour:"x" tags_tour.logistics:"x" tags_work:"x" uuid:"6c0cebe1-7cc6-4e74-a2d0-7def2b4e9001"]
+---
+time 1769003626
+old [dep_d0ad9466-db96-4351-9a68-16e5e76a4ea4:"x" dep_eb36e922-2967-44bc-aeaa-dfa8aa18c223:"x" dep_f0cbc6bd-045e-4de1-a35d-054be051fffc:"x" depends:"d0ad9466-db96-4351-9a68-16e5e76a4ea4,eb36e922-2967-44bc-aeaa-dfa8aa18c223,f0cbc6bd-045e-4de1-a35d-054be051fffc" description:"Clean Up Rooms" entry:"1768309973" modified:"1768557780" project:"tour.tmck.brown_county_music_center.logistics" status:"pending" tags:"tmck,tour,tour.logistics,work" tags_tmck:"x" tags_tour:"x" tags_tour.logistics:"x" tags_work:"x" uuid:"8c967b93-4180-4e56-ae3e-5742ac2503a4"]
+new [dep_d0ad9466-db96-4351-9a68-16e5e76a4ea4:"x" dep_eb36e922-2967-44bc-aeaa-dfa8aa18c223:"x" dep_f0cbc6bd-045e-4de1-a35d-054be051fffc:"x" depends:"d0ad9466-db96-4351-9a68-16e5e76a4ea4,eb36e922-2967-44bc-aeaa-dfa8aa18c223,f0cbc6bd-045e-4de1-a35d-054be051fffc" description:"1 Drive and 2 AM Clean Up Rooms" entry:"1768309973" modified:"1769003626" project:"tour.tmck.brown_county_music_center.logistics" status:"pending" tags:"tmck,tour,tour.logistics,work" tags_tmck:"x" tags_tour:"x" tags_tour.logistics:"x" tags_work:"x" uuid:"8c967b93-4180-4e56-ae3e-5742ac2503a4"]
+---
+time 1769003787
+old [dep_5e6e58c3-b198-4a59-88ec-8136f8609adf:"x" dep_7760039a-669c-4cde-86cd-d7c89144cf70:"x" dep_c3339256-1422-4589-ac1a-206aec27ad2c:"x" depends:"5e6e58c3-b198-4a59-88ec-8136f8609adf,7760039a-669c-4cde-86cd-d7c89144cf70,c3339256-1422-4589-ac1a-206aec27ad2c" description:"Clean Up Rooms" entry:"1768309973" modified:"1768557781" project:"tour.tmck.celestia_theater.logistics" status:"pending" tags:"tmck,tour,tour.logistics,work" tags_tmck:"x" tags_tour:"x" tags_tour.logistics:"x" tags_work:"x" uuid:"893396e2-10e9-4af5-8d28-6a21d1decbc9"]
+new [dep_5e6e58c3-b198-4a59-88ec-8136f8609adf:"x" dep_7760039a-669c-4cde-86cd-d7c89144cf70:"x" dep_c3339256-1422-4589-ac1a-206aec27ad2c:"x" depends:"5e6e58c3-b198-4a59-88ec-8136f8609adf,7760039a-669c-4cde-86cd-d7c89144cf70,c3339256-1422-4589-ac1a-206aec27ad2c" description:"1 Driver Room" entry:"1768309973" modified:"1769003787" project:"tour.tmck.celestia_theater.logistics" status:"pending" tags:"tmck,tour,tour.logistics,work" tags_tmck:"x" tags_tour:"x" tags_tour.logistics:"x" tags_work:"x" uuid:"893396e2-10e9-4af5-8d28-6a21d1decbc9"]
+---
+time 1769003787
+old [dep_3731d81a-91dc-484f-b762-a41ad30bc326:"x" dep_9e03ef23-82a9-4fbc-8efa-8f047939b83f:"x" dep_da959ae3-730e-4f24-a961-199df25a8f33:"x" depends:"3731d81a-91dc-484f-b762-a41ad30bc326,9e03ef23-82a9-4fbc-8efa-8f047939b83f,da959ae3-730e-4f24-a961-199df25a8f33" description:"Clean Up Rooms" entry:"1768309973" modified:"1768557781" project:"tour.tmck.flagstar_strand_theatre.logistics" status:"pending" tags:"tmck,tour,tour.logistics,work" tags_tmck:"x" tags_tour:"x" tags_tour.logistics:"x" tags_work:"x" uuid:"b428d0af-816f-4620-9bb4-5885eb453118"]
+new [dep_3731d81a-91dc-484f-b762-a41ad30bc326:"x" dep_9e03ef23-82a9-4fbc-8efa-8f047939b83f:"x" dep_da959ae3-730e-4f24-a961-199df25a8f33:"x" depends:"3731d81a-91dc-484f-b762-a41ad30bc326,9e03ef23-82a9-4fbc-8efa-8f047939b83f,da959ae3-730e-4f24-a961-199df25a8f33" description:"1 Driver Room" entry:"1768309973" modified:"1769003787" project:"tour.tmck.flagstar_strand_theatre.logistics" status:"pending" tags:"tmck,tour,tour.logistics,work" tags_tmck:"x" tags_tour:"x" tags_tour.logistics:"x" tags_work:"x" uuid:"b428d0af-816f-4620-9bb4-5885eb453118"]
+---
+time 1769003787
+old [dep_473f2d60-cd9d-4c7c-8e32-6765c27b9b51:"x" dep_b327d6a8-3689-4b5f-a5c4-88abff6e9641:"x" dep_cf45f366-43aa-4cd0-8166-d5c6b635b67a:"x" depends:"473f2d60-cd9d-4c7c-8e32-6765c27b9b51,b327d6a8-3689-4b5f-a5c4-88abff6e9641,cf45f366-43aa-4cd0-8166-d5c6b635b67a" description:"Clean Up Rooms" entry:"1768309973" modified:"1768557780" project:"tour.tmck.blue_gate_pac.logistics" status:"pending" tags:"tmck,tour,tour.logistics,work" tags_tmck:"x" tags_tour:"x" tags_tour.logistics:"x" tags_work:"x" uuid:"f660d0eb-5db2-40da-9602-50693ed35930"]
+new [dep_473f2d60-cd9d-4c7c-8e32-6765c27b9b51:"x" dep_b327d6a8-3689-4b5f-a5c4-88abff6e9641:"x" dep_cf45f366-43aa-4cd0-8166-d5c6b635b67a:"x" depends:"473f2d60-cd9d-4c7c-8e32-6765c27b9b51,b327d6a8-3689-4b5f-a5c4-88abff6e9641,cf45f366-43aa-4cd0-8166-d5c6b635b67a" description:"1 Driver and ? Clean Up Rooms" entry:"1768309973" modified:"1769003787" project:"tour.tmck.blue_gate_pac.logistics" status:"pending" tags:"tmck,tour,tour.logistics,work" tags_tmck:"x" tags_tour:"x" tags_tour.logistics:"x" tags_work:"x" uuid:"f660d0eb-5db2-40da-9602-50693ed35930"]
+---
+time 1769003787
+old [dep_1c354f2f-f217-4ffb-b363-a502ea27f4dd:"x" dep_74dc5164-c959-4f4d-864c-eb47d2f61073:"x" dep_d3a5867a-b680-4868-868d-b03dd9f79103:"x" depends:"1c354f2f-f217-4ffb-b363-a502ea27f4dd,74dc5164-c959-4f4d-864c-eb47d2f61073,d3a5867a-b680-4868-868d-b03dd9f79103" description:"Clean Up Rooms" entry:"1768309973" modified:"1768557782" project:"tour.tmck.peoples_bank_theatre.logistics" status:"pending" tags:"tmck,tour,tour.logistics,work" tags_tmck:"x" tags_tour:"x" tags_tour.logistics:"x" tags_work:"x" uuid:"671642f6-417f-425e-ade5-b0c92bd086e4"]
+new [dep_1c354f2f-f217-4ffb-b363-a502ea27f4dd:"x" dep_74dc5164-c959-4f4d-864c-eb47d2f61073:"x" dep_d3a5867a-b680-4868-868d-b03dd9f79103:"x" depends:"1c354f2f-f217-4ffb-b363-a502ea27f4dd,74dc5164-c959-4f4d-864c-eb47d2f61073,d3a5867a-b680-4868-868d-b03dd9f79103" description:"Clean Up Rooms (provided)" entry:"1768309973" modified:"1769003787" project:"tour.tmck.peoples_bank_theatre.logistics" status:"pending" tags:"tmck,tour,tour.logistics,work" tags_tmck:"x" tags_tour:"x" tags_tour.logistics:"x" tags_work:"x" uuid:"671642f6-417f-425e-ade5-b0c92bd086e4"]
+---
+time 1769004268
+old [dep_0b1d51d2-d5a2-4758-92be-8c686f829245:"x" dep_c7454764-24de-4c36-9222-06b177bbc540:"x" dep_f4fac69e-c621-452a-a191-71db722f8021:"x" depends:"0b1d51d2-d5a2-4758-92be-8c686f829245,c7454764-24de-4c36-9222-06b177bbc540,f4fac69e-c621-452a-a191-71db722f8021" description:"1 Driver and 2 Clean Up Rooms at the Graduate by Hilton Iowa City" entry:"1768300407" modified:"1769003626" project:"tour.tmck.the_englert_theatre.logistics" status:"pending" tags:"tmck,tour,tour.logistics,work" tags_tmck:"x" tags_tour:"x" tags_tour.logistics:"x" tags_work:"x" uuid:"b7834504-5bbd-4c6c-bb06-4f336c4d760a"]
+new [annotation_1769004268:"Check for early check-in first" dep_0b1d51d2-d5a2-4758-92be-8c686f829245:"x" dep_c7454764-24de-4c36-9222-06b177bbc540:"x" dep_f4fac69e-c621-452a-a191-71db722f8021:"x" depends:"0b1d51d2-d5a2-4758-92be-8c686f829245,c7454764-24de-4c36-9222-06b177bbc540,f4fac69e-c621-452a-a191-71db722f8021" description:"1 Driver and 2 Clean Up Rooms at the Graduate by Hilton Iowa City" entry:"1768300407" modified:"1769004268" project:"tour.tmck.the_englert_theatre.logistics" status:"pending" tags:"tmck,tour,tour.logistics,work" tags_tmck:"x" tags_tour:"x" tags_tour.logistics:"x" tags_work:"x" uuid:"b7834504-5bbd-4c6c-bb06-4f336c4d760a"]
+---

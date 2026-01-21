@@ -1,1 +1,4 @@
 next	-DELETED -PARENT ( +work )	rc.defaultheight=0 rc.context:
+next	-DELETED -PARENT ( project:tour.panic_en_la_playa +work )	rc.defaultheight=0 rc.context:
+next	-DELETED -PARENT ( project:tour.logistics -COMPLETED -DELETED )	rc.defaultheight=0 rc.context:
+next	-DELETED -PARENT ( +tour.logistics +PENDING )	rc.defaultheight=0 rc.context:
