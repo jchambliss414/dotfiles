@@ -28,6 +28,9 @@ export PATH="/shared/bin:$PATH"
 export BUN_INSTALL="/shared/bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# Shared npm installation
+export PATH="/shared/npm-global/bin:$PATH"
+
 #---------------------------------------
 # Directory Exports
 #---------------------------------------

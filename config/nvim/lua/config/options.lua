@@ -36,3 +36,5 @@ opt.timeoutlen = 300
 opt.conceallevel = 2
 
 opt.foldcolumn = "0"
+
+vim.g.node_host_prog = "/shared/npm-global/bin/neovim-node-host"
