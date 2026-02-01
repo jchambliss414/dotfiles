@@ -36,8 +36,8 @@ vim.api.nvim_create_autocmd("FileType", {
 	pattern = "vimwiki",
 	callback = function()
 		-- Disable treesitter highlighting for vimwiki (allows TaskWiki conceal to work)
-		vim.treesitter.stop()
-		vim.opt_local.conceallevel = 2
+		-- vim.treesitter.stop()
+		-- vim.opt_local.conceallevel = 2
 
 		-- Remap diary navigation to horizontal arrows
 		local buf = vim.api.nvim_get_current_buf()

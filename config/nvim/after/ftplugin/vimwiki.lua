@@ -9,7 +9,7 @@ function _G.VimwikiFoldText()
 	end
 
 	-- Convert markdown links [label](url) to just label
-	line = line:gsub("%[(.-)%]%(.-%)$", "%1")
+	-- line = line:gsub("%[(.-)%]%(.-%)$", "%1")
 
 	-- Count heading level for highlight group
 	local pounds = line:match("^(#+)")

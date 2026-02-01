@@ -291,7 +291,9 @@ return {
 			icon = false,
 		},
 		link = {
-			enabled = false,
+			enabled = true,
+			hyperlink = "",
+			custom = {},
 		},
 		code = {
 			language_border = " ",

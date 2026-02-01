@@ -165,4 +165,3 @@ color.uda.showdate.before.3d=white on red
 color.uda.showdate.before.7d=black on yellow
 context.FEB.read=project:FEB-Prep
 context.FEB.write=project:FEB-Prep
-context=FEB

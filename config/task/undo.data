@@ -2099,3 +2099,36 @@ time 1769941185
 old [description:"Finalize tour wiki population" entry:"1769933399" modified:"1769933399" project:"FEB-Prep" status:"pending" uuid:"292b1d55-0b3e-47b7-8ca0-4a82e59aa24b"]
 new [description:"Finalize tour wiki population" end:"1769941185" entry:"1769933399" modified:"1769941185" project:"FEB-Prep" status:"completed" uuid:"292b1d55-0b3e-47b7-8ca0-4a82e59aa24b"]
 ---
+time 1769949115
+new [description:"1 Driver and 2-3 Clean Up Rooms" entry:"1769949115" modified:"1769949115" status:"pending" uuid:"72822d7f-4233-40ff-9e8c-8e28a7cfee32"]
+---
+time 1769949115
+new [description:"Book" entry:"1769949115" modified:"1769949115" project:"tour.tmck.space.logistics" status:"pending" tags:"work" tags_work:"x" uuid:"7cfce6a1-4dd7-4292-8ff9-2e904f532f7d"]
+---
+time 1769949115
+new [description:"Log MT" entry:"1769949115" modified:"1769949115" project:"tour.tmck.space.logistics" status:"pending" tags:"work" tags_work:"x" uuid:"dd504863-4fb6-4aa5-b534-348577905606"]
+---
+time 1769949115
+new [description:"Log Drive" entry:"1769949115" modified:"1769949115" project:"tour.tmck.space.logistics" status:"pending" tags:"work" tags_work:"x" uuid:"f1a6fbc1-aa1e-4d4e-9753-d742979b347c"]
+---
+time 1769949115
+new [description:"Book" entry:"1769949115" modified:"1769949115" project:"tour.tmck.brown_county_music_center.logistics" status:"pending" tags:"work" tags_work:"x" uuid:"db1c3c69-a15f-4cd2-9b02-f134bedd1535"]
+---
+time 1769949115
+new [description:"Log Drive" entry:"1769949115" modified:"1769949115" project:"tour.tmck.brown_county_music_center.logistics" status:"pending" tags:"work" tags_work:"x" uuid:"c93e59e2-997d-4116-8044-20b5c14aba47"]
+---
+time 1769949115
+new [description:"Log MT" entry:"1769949115" modified:"1769949115" project:"tour.tmck.brown_county_music_center.logistics" status:"pending" tags:"work" tags_work:"x" uuid:"71bb860b-eef3-4508-8543-47190ed9f472"]
+---
+time 1769949115
+new [description:"Check for other options project:tour.tmck.off_day_feb_18 +work" entry:"1769949115" modified:"1769949115" status:"pending" uuid:"998380e9-7863-4008-82a7-55dcbbfa61f4"]
+---
+time 1769949115
+new [description:"Log Drive" entry:"1769949115" modified:"1769949115" project:"tour.tmck.celestia_theater.logistics" status:"pending" tags:"work" tags_work:"x" uuid:"a7e20fab-6cc9-4c93-9aa9-338205e98e8f"]
+---
+time 1769949115
+new [description:"Log MT" entry:"1769949115" modified:"1769949115" project:"tour.tmck.celestia_theater.logistics" status:"pending" tags:"work" tags_work:"x" uuid:"a804bd69-9b5d-42c0-9fe0-fdcc3993a557"]
+---
+time 1769949115
+new [description:"Book" entry:"1769949115" modified:"1769949115" project:"tour.tmck.celestia_theater.logistics" status:"pending" tags:"work" tags_work:"x" uuid:"15b6361b-b439-45ae-bd6b-1231fa517aea"]
+---
