@@ -57,9 +57,9 @@ uda.venue.label=Venue
 
 # Tour work category
 # Values: advance, lodging
-uda.tour-category.type=string
-uda.tour-category.label=Category
-uda.tour-category.values=advance,lodging
+uda.tour_category.type=string
+uda.tour_category.label=Category
+uda.tour_category.values=advance,lodging
 
 # Show date - the actual performance date
 uda.showdate.type=date
@@ -139,16 +139,13 @@ context.lodging.read=tour-category:lodging
 context.lodging.write=tour-category:lodging
 
 # Focus on specific tour (example - customize as needed)
-context.tmck.read=run:tmck
-context.tmck.write=run:tmck
+context.tmck.read=run:TMCK
+context.tmck.write=run:TMCK
 
 # Combined context: TMCK tour lodging only
 context.tmck-lodging.read=project:tour run:tmck tour-category:lodging
 context.tmck-lodging.write=project:tour run:tmck tour-category:lodging
 
-# Legacy work context (keep if still used)
-context.work.read=project:Work Email\/Booking Catch-up
-context.work.write=project:Work Email\/Booking Catch-up
 
 # -----------------------------------------------------------------------------
 # Colors for Tour Management
