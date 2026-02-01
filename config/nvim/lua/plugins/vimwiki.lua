@@ -972,8 +972,27 @@ return {
 		{ "<leader>w<leader>d", "<Plug>VimwikiDeleteFile", desc = "Delete Current Page" },
 		{ "<leader>w<leader>r", "<Plug>VimwikiRenameFile", desc = "Rename Current Page" },
 
-		-- Task navigation
-		{ "<A-Tab>", "<Plug>VimwikiNextTask", desc = "Go to Next Unfinished Task" },
+		-- Task Navigation
+		{
+			"<leader>tn",
+			function()
+				local found = vim.fn.search("^\\s*[\\-\\*] \\[ \\]", "w")
+				if found == 0 then
+					vim.notify("No unfinished tasks found", vim.log.levels.INFO)
+				end
+			end,
+			desc = "Go to Next Unfinished Task",
+		},
+		{
+			"<leader>tN",
+			function()
+				local found = vim.fn.search("^\\s*[\\-\\*] \\[ \\]", "bw")
+				if found == 0 then
+					vim.notify("No unfinished tasks found", vim.log.levels.INFO)
+				end
+			end,
+			desc = "Go to Previous Unfinished Task",
+		},
 
 		-- Tables
 		{ "<leader>wt", ":VimwikiTable ", desc = "Insert Table" },
