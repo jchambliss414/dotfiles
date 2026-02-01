@@ -10,7 +10,7 @@ opt.tabstop = 3
 opt.shiftwidth = 3
 opt.expandtab = true
 opt.autoindent = true
-opt.textwidth = 80
+opt.textwidth = 120
 
 -- Search
 opt.ignorecase = true

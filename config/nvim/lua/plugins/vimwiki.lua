@@ -575,30 +575,126 @@ local event_months = {
 	Dec = "12",
 }
 
+-- ############################################################################
+--                       Event Link Creation
+-- ############################################################################
+-- Transform event text to filename
+--
+-- Supported formats:
+--   "Feb-10: Folly Theater - Kansas City, MO"      → 2026_0210_Folly-Theater_Kansas-City_MO.md
+--   "Jan-22-24: Panic En La Playa - Cancun, MX"    → 2026_0122-0124_Panic-En-La-Playa_Cancun_MX.md
+--   "Jan-30-Feb-02: Festival - Austin, TX"         → 2026_0130-0202_Festival_Austin_TX.md
+--   "Feb-09-23: TMCK/"                             → 2026_0209-0223_TMCK/index.md
+--   "Jan-30-Feb-02: Spring Tour/"                  → 2026_0130-0202_Spring-Tour/index.md
+
+local event_months = {
+	Jan = "01",
+	Feb = "02",
+	Mar = "03",
+	Apr = "04",
+	May = "05",
+	Jun = "06",
+	Jul = "07",
+	Aug = "08",
+	Sep = "09",
+	Oct = "10",
+	Nov = "11",
+	Dec = "12",
+}
+
 local function transform_event_to_filename(text)
-	-- Pattern: "Mon-DD: Venue Name - City Name, ST"
-	local month_abbr, day, venue, city, state = text:match("^(%a+)%-(%d+):%s*(.-)%s*%-%s*(.-),%s*(%a+)$")
+	local year = "2026" -- Update manually each year
+	local venue_clean, city_clean, state, date_part
 
-	if not month_abbr then
-		return nil, "Could not parse. Expected format: 'Mon-DD: Venue - City, ST'"
+	-- Pattern 0: Tour directory "Mon-DD-DD: TourName/"
+	local month, d1, d2, tour = text:match("^(%a+)%-(%d+)%-(%d+):%s*(.-)/$")
+
+	if month and tour then
+		local m = event_months[month]
+		if not m then
+			return nil, "Unknown month: " .. month
+		end
+		d1 = string.format("%02d", tonumber(d1))
+		d2 = string.format("%02d", tonumber(d2))
+		local tour_clean = tour:gsub("%s+", "-")
+		local filename = string.format("%s_%s%s-%s%s_%s/index.md", year, m, d1, m, d2, tour_clean)
+		return filename
 	end
 
-	local month_num = event_months[month_abbr]
-	if not month_num then
-		return nil, "Unknown month: " .. month_abbr
+	-- Pattern 0b: Tour directory cross-month "Mon-DD-Mon-DD: TourName/"
+	local month1, day1, month2, day2, tour2 = text:match("^(%a+)%-(%d+)%-(%a+)%-(%d+):%s*(.-)/$")
+
+	if month1 and tour2 then
+		local m1 = event_months[month1]
+		local m2 = event_months[month2]
+		if not m1 then
+			return nil, "Unknown month: " .. month1
+		end
+		if not m2 then
+			return nil, "Unknown month: " .. month2
+		end
+		day1 = string.format("%02d", tonumber(day1))
+		day2 = string.format("%02d", tonumber(day2))
+		local tour_clean = tour2:gsub("%s+", "-")
+		local filename = string.format("%s_%s%s-%s%s_%s/index.md", year, m1, day1, m2, day2, tour_clean)
+		return filename
 	end
 
-	-- Pad day to 2 digits
-	day = string.format("%02d", tonumber(day))
+	-- Pattern 1: Cross-month range "Mon-DD-Mon-DD: Venue - City, ST"
+	local m1, dy1, m2, dy2, venue, city, st = text:match("^(%a+)%-(%d+)%-(%a+)%-(%d+):%s*(.-)%s*%-%s*(.-),%s*(%a+)$")
 
-	-- Transform venue and city (spaces → hyphens)
-	local venue_clean = venue:gsub("%s+", "-")
-	local city_clean = city:gsub("%s+", "-")
+	if m1 and m2 then
+		local mon1 = event_months[m1]
+		local mon2 = event_months[m2]
+		if not mon1 then
+			return nil, "Unknown month: " .. m1
+		end
+		if not mon2 then
+			return nil, "Unknown month: " .. m2
+		end
+		dy1 = string.format("%02d", tonumber(dy1))
+		dy2 = string.format("%02d", tonumber(dy2))
+		date_part = string.format("%s_%s%s-%s%s", year, mon1, dy1, mon2, dy2)
+		venue_clean = venue:gsub("%s+", "-")
+		city_clean = city:gsub("%s+", "-")
+		state = st
+	else
+		-- Pattern 2: Same-month range "Mon-DD-DD: Venue - City, ST"
+		local mon, dd1, dd2, v, c, s = text:match("^(%a+)%-(%d+)%-(%d+):%s*(.-)%s*%-%s*(.-),%s*(%a+)$")
 
-	-- Build filename: MMDDYY_Venue-Name_City-Name_ST.md
-	local year = "26" -- Update manually each year
-	local filename = string.format("%s%s%s_%s_%s_%s.md", month_num, day, year, venue_clean, city_clean, state)
+		if mon and dd2 then
+			local m = event_months[mon]
+			if not m then
+				return nil, "Unknown month: " .. mon
+			end
+			dd1 = string.format("%02d", tonumber(dd1))
+			dd2 = string.format("%02d", tonumber(dd2))
+			date_part = string.format("%s_%s%s-%s%s", year, m, dd1, m, dd2)
+			venue_clean = v:gsub("%s+", "-")
+			city_clean = c:gsub("%s+", "-")
+			state = s
+		else
+			-- Pattern 3: Single date "Mon-DD: Venue - City, ST"
+			local mon, day, v, c, s = text:match("^(%a+)%-(%d+):%s*(.-)%s*%-%s*(.-),%s*(%a+)$")
 
+			if not mon then
+				return nil,
+					"Could not parse. Expected formats:\n  'Mon-DD: Venue - City, ST'\n  'Mon-DD-DD: Venue - City, ST'\n  'Mon-DD-Mon-DD: Venue - City, ST'\n  'Mon-DD-DD: TourName/'"
+			end
+
+			local m = event_months[mon]
+			if not m then
+				return nil, "Unknown month: " .. mon
+			end
+			day = string.format("%02d", tonumber(day))
+			date_part = string.format("%s_%s%s", year, m, day)
+			venue_clean = v:gsub("%s+", "-")
+			city_clean = c:gsub("%s+", "-")
+			state = s
+		end
+	end
+
+	local filename = string.format("%s_%s_%s_%s.md", date_part, venue_clean, city_clean, state)
 	return filename
 end
 

@@ -13,7 +13,7 @@ return {
 			},
 			concealcursor = {
 				default = vim.api.nvim_get_option_value("concealcursor", {}),
-				rendered = "nc", -- Always reveal on cursor line
+				rendered = "", -- Always reveal on cursor line
 			},
 		},
 		heading = {

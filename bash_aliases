@@ -61,6 +61,9 @@ export CONF_TM="$CONF/tmux"
 # Housekeeping
 #---------------------------------------
 
+# Open bashrc file
+alias edbash="nvim ~/.bashrc"
+
 # Refresh .bashrc
 rf_trig="rf refresh"
 for cmd in $rf_trig; do
