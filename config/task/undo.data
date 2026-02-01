@@ -2492,3 +2492,227 @@ time 1769958356
 old [dep_64368232-574b-4f15-a4dc-5f28ae279fa2:"x" dep_915fd9a7-d0d8-42ec-9000-40b339fd2e03:"x" dep_bf7dbe4e-9cc9-4b32-8963-124ca64e466f:"x" dep_fba352de-0f5b-4d09-9fa1-d62615a7f092:"x" depends:"64368232-574b-4f15-a4dc-5f28ae279fa2,915fd9a7-d0d8-42ec-9000-40b339fd2e03,bf7dbe4e-9cc9-4b32-8963-124ca64e466f,fba352de-0f5b-4d09-9fa1-d62615a7f092" description:"Driver\/cleanup rooms" entry:"1769938275" modified:"1769938275" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"eae25355-4a31-4571-b5f6-a5de1596626c" venue:"the_englert_theatre"]
 new [dep_64368232-574b-4f15-a4dc-5f28ae279fa2:"x" dep_915fd9a7-d0d8-42ec-9000-40b339fd2e03:"x" dep_bf7dbe4e-9cc9-4b32-8963-124ca64e466f:"x" dep_fba352de-0f5b-4d09-9fa1-d62615a7f092:"x" depends:"64368232-574b-4f15-a4dc-5f28ae279fa2,915fd9a7-d0d8-42ec-9000-40b339fd2e03,bf7dbe4e-9cc9-4b32-8963-124ca64e466f,fba352de-0f5b-4d09-9fa1-d62615a7f092" description:"Driver\/cleanup rooms" end:"1769958356" entry:"1769938275" modified:"1769958356" project:"tour.tmck" run:"TMCK" status:"completed" uuid:"eae25355-4a31-4571-b5f6-a5de1596626c" venue:"the_englert_theatre"]
 ---
+time 1769959223
+old [description:"Advance sent" entry:"1769938298" modified:"1769938298" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"6765bc50-de4a-43c9-b727-184b76b97345" venue:"hopkins_center_for_the_arts"]
+new [description:"Advance sent" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"6765bc50-de4a-43c9-b727-184b76b97345" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959223
+old [description:"Tech pack received" entry:"1769938298" modified:"1769938298" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"2a19d994-260f-4ec1-870a-34eb2a98ce50" venue:"hopkins_center_for_the_arts"]
+new [description:"Tech pack received" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"2a19d994-260f-4ec1-870a-34eb2a98ce50" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959223
+old [description:"Schedule confirmed" entry:"1769938298" modified:"1769938298" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"a793cbdb-4d86-4e4a-825d-320cd08b85d5" venue:"hopkins_center_for_the_arts"]
+new [description:"Schedule confirmed" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"a793cbdb-4d86-4e4a-825d-320cd08b85d5" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959223
+old [description:"Parking instructions" entry:"1769938298" modified:"1769938298" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"8c95803a-bbc9-45ba-9254-76d8e4547aef" venue:"hopkins_center_for_the_arts"]
+new [description:"Parking instructions" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"8c95803a-bbc9-45ba-9254-76d8e4547aef" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959223
+old [description:"Shore power \/ generator" entry:"1769938298" modified:"1769938298" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"2ce37cff-aadc-4272-80a1-f978c1c366b3" venue:"hopkins_center_for_the_arts"]
+new [description:"Shore power \/ generator" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"2ce37cff-aadc-4272-80a1-f978c1c366b3" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959223
+old [description:"Runner" entry:"1769938298" modified:"1769938298" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"1fdcf901-bfc4-4d84-a81d-41c26c730d89" venue:"hopkins_center_for_the_arts"]
+new [description:"Runner" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"1fdcf901-bfc4-4d84-a81d-41c26c730d89" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959223
+old [description:"Merch seller" entry:"1769938298" modified:"1769938298" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"8cf0eed4-f1fb-414e-b512-5ce0cbba9db7" venue:"hopkins_center_for_the_arts"]
+new [description:"Merch seller" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"8cf0eed4-f1fb-414e-b512-5ce0cbba9db7" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959223
+old [description:"Dinner" entry:"1769938298" modified:"1769938298" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"5dd1a51f-d749-4717-894b-bbb75621bc87" venue:"hopkins_center_for_the_arts"]
+new [description:"Dinner" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"5dd1a51f-d749-4717-894b-bbb75621bc87" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959223
+old [description:"Showers" entry:"1769938298" modified:"1769938298" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"f9c3bc51-fc58-46f0-bb88-6a1cb59e3450" venue:"hopkins_center_for_the_arts"]
+new [description:"Showers" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"f9c3bc51-fc58-46f0-bb88-6a1cb59e3450" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959223
+old [dep_2ce37cff-aadc-4272-80a1-f978c1c366b3:"x" dep_8c95803a-bbc9-45ba-9254-76d8e4547aef:"x" depends:"2ce37cff-aadc-4272-80a1-f978c1c366b3,8c95803a-bbc9-45ba-9254-76d8e4547aef" description:"Bus info confirmed" entry:"1769938299" modified:"1769938299" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"c9e8d67b-3632-483b-92df-64e9217ee360" venue:"hopkins_center_for_the_arts"]
+new [dep_2ce37cff-aadc-4272-80a1-f978c1c366b3:"x" dep_8c95803a-bbc9-45ba-9254-76d8e4547aef:"x" depends:"2ce37cff-aadc-4272-80a1-f978c1c366b3,8c95803a-bbc9-45ba-9254-76d8e4547aef" description:"Bus info confirmed" entry:"1769938299" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"c9e8d67b-3632-483b-92df-64e9217ee360" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959223
+old [dep_1fdcf901-bfc4-4d84-a81d-41c26c730d89:"x" dep_8cf0eed4-f1fb-414e-b512-5ce0cbba9db7:"x" depends:"1fdcf901-bfc4-4d84-a81d-41c26c730d89,8cf0eed4-f1fb-414e-b512-5ce0cbba9db7" description:"Personnel confirmed" entry:"1769938299" modified:"1769938299" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"4ea46c64-8dde-4a30-aa99-304fdb2b9f15" venue:"hopkins_center_for_the_arts"]
+new [dep_1fdcf901-bfc4-4d84-a81d-41c26c730d89:"x" dep_8cf0eed4-f1fb-414e-b512-5ce0cbba9db7:"x" depends:"1fdcf901-bfc4-4d84-a81d-41c26c730d89,8cf0eed4-f1fb-414e-b512-5ce0cbba9db7" description:"Personnel confirmed" entry:"1769938299" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"4ea46c64-8dde-4a30-aa99-304fdb2b9f15" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959223
+old [dep_5dd1a51f-d749-4717-894b-bbb75621bc87:"x" dep_f9c3bc51-fc58-46f0-bb88-6a1cb59e3450:"x" depends:"5dd1a51f-d749-4717-894b-bbb75621bc87,f9c3bc51-fc58-46f0-bb88-6a1cb59e3450" description:"Hospitality confirmed" entry:"1769938299" modified:"1769938299" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"739723a7-30a0-4852-9f74-e3132fbed53c" venue:"hopkins_center_for_the_arts"]
+new [dep_5dd1a51f-d749-4717-894b-bbb75621bc87:"x" dep_f9c3bc51-fc58-46f0-bb88-6a1cb59e3450:"x" depends:"5dd1a51f-d749-4717-894b-bbb75621bc87,f9c3bc51-fc58-46f0-bb88-6a1cb59e3450" description:"Hospitality confirmed" entry:"1769938299" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"739723a7-30a0-4852-9f74-e3132fbed53c" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959237
+old [description:"Researched" entry:"1769938299" modified:"1769938299" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"2c21864d-004d-43fb-97f2-a08630e8a48d" venue:"hopkins_center_for_the_arts"]
+new [description:"Researched" entry:"1769938299" modified:"1769959237" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"2c21864d-004d-43fb-97f2-a08630e8a48d" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959237
+old [description:"Booked" entry:"1769938299" modified:"1769938299" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"0aa8a48e-5b17-4a6f-a59b-449504b3bb7f" venue:"hopkins_center_for_the_arts"]
+new [description:"Booked" entry:"1769938299" modified:"1769959237" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"0aa8a48e-5b17-4a6f-a59b-449504b3bb7f" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959237
+old [description:"Logged in Drive" entry:"1769938299" modified:"1769938299" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"7e147f0a-437d-4a60-b1ea-32464931560a" venue:"hopkins_center_for_the_arts"]
+new [description:"Logged in Drive" entry:"1769938299" modified:"1769959237" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"7e147f0a-437d-4a60-b1ea-32464931560a" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959237
+old [description:"Logged in Master Tour" entry:"1769938299" modified:"1769938299" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"7684608b-04a8-4be6-a3d9-96af550b7a50" venue:"hopkins_center_for_the_arts"]
+new [description:"Logged in Master Tour" entry:"1769938299" modified:"1769959237" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"7684608b-04a8-4be6-a3d9-96af550b7a50" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959237
+old [dep_0aa8a48e-5b17-4a6f-a59b-449504b3bb7f:"x" dep_2c21864d-004d-43fb-97f2-a08630e8a48d:"x" dep_7684608b-04a8-4be6-a3d9-96af550b7a50:"x" dep_7e147f0a-437d-4a60-b1ea-32464931560a:"x" depends:"0aa8a48e-5b17-4a6f-a59b-449504b3bb7f,2c21864d-004d-43fb-97f2-a08630e8a48d,7684608b-04a8-4be6-a3d9-96af550b7a50,7e147f0a-437d-4a60-b1ea-32464931560a" description:"Driver\/cleanup rooms" entry:"1769938299" modified:"1769938299" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"2602f54b-3876-4a22-877f-67f506db96b8" venue:"hopkins_center_for_the_arts"]
+new [dep_0aa8a48e-5b17-4a6f-a59b-449504b3bb7f:"x" dep_2c21864d-004d-43fb-97f2-a08630e8a48d:"x" dep_7684608b-04a8-4be6-a3d9-96af550b7a50:"x" dep_7e147f0a-437d-4a60-b1ea-32464931560a:"x" depends:"0aa8a48e-5b17-4a6f-a59b-449504b3bb7f,2c21864d-004d-43fb-97f2-a08630e8a48d,7684608b-04a8-4be6-a3d9-96af550b7a50,7e147f0a-437d-4a60-b1ea-32464931560a" description:"Driver\/cleanup rooms" entry:"1769938299" modified:"1769959237" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"2602f54b-3876-4a22-877f-67f506db96b8" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959249
+old [description:"Advance sent" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"6765bc50-de4a-43c9-b727-184b76b97345" venue:"hopkins_center_for_the_arts"]
+new [description:"Advance sent" end:"1769959249" entry:"1769938298" modified:"1769959249" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"6765bc50-de4a-43c9-b727-184b76b97345" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959249
+old [description:"Schedule confirmed" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"a793cbdb-4d86-4e4a-825d-320cd08b85d5" venue:"hopkins_center_for_the_arts"]
+new [description:"Schedule confirmed" end:"1769959249" entry:"1769938298" modified:"1769959249" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"a793cbdb-4d86-4e4a-825d-320cd08b85d5" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959249
+old [description:"Parking instructions" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"8c95803a-bbc9-45ba-9254-76d8e4547aef" venue:"hopkins_center_for_the_arts"]
+new [description:"Parking instructions" end:"1769959249" entry:"1769938298" modified:"1769959249" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"8c95803a-bbc9-45ba-9254-76d8e4547aef" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959249
+old [description:"Shore power \/ generator" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"2ce37cff-aadc-4272-80a1-f978c1c366b3" venue:"hopkins_center_for_the_arts"]
+new [description:"Shore power \/ generator" end:"1769959249" entry:"1769938298" modified:"1769959249" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"2ce37cff-aadc-4272-80a1-f978c1c366b3" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959249
+old [description:"Runner" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"1fdcf901-bfc4-4d84-a81d-41c26c730d89" venue:"hopkins_center_for_the_arts"]
+new [description:"Runner" end:"1769959249" entry:"1769938298" modified:"1769959249" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"1fdcf901-bfc4-4d84-a81d-41c26c730d89" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959249
+old [description:"Merch seller" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"8cf0eed4-f1fb-414e-b512-5ce0cbba9db7" venue:"hopkins_center_for_the_arts"]
+new [description:"Merch seller" end:"1769959249" entry:"1769938298" modified:"1769959249" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"8cf0eed4-f1fb-414e-b512-5ce0cbba9db7" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959249
+old [description:"Dinner" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"5dd1a51f-d749-4717-894b-bbb75621bc87" venue:"hopkins_center_for_the_arts"]
+new [description:"Dinner" end:"1769959249" entry:"1769938298" modified:"1769959249" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"5dd1a51f-d749-4717-894b-bbb75621bc87" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959249
+old [description:"Showers" entry:"1769938298" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"f9c3bc51-fc58-46f0-bb88-6a1cb59e3450" venue:"hopkins_center_for_the_arts"]
+new [description:"Showers" end:"1769959249" entry:"1769938298" modified:"1769959249" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"f9c3bc51-fc58-46f0-bb88-6a1cb59e3450" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959249
+old [description:"Researched" entry:"1769938299" modified:"1769959237" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"2c21864d-004d-43fb-97f2-a08630e8a48d" venue:"hopkins_center_for_the_arts"]
+new [description:"Researched" end:"1769959249" entry:"1769938299" modified:"1769959249" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"lodging" uuid:"2c21864d-004d-43fb-97f2-a08630e8a48d" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959249
+old [description:"Booked" entry:"1769938299" modified:"1769959237" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"0aa8a48e-5b17-4a6f-a59b-449504b3bb7f" venue:"hopkins_center_for_the_arts"]
+new [description:"Booked" end:"1769959249" entry:"1769938299" modified:"1769959249" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"lodging" uuid:"0aa8a48e-5b17-4a6f-a59b-449504b3bb7f" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959249
+old [description:"Logged in Drive" entry:"1769938299" modified:"1769959237" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"7e147f0a-437d-4a60-b1ea-32464931560a" venue:"hopkins_center_for_the_arts"]
+new [description:"Logged in Drive" end:"1769959249" entry:"1769938299" modified:"1769959249" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"lodging" uuid:"7e147f0a-437d-4a60-b1ea-32464931560a" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959249
+old [description:"Logged in Master Tour" entry:"1769938299" modified:"1769959237" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"7684608b-04a8-4be6-a3d9-96af550b7a50" venue:"hopkins_center_for_the_arts"]
+new [description:"Logged in Master Tour" end:"1769959249" entry:"1769938299" modified:"1769959249" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"lodging" uuid:"7684608b-04a8-4be6-a3d9-96af550b7a50" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959249
+old [dep_2ce37cff-aadc-4272-80a1-f978c1c366b3:"x" dep_8c95803a-bbc9-45ba-9254-76d8e4547aef:"x" depends:"2ce37cff-aadc-4272-80a1-f978c1c366b3,8c95803a-bbc9-45ba-9254-76d8e4547aef" description:"Bus info confirmed" entry:"1769938299" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"c9e8d67b-3632-483b-92df-64e9217ee360" venue:"hopkins_center_for_the_arts"]
+new [dep_2ce37cff-aadc-4272-80a1-f978c1c366b3:"x" dep_8c95803a-bbc9-45ba-9254-76d8e4547aef:"x" depends:"2ce37cff-aadc-4272-80a1-f978c1c366b3,8c95803a-bbc9-45ba-9254-76d8e4547aef" description:"Bus info confirmed" end:"1769959249" entry:"1769938299" modified:"1769959249" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"c9e8d67b-3632-483b-92df-64e9217ee360" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959249
+old [dep_1fdcf901-bfc4-4d84-a81d-41c26c730d89:"x" dep_8cf0eed4-f1fb-414e-b512-5ce0cbba9db7:"x" depends:"1fdcf901-bfc4-4d84-a81d-41c26c730d89,8cf0eed4-f1fb-414e-b512-5ce0cbba9db7" description:"Personnel confirmed" entry:"1769938299" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"4ea46c64-8dde-4a30-aa99-304fdb2b9f15" venue:"hopkins_center_for_the_arts"]
+new [dep_1fdcf901-bfc4-4d84-a81d-41c26c730d89:"x" dep_8cf0eed4-f1fb-414e-b512-5ce0cbba9db7:"x" depends:"1fdcf901-bfc4-4d84-a81d-41c26c730d89,8cf0eed4-f1fb-414e-b512-5ce0cbba9db7" description:"Personnel confirmed" end:"1769959249" entry:"1769938299" modified:"1769959249" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"4ea46c64-8dde-4a30-aa99-304fdb2b9f15" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959249
+old [dep_5dd1a51f-d749-4717-894b-bbb75621bc87:"x" dep_f9c3bc51-fc58-46f0-bb88-6a1cb59e3450:"x" depends:"5dd1a51f-d749-4717-894b-bbb75621bc87,f9c3bc51-fc58-46f0-bb88-6a1cb59e3450" description:"Hospitality confirmed" entry:"1769938299" modified:"1769959223" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"739723a7-30a0-4852-9f74-e3132fbed53c" venue:"hopkins_center_for_the_arts"]
+new [dep_5dd1a51f-d749-4717-894b-bbb75621bc87:"x" dep_f9c3bc51-fc58-46f0-bb88-6a1cb59e3450:"x" depends:"5dd1a51f-d749-4717-894b-bbb75621bc87,f9c3bc51-fc58-46f0-bb88-6a1cb59e3450" description:"Hospitality confirmed" end:"1769959249" entry:"1769938299" modified:"1769959249" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"739723a7-30a0-4852-9f74-e3132fbed53c" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959249
+old [dep_0aa8a48e-5b17-4a6f-a59b-449504b3bb7f:"x" dep_2c21864d-004d-43fb-97f2-a08630e8a48d:"x" dep_7684608b-04a8-4be6-a3d9-96af550b7a50:"x" dep_7e147f0a-437d-4a60-b1ea-32464931560a:"x" depends:"0aa8a48e-5b17-4a6f-a59b-449504b3bb7f,2c21864d-004d-43fb-97f2-a08630e8a48d,7684608b-04a8-4be6-a3d9-96af550b7a50,7e147f0a-437d-4a60-b1ea-32464931560a" description:"Driver\/cleanup rooms" entry:"1769938299" modified:"1769959237" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"2602f54b-3876-4a22-877f-67f506db96b8" venue:"hopkins_center_for_the_arts"]
+new [dep_0aa8a48e-5b17-4a6f-a59b-449504b3bb7f:"x" dep_2c21864d-004d-43fb-97f2-a08630e8a48d:"x" dep_7684608b-04a8-4be6-a3d9-96af550b7a50:"x" dep_7e147f0a-437d-4a60-b1ea-32464931560a:"x" depends:"0aa8a48e-5b17-4a6f-a59b-449504b3bb7f,2c21864d-004d-43fb-97f2-a08630e8a48d,7684608b-04a8-4be6-a3d9-96af550b7a50,7e147f0a-437d-4a60-b1ea-32464931560a" description:"Driver\/cleanup rooms" end:"1769959249" entry:"1769938299" modified:"1769959249" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"lodging" uuid:"2602f54b-3876-4a22-877f-67f506db96b8" venue:"hopkins_center_for_the_arts"]
+---
+time 1769959268
+old [description:"Advance sent" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"5a3a95ec-c4cd-4db0-b56d-cba22df5c660" venue:"poplar_hall"]
+new [description:"Advance sent" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"5a3a95ec-c4cd-4db0-b56d-cba22df5c660" venue:"poplar_hall"]
+---
+time 1769959268
+old [description:"Tech pack received" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"e26dc945-0079-4526-8c93-d372ffe4bfc2" venue:"poplar_hall"]
+new [description:"Tech pack received" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"e26dc945-0079-4526-8c93-d372ffe4bfc2" venue:"poplar_hall"]
+---
+time 1769959268
+old [description:"Schedule confirmed" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"a7fbd754-9f98-4a0f-9018-2eb16ae2e820" venue:"poplar_hall"]
+new [description:"Schedule confirmed" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"a7fbd754-9f98-4a0f-9018-2eb16ae2e820" venue:"poplar_hall"]
+---
+time 1769959268
+old [description:"Parking instructions" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"509e771c-a15f-4abd-8e1b-1e0d5326ad43" venue:"poplar_hall"]
+new [description:"Parking instructions" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"509e771c-a15f-4abd-8e1b-1e0d5326ad43" venue:"poplar_hall"]
+---
+time 1769959268
+old [description:"Shore power \/ generator" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"4fb42ecf-2f12-48bf-abad-e3c9c4fd3681" venue:"poplar_hall"]
+new [description:"Shore power \/ generator" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"4fb42ecf-2f12-48bf-abad-e3c9c4fd3681" venue:"poplar_hall"]
+---
+time 1769959268
+old [description:"Runner" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"18809204-4d4a-40e1-8816-05a4e20b593c" venue:"poplar_hall"]
+new [description:"Runner" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"18809204-4d4a-40e1-8816-05a4e20b593c" venue:"poplar_hall"]
+---
+time 1769959268
+old [description:"Merch seller" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"c4eaa079-80b1-405d-b6b9-442b04d03e5a" venue:"poplar_hall"]
+new [description:"Merch seller" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"c4eaa079-80b1-405d-b6b9-442b04d03e5a" venue:"poplar_hall"]
+---
+time 1769959268
+old [description:"Dinner" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"ac4a0d6f-987b-462d-888d-c02a58af6e9a" venue:"poplar_hall"]
+new [description:"Dinner" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"ac4a0d6f-987b-462d-888d-c02a58af6e9a" venue:"poplar_hall"]
+---
+time 1769959268
+old [description:"Showers" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"533e9d08-e197-4702-908c-8e5b9c498317" venue:"poplar_hall"]
+new [description:"Showers" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"533e9d08-e197-4702-908c-8e5b9c498317" venue:"poplar_hall"]
+---
+time 1769959268
+old [dep_4fb42ecf-2f12-48bf-abad-e3c9c4fd3681:"x" dep_509e771c-a15f-4abd-8e1b-1e0d5326ad43:"x" depends:"4fb42ecf-2f12-48bf-abad-e3c9c4fd3681,509e771c-a15f-4abd-8e1b-1e0d5326ad43" description:"Bus info confirmed" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"7aa71ac4-dd59-4bc7-bd4d-897e56b58884" venue:"poplar_hall"]
+new [dep_4fb42ecf-2f12-48bf-abad-e3c9c4fd3681:"x" dep_509e771c-a15f-4abd-8e1b-1e0d5326ad43:"x" depends:"4fb42ecf-2f12-48bf-abad-e3c9c4fd3681,509e771c-a15f-4abd-8e1b-1e0d5326ad43" description:"Bus info confirmed" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"7aa71ac4-dd59-4bc7-bd4d-897e56b58884" venue:"poplar_hall"]
+---
+time 1769959268
+old [dep_18809204-4d4a-40e1-8816-05a4e20b593c:"x" dep_c4eaa079-80b1-405d-b6b9-442b04d03e5a:"x" depends:"18809204-4d4a-40e1-8816-05a4e20b593c,c4eaa079-80b1-405d-b6b9-442b04d03e5a" description:"Personnel confirmed" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"89b6b7de-09f6-4210-984f-9c2046a6493b" venue:"poplar_hall"]
+new [dep_18809204-4d4a-40e1-8816-05a4e20b593c:"x" dep_c4eaa079-80b1-405d-b6b9-442b04d03e5a:"x" depends:"18809204-4d4a-40e1-8816-05a4e20b593c,c4eaa079-80b1-405d-b6b9-442b04d03e5a" description:"Personnel confirmed" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"89b6b7de-09f6-4210-984f-9c2046a6493b" venue:"poplar_hall"]
+---
+time 1769959268
+old [dep_533e9d08-e197-4702-908c-8e5b9c498317:"x" dep_ac4a0d6f-987b-462d-888d-c02a58af6e9a:"x" depends:"533e9d08-e197-4702-908c-8e5b9c498317,ac4a0d6f-987b-462d-888d-c02a58af6e9a" description:"Hospitality confirmed" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"4052c9b6-a094-4a6d-b091-91cda6438e5f" venue:"poplar_hall"]
+new [dep_533e9d08-e197-4702-908c-8e5b9c498317:"x" dep_ac4a0d6f-987b-462d-888d-c02a58af6e9a:"x" depends:"533e9d08-e197-4702-908c-8e5b9c498317,ac4a0d6f-987b-462d-888d-c02a58af6e9a" description:"Hospitality confirmed" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"4052c9b6-a094-4a6d-b091-91cda6438e5f" venue:"poplar_hall"]
+---
+time 1769959287
+old [description:"Researched" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"3bfebb3a-13bb-4ce1-b4bf-3998a6a965c9" venue:"poplar_hall"]
+new [description:"Researched" entry:"1769938318" modified:"1769959287" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"3bfebb3a-13bb-4ce1-b4bf-3998a6a965c9" venue:"poplar_hall"]
+---
+time 1769959287
+old [description:"Booked" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"c3bcb574-6b26-4553-8862-080780638b7e" venue:"poplar_hall"]
+new [description:"Booked" entry:"1769938318" modified:"1769959287" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"c3bcb574-6b26-4553-8862-080780638b7e" venue:"poplar_hall"]
+---
+time 1769959287
+old [description:"Logged in Drive" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"abac9247-fe74-422d-bfca-6b799b599750" venue:"poplar_hall"]
+new [description:"Logged in Drive" entry:"1769938318" modified:"1769959287" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"abac9247-fe74-422d-bfca-6b799b599750" venue:"poplar_hall"]
+---
+time 1769959287
+old [description:"Logged in Master Tour" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"3af26be0-e714-4336-9813-2fdf27fce95a" venue:"poplar_hall"]
+new [description:"Logged in Master Tour" entry:"1769938318" modified:"1769959287" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"3af26be0-e714-4336-9813-2fdf27fce95a" venue:"poplar_hall"]
+---
+time 1769959287
+old [dep_3af26be0-e714-4336-9813-2fdf27fce95a:"x" dep_3bfebb3a-13bb-4ce1-b4bf-3998a6a965c9:"x" dep_abac9247-fe74-422d-bfca-6b799b599750:"x" dep_c3bcb574-6b26-4553-8862-080780638b7e:"x" depends:"3af26be0-e714-4336-9813-2fdf27fce95a,3bfebb3a-13bb-4ce1-b4bf-3998a6a965c9,abac9247-fe74-422d-bfca-6b799b599750,c3bcb574-6b26-4553-8862-080780638b7e" description:"Driver\/cleanup rooms" entry:"1769938318" modified:"1769938318" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"c74176a4-a455-466f-9e68-1cee163df3de" venue:"poplar_hall"]
+new [dep_3af26be0-e714-4336-9813-2fdf27fce95a:"x" dep_3bfebb3a-13bb-4ce1-b4bf-3998a6a965c9:"x" dep_abac9247-fe74-422d-bfca-6b799b599750:"x" dep_c3bcb574-6b26-4553-8862-080780638b7e:"x" depends:"3af26be0-e714-4336-9813-2fdf27fce95a,3bfebb3a-13bb-4ce1-b4bf-3998a6a965c9,abac9247-fe74-422d-bfca-6b799b599750,c3bcb574-6b26-4553-8862-080780638b7e" description:"Driver\/cleanup rooms" entry:"1769938318" modified:"1769959287" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"c74176a4-a455-466f-9e68-1cee163df3de" venue:"poplar_hall"]
+---
+time 1769959831
+old [description:"Advance sent" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"5a3a95ec-c4cd-4db0-b56d-cba22df5c660" venue:"poplar_hall"]
+new [description:"Advance sent" end:"1769959831" entry:"1769938318" modified:"1769959831" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"5a3a95ec-c4cd-4db0-b56d-cba22df5c660" venue:"poplar_hall"]
+---
+time 1769959831
+old [description:"Merch seller" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"c4eaa079-80b1-405d-b6b9-442b04d03e5a" venue:"poplar_hall"]
+new [description:"Merch seller" end:"1769959831" entry:"1769938318" modified:"1769959831" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"c4eaa079-80b1-405d-b6b9-442b04d03e5a" venue:"poplar_hall"]
+---
+time 1769959831
+old [description:"Dinner" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"ac4a0d6f-987b-462d-888d-c02a58af6e9a" venue:"poplar_hall"]
+new [description:"Dinner" end:"1769959831" entry:"1769938318" modified:"1769959831" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"ac4a0d6f-987b-462d-888d-c02a58af6e9a" venue:"poplar_hall"]
+---
+time 1769959831
+old [description:"Showers" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"533e9d08-e197-4702-908c-8e5b9c498317" venue:"poplar_hall"]
+new [description:"Showers" end:"1769959831" entry:"1769938318" modified:"1769959831" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"533e9d08-e197-4702-908c-8e5b9c498317" venue:"poplar_hall"]
+---
+time 1769959831
+old [description:"Schedule confirmed" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"a7fbd754-9f98-4a0f-9018-2eb16ae2e820" venue:"poplar_hall"]
+new [description:"Schedule confirmed" end:"1769959831" entry:"1769938318" modified:"1769959831" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"a7fbd754-9f98-4a0f-9018-2eb16ae2e820" venue:"poplar_hall"]
+---
+time 1769959831
+old [dep_533e9d08-e197-4702-908c-8e5b9c498317:"x" dep_ac4a0d6f-987b-462d-888d-c02a58af6e9a:"x" depends:"533e9d08-e197-4702-908c-8e5b9c498317,ac4a0d6f-987b-462d-888d-c02a58af6e9a" description:"Hospitality confirmed" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"4052c9b6-a094-4a6d-b091-91cda6438e5f" venue:"poplar_hall"]
+new [dep_533e9d08-e197-4702-908c-8e5b9c498317:"x" dep_ac4a0d6f-987b-462d-888d-c02a58af6e9a:"x" depends:"533e9d08-e197-4702-908c-8e5b9c498317,ac4a0d6f-987b-462d-888d-c02a58af6e9a" description:"Hospitality confirmed" end:"1769959831" entry:"1769938318" modified:"1769959831" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"4052c9b6-a094-4a6d-b091-91cda6438e5f" venue:"poplar_hall"]
+---
