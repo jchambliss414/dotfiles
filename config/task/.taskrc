@@ -39,8 +39,6 @@ include dark-green-256.theme
 #include solarized-light-256.theme
 #include no-color.theme
 
-context.work.read=project:Work Email\/Booking Catch-up
-context.work.write=project:Work Email\/Booking Catch-up
 print.empty.columns=on
 
 
@@ -52,22 +50,24 @@ print.empty.columns=on
 # User Defined Attributes (UDAs)
 # -----------------------------------------------------------------------------
 
-# Tour Run
-uda.run.type=string
-uda.run.label=Tour
-
-# Venue identifier (e.g., folly_theater, the_pageant)
+# Venue identifier (lowercase, underscores)
+# Example: folly_theater_kc_mo
 uda.venue.type=string
 uda.venue.label=Venue
+
+# Tour work category
+# Values: advance, lodging
+uda.tour-category.type=string
+uda.tour-category.label=Category
+uda.tour-category.values=advance,lodging
 
 # Show date - the actual performance date
 uda.showdate.type=date
 uda.showdate.label=Show Date
 
-# Category - type of task
-uda.category.type=string
-uda.category.label=Category
-uda.category.values=advance,lodging
+# Tour Run (for grouping tasks by tour)
+uda.run.type=string
+uda.run.label=Tour
 
 # -----------------------------------------------------------------------------
 # Urgency Coefficients
@@ -77,8 +77,8 @@ uda.category.values=advance,lodging
 urgency.uda.showdate.coefficient=12.0
 
 # Category weights (advance work slightly more urgent)
-urgency.uda.category.advance.coefficient=2.0
-urgency.uda.category.lodging.coefficient=1.5
+urgency.uda.tour-category.advance.coefficient=2.0
+urgency.uda.tour-category.lodging.coefficient=1.5
 
 # Reduce default urgency factors to let showdate dominate
 urgency.age.coefficient=1.0
@@ -90,9 +90,9 @@ urgency.tags.coefficient=0.5
 
 # Main tour dashboard
 report.tour.description=Tour dashboard - all pending tasks
-report.tour.columns=id,project,run,showdate,venue,category,description.truncated_count,urgency
+report.tour.columns=id,project,run,showdate,venue,tour-category,description.truncated_count,urgency
 report.tour.labels=ID,Proj,Tour,Show,Venue,Cat,Task,Urg
-report.tour.sort=showdate+,run+,venue+,category+
+report.tour.sort=showdate+,run+,venue+,tour-category+
 report.tour.filter=status:pending
 
 # Advance tasks only
@@ -100,25 +100,25 @@ report.adv.description=Advance tasks only
 report.adv.columns=id,showdate,venue,description.truncated_count,urgency
 report.adv.labels=ID,Show,Venue,Task,Urg
 report.adv.sort=showdate+,venue+
-report.adv.filter=status:pending category:advance
+report.adv.filter=status:pending tour-category:advance
 
 # Lodging tasks only
 report.lodging.description=Lodging tasks only
 report.lodging.columns=id,showdate,venue,description.truncated_count,urgency
 report.lodging.labels=ID,Show,Venue,Task,Urg
 report.lodging.sort=showdate+,venue+
-report.lodging.filter=status:pending category:lodging
+report.lodging.filter=status:pending tour-category:lodging
 
 # This week's shows
 report.week.description=Shows this week
-report.week.columns=id,showdate,venue,category,description.truncated_count
+report.week.columns=id,showdate,venue,tour-category,description.truncated_count
 report.week.labels=ID,Show,Venue,Cat,Task
-report.week.sort=showdate+,category+
+report.week.sort=showdate+,tour-category+
 report.week.filter=status:pending showdate.before:now+8d
 
 # Upcoming shows (next 30 days)
 report.upcoming.description=Upcoming shows (30 days)
-report.upcoming.columns=id,showdate,venue,category,description.truncated_count,urgency
+report.upcoming.columns=id,showdate,venue,tour-category,description.truncated_count,urgency
 report.upcoming.labels=ID,Show,Venue,Cat,Task,Urg
 report.upcoming.sort=showdate+
 report.upcoming.filter=status:pending showdate.before:now+31d
@@ -131,31 +131,35 @@ default.command=tour
 # -----------------------------------------------------------------------------
 
 # Focus on advance work only
-context.advance.read=category:advance
-context.advance.write=category:advance
+context.advance.read=tour-category:advance
+context.advance.write=tour-category:advance
 
 # Focus on lodging work only
-context.lodging.read=category:lodging
-context.lodging.write=category:lodging
+context.lodging.read=tour-category:lodging
+context.lodging.write=tour-category:lodging
 
-# Focus on specific TMCK tour
+# Focus on specific tour (example - customize as needed)
 context.tmck.read=run:tmck
 context.tmck.write=run:tmck
+
+# Combined context: TMCK tour lodging only
+context.tmck-lodging.read=project:tour run:tmck tour-category:lodging
+context.tmck-lodging.write=project:tour run:tmck tour-category:lodging
+
+# Legacy work context (keep if still used)
+context.work.read=project:Work Email\/Booking Catch-up
+context.work.write=project:Work Email\/Booking Catch-up
 
 # -----------------------------------------------------------------------------
 # Colors for Tour Management
 # -----------------------------------------------------------------------------
 
 # Category colors
-color.uda.category.advance=rgb115
-color.uda.category.lodging=rgb513
+color.uda.tour-category.advance=rgb115
+color.uda.tour-category.lodging=rgb513
 
 # Highlight tasks with shows in next 3 days
 color.uda.showdate.before.3d=white on red
 
-# Highlight tasks with shows in next 7 days  
+# Highlight tasks with shows in next 7 days
 color.uda.showdate.before.7d=black on yellow
-context.tmck.lodging.read=project:tour run:tmck category:lodging
-context.tmck.lodging.write=project:tour run:tmck category:lodging
-context.tmck-lodging.read=project:tour run:tmck category:lodging
-context.tmck-lodging.write=project:tour run:tmck category:lodging

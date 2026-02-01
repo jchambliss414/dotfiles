@@ -1,6 +1,18 @@
 -- ###########################################################################################
 --                          VIMWIKI CONFIGURATION
 -- ###########################################################################################
+--
+-- Tour Management Workflow System
+-- Two wikis: Personal (/shared/vimwiki/) and Tour (/shared/tour_wiki/)
+--
+-- Keymap namespaces:
+--   <leader>v  - Personal VimWiki
+--   <leader>t  - Tour Wiki
+--   <leader>tr - Tour Wiki relational navigation
+--   <leader>w  - Shared wiki commands
+--   <leader>vl - Link creation (inline and reference)
+--
+-- ###########################################################################################
 
 -- ######################################################################################
 --                            FUNCTIONS SECTION
@@ -123,7 +135,6 @@ local function link_selection_to_wiki_page()
 
 	local current_dir = vim.fn.expand("%:p:h")
 
-	-- Collect all markdown files from all wikis
 	local all_files = {}
 	for _, wiki_path in ipairs(wiki_paths) do
 		local handle = io.popen("fdfind -e md -t f . " .. vim.fn.shellescape(wiki_path) .. " 2>/dev/null")
@@ -142,10 +153,7 @@ local function link_selection_to_wiki_page()
 
 	local items = {}
 	for _, file in ipairs(all_files) do
-		table.insert(items, {
-			text = file,
-			file = file,
-		})
+		table.insert(items, { text = file, file = file })
 	end
 
 	Snacks.picker.pick({
@@ -168,13 +176,8 @@ local function link_selection_to_wiki_page()
 end
 
 -- ############################################################################
---   end             Link to Existing Wiki Page Function                  end
+--                    Link to URL from Clipboard
 -- ############################################################################
-
--- ############################################################################
---                       Link to URL from Clipboard
--- ############################################################################
--- Create a markdown link using clipboard contents as the URL
 
 local function is_valid_url(str)
 	return str:match("^https?://") ~= nil
@@ -235,10 +238,6 @@ local function link_selection_to_clipboard_url()
 	vim.cmd('normal! gv"zp')
 	vim.notify("Linked → " .. clipboard:sub(1, 50) .. (clipboard:len() > 50 and "..." or ""), vim.log.levels.INFO)
 end
-
--- ############################################################################
---  end                  Link to URL from Clipboard                        end
--- ############################################################################
 
 -- ############################################################################
 --                    Reference-Style Link Helpers
@@ -489,71 +488,6 @@ local function reflink_selection_to_wiki_page()
 end
 
 -- ############################################################################
---                  Follow Reference-Style Links
--- ############################################################################
--- Workaround: find the reference definition and run gx on the URL
-
-local function follow_reference_link()
-	local line = vim.fn.getline(".")
-	local col = vim.fn.col(".")
-
-	-- Try to extract reference ID from [label][ref] pattern at cursor position
-	local ref_id = nil
-
-	-- Find all [label][ref] patterns on this line and check if cursor is inside one
-	local search_start = 1
-	while true do
-		local s, e, label, ref = line:find("%[([^%]]+)%]%[([^%]]+)%]", search_start)
-		if not s then
-			break
-		end
-
-		if col >= s and col <= e then
-			ref_id = ref
-			break
-		end
-		search_start = e + 1
-	end
-
-	if not ref_id then
-		vim.notify("No reference link under cursor", vim.log.levels.WARN)
-		return
-	end
-
-	-- Search buffer for the reference definition [ref_id]: URL
-	local bufnr = vim.api.nvim_get_current_buf()
-	local lines = vim.api.nvim_buf_get_lines(bufnr, 0, -1, false)
-	local ref_pattern = "^%[" .. vim.pesc(ref_id) .. "%]:%s*(.+)$"
-
-	local url = nil
-	for _, buf_line in ipairs(lines) do
-		local match = buf_line:match(ref_pattern)
-		if match then
-			url = match:gsub("^%s+", ""):gsub("%s+$", "") -- trim whitespace
-			break
-		end
-	end
-
-	if not url then
-		vim.notify("Reference [" .. ref_id .. "] not found", vim.log.levels.ERROR)
-		return
-	end
-
-	-- Open URL using wslview (for WSL) or vim.ui.open as fallback
-	if url:match("^https?://") then
-		vim.fn.jobstart({ "wslview", url }, { detach = true })
-		vim.notify("Opening: " .. url:sub(1, 50) .. "...", vim.log.levels.INFO)
-	else
-		-- For non-URL targets (wiki pages), use vim.ui.open or just notify
-		vim.ui.open(url)
-	end
-end
-
--- ############################################################################
---  end               Reference-Style Link Functions                      end
--- ############################################################################
-
--- ############################################################################
 --                       Event Link Creation Function
 -- ############################################################################
 -- Transform event text to filename
@@ -575,126 +509,30 @@ local event_months = {
 	Dec = "12",
 }
 
--- ############################################################################
---                       Event Link Creation
--- ############################################################################
--- Transform event text to filename
---
--- Supported formats:
---   "Feb-10: Folly Theater - Kansas City, MO"      → 2026_0210_Folly-Theater_Kansas-City_MO.md
---   "Jan-22-24: Panic En La Playa - Cancun, MX"    → 2026_0122-0124_Panic-En-La-Playa_Cancun_MX.md
---   "Jan-30-Feb-02: Festival - Austin, TX"         → 2026_0130-0202_Festival_Austin_TX.md
---   "Feb-09-23: TMCK/"                             → 2026_0209-0223_TMCK/index.md
---   "Jan-30-Feb-02: Spring Tour/"                  → 2026_0130-0202_Spring-Tour/index.md
-
-local event_months = {
-	Jan = "01",
-	Feb = "02",
-	Mar = "03",
-	Apr = "04",
-	May = "05",
-	Jun = "06",
-	Jul = "07",
-	Aug = "08",
-	Sep = "09",
-	Oct = "10",
-	Nov = "11",
-	Dec = "12",
-}
-
 local function transform_event_to_filename(text)
-	local year = "2026" -- Update manually each year
-	local venue_clean, city_clean, state, date_part
+	-- Pattern: "Mon-DD: Venue Name - City Name, ST"
+	local month_abbr, day, venue, city, state = text:match("^(%a+)%-(%d+):%s*(.-)%s*%-%s*(.-),%s*(%a+)$")
 
-	-- Pattern 0: Tour directory "Mon-DD-DD: TourName/"
-	local month, d1, d2, tour = text:match("^(%a+)%-(%d+)%-(%d+):%s*(.-)/$")
-
-	if month and tour then
-		local m = event_months[month]
-		if not m then
-			return nil, "Unknown month: " .. month
-		end
-		d1 = string.format("%02d", tonumber(d1))
-		d2 = string.format("%02d", tonumber(d2))
-		local tour_clean = tour:gsub("%s+", "-")
-		local filename = string.format("%s_%s%s-%s%s_%s/index.md", year, m, d1, m, d2, tour_clean)
-		return filename
+	if not month_abbr then
+		return nil, "Could not parse. Expected format: 'Mon-DD: Venue - City, ST'"
 	end
 
-	-- Pattern 0b: Tour directory cross-month "Mon-DD-Mon-DD: TourName/"
-	local month1, day1, month2, day2, tour2 = text:match("^(%a+)%-(%d+)%-(%a+)%-(%d+):%s*(.-)/$")
-
-	if month1 and tour2 then
-		local m1 = event_months[month1]
-		local m2 = event_months[month2]
-		if not m1 then
-			return nil, "Unknown month: " .. month1
-		end
-		if not m2 then
-			return nil, "Unknown month: " .. month2
-		end
-		day1 = string.format("%02d", tonumber(day1))
-		day2 = string.format("%02d", tonumber(day2))
-		local tour_clean = tour2:gsub("%s+", "-")
-		local filename = string.format("%s_%s%s-%s%s_%s/index.md", year, m1, day1, m2, day2, tour_clean)
-		return filename
+	local month_num = event_months[month_abbr]
+	if not month_num then
+		return nil, "Unknown month: " .. month_abbr
 	end
 
-	-- Pattern 1: Cross-month range "Mon-DD-Mon-DD: Venue - City, ST"
-	local m1, dy1, m2, dy2, venue, city, st = text:match("^(%a+)%-(%d+)%-(%a+)%-(%d+):%s*(.-)%s*%-%s*(.-),%s*(%a+)$")
+	-- Pad day to 2 digits
+	day = string.format("%02d", tonumber(day))
 
-	if m1 and m2 then
-		local mon1 = event_months[m1]
-		local mon2 = event_months[m2]
-		if not mon1 then
-			return nil, "Unknown month: " .. m1
-		end
-		if not mon2 then
-			return nil, "Unknown month: " .. m2
-		end
-		dy1 = string.format("%02d", tonumber(dy1))
-		dy2 = string.format("%02d", tonumber(dy2))
-		date_part = string.format("%s_%s%s-%s%s", year, mon1, dy1, mon2, dy2)
-		venue_clean = venue:gsub("%s+", "-")
-		city_clean = city:gsub("%s+", "-")
-		state = st
-	else
-		-- Pattern 2: Same-month range "Mon-DD-DD: Venue - City, ST"
-		local mon, dd1, dd2, v, c, s = text:match("^(%a+)%-(%d+)%-(%d+):%s*(.-)%s*%-%s*(.-),%s*(%a+)$")
+	-- Transform venue and city (spaces → hyphens)
+	local venue_clean = venue:gsub("%s+", "-")
+	local city_clean = city:gsub("%s+", "-")
 
-		if mon and dd2 then
-			local m = event_months[mon]
-			if not m then
-				return nil, "Unknown month: " .. mon
-			end
-			dd1 = string.format("%02d", tonumber(dd1))
-			dd2 = string.format("%02d", tonumber(dd2))
-			date_part = string.format("%s_%s%s-%s%s", year, m, dd1, m, dd2)
-			venue_clean = v:gsub("%s+", "-")
-			city_clean = c:gsub("%s+", "-")
-			state = s
-		else
-			-- Pattern 3: Single date "Mon-DD: Venue - City, ST"
-			local mon, day, v, c, s = text:match("^(%a+)%-(%d+):%s*(.-)%s*%-%s*(.-),%s*(%a+)$")
+	-- Build filename: MMDDYY_Venue-Name_City-Name_ST.md
+	local year = "26" -- Update manually each year
+	local filename = string.format("%s%s%s_%s_%s_%s.md", month_num, day, year, venue_clean, city_clean, state)
 
-			if not mon then
-				return nil,
-					"Could not parse. Expected formats:\n  'Mon-DD: Venue - City, ST'\n  'Mon-DD-DD: Venue - City, ST'\n  'Mon-DD-Mon-DD: Venue - City, ST'\n  'Mon-DD-DD: TourName/'"
-			end
-
-			local m = event_months[mon]
-			if not m then
-				return nil, "Unknown month: " .. mon
-			end
-			day = string.format("%02d", tonumber(day))
-			date_part = string.format("%s_%s%s", year, m, day)
-			venue_clean = v:gsub("%s+", "-")
-			city_clean = c:gsub("%s+", "-")
-			state = s
-		end
-	end
-
-	local filename = string.format("%s_%s_%s_%s.md", date_part, venue_clean, city_clean, state)
 	return filename
 end
 
@@ -724,8 +562,334 @@ local function create_event_link()
 end
 
 -- ############################################################################
---  end                  Event Link Creation Function                     end
+--                    Itinerary Status Automation
 -- ############################################################################
+-- Updates the Status column in tour index itinerary tables
+-- based on TaskWarrior task completion state
+
+local function get_venue_status(project, venue)
+	local cmd_total = string.format("task project:%s venue:%s count 2>/dev/null", project, venue)
+	local cmd_complete = string.format("task project:%s venue:%s status:completed count 2>/dev/null", project, venue)
+	local cmd_advance_sent = string.format(
+		"task project:%s venue:%s description.has:'Advance sent' status:completed count 2>/dev/null",
+		project,
+		venue
+	)
+
+	local total = tonumber(vim.fn.system(cmd_total)) or 0
+	local complete = tonumber(vim.fn.system(cmd_complete)) or 0
+	local advance_sent = tonumber(vim.fn.system(cmd_advance_sent)) or 0
+
+	if total == 0 then
+		return "No Tasks"
+	elseif complete == total then
+		return "Complete"
+	elseif advance_sent == 0 then
+		return "Not Sent"
+	elseif complete > 0 then
+		return "Advancing"
+	else
+		return "Not Sent"
+	end
+end
+
+local function update_itinerary_status()
+	local lines = vim.api.nvim_buf_get_lines(0, 0, -1, false)
+	local in_itinerary = false
+	local project = nil
+	local updated_lines = {}
+
+	-- Extract project from viewport
+	for _, line in ipairs(lines) do
+		local proj = line:match("project:(tour%.[%w_]+)")
+		if proj then
+			project = proj
+			break
+		end
+	end
+
+	if not project then
+		vim.notify("Could not find project in viewports", vim.log.levels.ERROR)
+		return
+	end
+
+	for i, line in ipairs(lines) do
+		if line:match("^|%s*Date%s*|%s*City%s*|%s*Venue%s*|%s*Status%s*|") then
+			in_itinerary = true
+			table.insert(updated_lines, line)
+		elseif in_itinerary and line:match("^|%-") then
+			table.insert(updated_lines, line)
+		elseif in_itinerary and line:match("^|") then
+			local cells = {}
+			for cell in line:gmatch("|([^|]+)") do
+				table.insert(cells, vim.trim(cell))
+			end
+
+			if #cells >= 5 then
+				local venue_name = cells[3]
+				local venue_id = venue_name:lower():gsub("%s+", "_"):gsub("[^%w_]", "")
+				local status = get_venue_status(project, venue_id)
+
+				local new_line =
+					string.format("| %s | %s | %s | %s | %s |", cells[1], cells[2], cells[3], status, cells[5])
+				table.insert(updated_lines, new_line)
+			else
+				table.insert(updated_lines, line)
+			end
+		elseif in_itinerary and not line:match("^|") then
+			in_itinerary = false
+			table.insert(updated_lines, line)
+		else
+			table.insert(updated_lines, line)
+		end
+	end
+
+	vim.api.nvim_buf_set_lines(0, 0, -1, false, updated_lines)
+	vim.notify("Itinerary status updated", vim.log.levels.INFO)
+end
+
+-- ############################################################################
+--                    Helper: Detect Which Wiki
+-- ############################################################################
+
+local function get_wiki_root()
+	local filepath = vim.fn.expand("%:p")
+	if filepath:match("^/shared/tour_wiki/") then
+		return "/shared/tour_wiki/"
+	else
+		return "/shared/vimwiki/"
+	end
+end
+
+local function is_tour_wiki()
+	local filepath = vim.fn.expand("%:p")
+	return filepath:match("^/shared/tour_wiki/") ~= nil
+end
+
+-- ############################################################################
+--                    Relational Navigation Functions
+-- ############################################################################
+-- Tour wiki specific navigation functions.
+-- All keymaps under <leader>tr (tour relations)
+
+local function get_current_file_stem()
+	return vim.fn.expand("%:t:r")
+end
+
+--- Determine the "type" of the current file based on its directory
+--- Returns: "venue", "festival", "contact", "hotel", "tour", "show", or "unknown"
+local function get_current_file_type()
+	local filepath = vim.fn.expand("%:p")
+
+	if filepath:match("/venues/") then
+		return "venue"
+	elseif filepath:match("/festivals/") then
+		return "festival"
+	elseif filepath:match("/contacts/") then
+		return "contact"
+	elseif filepath:match("/hotels/") then
+		return "hotel"
+	elseif filepath:match("/tours/[^/]+/index%.md$") then
+		return "tour"
+	elseif filepath:match("/tours/") then
+		return "show"
+	else
+		return "unknown"
+	end
+end
+
+--- Extract venue link from current show file
+local function get_venue_from_show_file()
+	local lines = vim.api.nvim_buf_get_lines(0, 0, 30, false)
+	for _, line in ipairs(lines) do
+		local venue = line:match("%*%*Venue:%*%*%s*%[%[venues/([^%]|]+)")
+		if venue then
+			return venue
+		end
+	end
+	return nil
+end
+
+--- Extract city from current show file header
+local function get_city_from_show_file()
+	local lines = vim.api.nvim_buf_get_lines(0, 0, 30, false)
+	for _, line in ipairs(lines) do
+		local city, state = line:match("^#[^,]+,%s*([%w%s]+)%s+(%u%u)%s*$")
+		if city and state then
+			city = city:gsub("%s+", "_"):gsub("^%s*", ""):gsub("%s*$", "")
+			return { city = city, state = state }
+		end
+	end
+	return nil
+end
+
+--- Convert venue name to TaskWarrior venue ID
+local function venue_name_to_id(venue_name)
+	return venue_name:lower():gsub("%s+", "_"):gsub("[^%w_]", "")
+end
+
+-- Backlinks: All files linking to current file
+local function backlinks_all()
+	if not is_tour_wiki() then
+		vim.notify("Not in tour wiki", vim.log.levels.WARN)
+		return
+	end
+
+	local filename = get_current_file_stem()
+	local wiki_root = get_wiki_root()
+
+	require("telescope.builtin").grep_string({
+		search = filename,
+		cwd = wiki_root,
+		prompt_title = "Backlinks: " .. filename,
+	})
+end
+
+-- Backlinks: Filtered by type
+local function backlinks_filtered(types)
+	if not is_tour_wiki() then
+		vim.notify("Not in tour wiki", vim.log.levels.WARN)
+		return
+	end
+
+	local filename = get_current_file_stem()
+	local wiki_root = get_wiki_root()
+
+	local globs = {}
+	for _, type_name in ipairs(types) do
+		if type_name == "venues" then
+			table.insert(globs, "--glob")
+			table.insert(globs, "**/venues/**")
+		elseif type_name == "festivals" then
+			table.insert(globs, "--glob")
+			table.insert(globs, "**/festivals/**")
+		elseif type_name == "contacts" then
+			table.insert(globs, "--glob")
+			table.insert(globs, "**/contacts/**")
+		elseif type_name == "hotels" then
+			table.insert(globs, "--glob")
+			table.insert(globs, "**/hotels/**")
+		elseif type_name == "tours" then
+			table.insert(globs, "--glob")
+			table.insert(globs, "**/tours/**")
+		end
+	end
+
+	if #globs == 0 then
+		vim.notify("No valid types specified, showing all backlinks", vim.log.levels.WARN)
+		backlinks_all()
+		return
+	end
+
+	local type_label = table.concat(types, " + ")
+
+	require("telescope.builtin").grep_string({
+		search = filename,
+		cwd = wiki_root,
+		additional_args = function()
+			return globs
+		end,
+		prompt_title = "Backlinks (" .. type_label .. "): " .. filename,
+	})
+end
+
+-- Predefined filtered backlink functions
+local function backlinks_shows()
+	backlinks_filtered({ "tours" })
+end
+
+local function backlinks_locations()
+	backlinks_filtered({ "venues", "festivals" })
+end
+
+local function backlinks_contacts()
+	backlinks_filtered({ "contacts" })
+end
+
+local function backlinks_hotels()
+	backlinks_filtered({ "hotels" })
+end
+
+local function backlinks_work()
+	backlinks_filtered({ "venues", "festivals", "tours" })
+end
+
+-- Venue Tasks: Show TaskWarrior tasks for current venue
+local function venue_tasks()
+	local file_type = get_current_file_type()
+
+	if file_type ~= "venue" then
+		vim.notify("Not in a venue file", vim.log.levels.WARN)
+		return
+	end
+
+	local filename = get_current_file_stem()
+	local venue_id = venue_name_to_id(filename)
+	local cmd = string.format("task venue:%s", venue_id)
+
+	vim.cmd("botright split | terminal " .. cmd)
+	vim.cmd("resize 15")
+	vim.api.nvim_buf_set_keymap(0, "n", "q", ":bd!<CR>", { noremap = true, silent = true })
+end
+
+-- Related Shows: Other shows at same venue (from show file)
+local function related_shows()
+	local file_type = get_current_file_type()
+
+	if file_type ~= "show" then
+		vim.notify("Not in a show file", vim.log.levels.WARN)
+		return
+	end
+
+	local venue = get_venue_from_show_file()
+
+	if not venue then
+		vim.notify("Could not find venue link in this file", vim.log.levels.WARN)
+		return
+	end
+
+	local wiki_root = get_wiki_root()
+
+	require("telescope.builtin").grep_string({
+		search = venue,
+		cwd = wiki_root,
+		additional_args = function()
+			return { "--glob", "**/tours/**" }
+		end,
+		prompt_title = "Shows at: " .. venue,
+	})
+end
+
+-- City Hotels: Browse hotels in this show's city (from show file)
+local function city_hotels()
+	local file_type = get_current_file_type()
+
+	if file_type ~= "show" then
+		vim.notify("Not in a show file", vim.log.levels.WARN)
+		return
+	end
+
+	local city_info = get_city_from_show_file()
+
+	if not city_info then
+		vim.notify("Could not extract city from this file", vim.log.levels.WARN)
+		return
+	end
+
+	local hotel_dir = string.format("%shotels/%s_%s/", get_wiki_root(), city_info.city, city_info.state)
+
+	if vim.fn.isdirectory(hotel_dir) == 1 then
+		require("telescope.builtin").find_files({
+			cwd = hotel_dir,
+			prompt_title = "Hotels in " .. city_info.city .. ", " .. city_info.state,
+		})
+	else
+		vim.notify(
+			"No hotel directory for " .. city_info.city .. ", " .. city_info.state .. "\nCreate at: " .. hotel_dir,
+			vim.log.levels.INFO
+		)
+	end
+end
 
 -- ######################################################################################
 --  end                       FUNCTIONS SECTION                           end
@@ -740,34 +904,82 @@ return {
 	branch = "dev",
 	event = "VeryLazy",
 	keys = {
-		-- Opens the default wiki index (replaces <leader>ww)
-		{ "<leader>vw", "<Plug>VimwikiIndex", desc = "Open Wiki Index" },
-		-- Opens the diary index (replaces <leader>wi)
-		{ "<leader>vdd", "<Plug>VimwikiDiaryIndex", desc = "Open Diary Index" },
-		-- Opens today's diary entry (replaces <leader>w<leader>w)
-		{ "<leader>vdt", "<Plug>VimwikiMakeDiaryNote", desc = "Open Today's Diary" },
-		-- Opens tomorrow's diary entry
-		{ "<leader>vdT", "<Plug>VimwikiMakeTomorrowDiaryNote", desc = "Open Tomorrow's Diary" },
-		-- Opens yesterday's diary entry
-		{ "<leader>vdy", "<Plug>VimwikiMakeYesterdayDiaryNote", desc = "Open Yesterday's Diary" },
-
-		-- Update diary section (delete old, insert new)
+		-- ====================================================================
+		-- PERSONAL WIKI (<leader>v)
+		-- ====================================================================
+		{ "<leader>vw", "1<Plug>VimwikiIndex", desc = "Open Personal Wiki" },
+		{ "<leader>vdd", "<Plug>VimwikiDiaryIndex", desc = "Diary Index" },
+		{ "<leader>vdt", "<Plug>VimwikiMakeDiaryNote", desc = "Today's Diary" },
+		{ "<leader>vdT", "<Plug>VimwikiMakeTomorrowDiaryNote", desc = "Tomorrow's Diary" },
+		{ "<leader>vdy", "<Plug>VimwikiMakeYesterdayDiaryNote", desc = "Yesterday's Diary" },
 		{ "<leader>vd<leader>u", "<Plug>VimwikiDiaryGenerateLinks", desc = "Update Diary Section" },
 
-		-- Delete current wiki page
-		{ "<leader>v<leader>d", "<Plug>VimwikiDeleteFile", desc = "Delete Current Page" },
+		-- ====================================================================
+		-- TOUR WIKI (<leader>t)
+		-- ====================================================================
+		{ "<leader>tw", "2<Plug>VimwikiIndex", desc = "Open Tour Wiki" },
 
-		-- Rename current wiki page
-		{ "<leader>v<leader>r", "<Plug>VimwikiRenameFile", desc = "Rename Current Page" },
+		-- Tour wiki utilities
+		{
+			"<leader>tu",
+			update_itinerary_status,
+			desc = "Update itinerary status",
+			ft = "vimwiki",
+		},
 
-		-- Task Navigation
+		-- Event link creation (tour wiki specific, but works in any vimwiki)
+		{
+			"<leader>t<CR>",
+			create_event_link,
+			mode = "v",
+			desc = "Create event link",
+			ft = "vimwiki",
+		},
+
+		-- Legacy event link keymap (for backward compatibility)
+		{
+			"<leader><CR>",
+			create_event_link,
+			mode = "v",
+			desc = "Create Formatted Event Link",
+			ft = "vimwiki",
+		},
+
+		-- ====================================================================
+		-- TOUR WIKI RELATIONS (<leader>tr)
+		-- ====================================================================
+		-- Backlinks
+		{ "<leader>trb", backlinks_all, desc = "Backlinks (all)", ft = "vimwiki" },
+		{ "<leader>trs", backlinks_shows, desc = "Backlinks (shows)", ft = "vimwiki" },
+		{ "<leader>trl", backlinks_locations, desc = "Backlinks (venues/festivals)", ft = "vimwiki" },
+		{ "<leader>trc", backlinks_contacts, desc = "Backlinks (contacts)", ft = "vimwiki" },
+		{ "<leader>trh", backlinks_hotels, desc = "Backlinks (hotels)", ft = "vimwiki" },
+		{ "<leader>trw", backlinks_work, desc = "Backlinks (work)", ft = "vimwiki" },
+
+		-- Context-aware navigation
+		{ "<leader>trt", venue_tasks, desc = "Tasks for this venue", ft = "vimwiki" },
+		{ "<leader>trr", related_shows, desc = "Related shows (same venue)", ft = "vimwiki" },
+		{ "<leader>tro", city_hotels, desc = "Hotels in this city", ft = "vimwiki" },
+
+		-- ====================================================================
+		-- WIKI SELECT
+		-- ====================================================================
+		{ "<leader>ws", "<Plug>VimwikiUISelect", desc = "Select Wiki" },
+
+		-- ====================================================================
+		-- SHARED COMMANDS (work in both wikis) (<leader>w)
+		-- ====================================================================
+		{ "<leader>w<leader>d", "<Plug>VimwikiDeleteFile", desc = "Delete Current Page" },
+		{ "<leader>w<leader>r", "<Plug>VimwikiRenameFile", desc = "Rename Current Page" },
+
+		-- Task navigation
 		{ "<A-Tab>", "<Plug>VimwikiNextTask", desc = "Go to Next Unfinished Task" },
 
-		-- Insert Table
-		{ "<leader>vt", ":VimwikiTable ", desc = "Insert Table" },
-		{ "<leader>vT", ":VimwikiTable 2 2<CR>", desc = "Insert Table" },
+		-- Tables
+		{ "<leader>wt", ":VimwikiTable ", desc = "Insert Table" },
+		{ "<leader>wT", ":VimwikiTable 2 2<CR>", desc = "Insert 2x2 Table" },
 
-		-- GoBackLink mappings
+		-- Back navigation (save & close buffer)
 		{
 			"<BS>",
 			function()
@@ -788,14 +1000,7 @@ return {
 			desc = "Go back (keep buffer open)",
 			ft = "vimwiki",
 		},
-		-- Create event link from visual selection
-		{
-			"<leader><CR>",
-			create_event_link,
-			mode = "v",
-			desc = "Create Formatted Event Link",
-			ft = "vimwiki",
-		},
+
 		-- Follow reference link and close source buffer
 		{
 			"<leader><C-CR>",
@@ -811,6 +1016,7 @@ return {
 			desc = "Follow reference link, close source",
 			ft = "vimwiki",
 		},
+
 		-- Follow inline link and close source buffer
 		{
 			"<leader><S-CR>",
@@ -919,29 +1125,112 @@ return {
 	},
 	enabled = true,
 
-	init = function() --replace 'config' with 'init'
+	init = function()
+		-- ====================================================================
+		-- BASE VIMWIKI SETTINGS
+		-- ====================================================================
 		vim.g.vimwiki_folding = "custom"
+
+		-- Two-wiki configuration
 		vim.g.vimwiki_list = {
 			{
+				-- Wiki 1: Personal (index 1)
 				path = "/shared/vimwiki/",
 				syntax = "markdown",
 				ext = ".md",
 				links_space_char = "_",
 				auto_generate_links = 1,
 			},
+			{
+				-- Wiki 2: Tour Management (index 2)
+				path = "/shared/tour_wiki/",
+				syntax = "markdown",
+				ext = ".md",
+				links_space_char = "_",
+				auto_generate_links = 1,
+			},
 		}
-		-- vim.g.vimwiki_ext2syntax = {}
+
 		vim.g.vimwiki_autowriteall = 1
-		vim.g.vimwiki_map_prefix = "<leader>v"
+		vim.g.vimwiki_map_prefix = "<leader>w" -- Shared commands under <leader>w
 		vim.g.vimwiki_auto_header = 1
 		vim.g.vimwiki_global_ext = 0
 		vim.g.vimwiki_split_action = "stay"
 		vim.g.vimwiki_conceallevel = 2
 		vim.g.vimwiki_markdown_link_ext = 1
+
 		-- TaskWiki Configs
 		vim.g.taskwiki_markup_syntax = "markdown"
 		vim.g.taskwiki_report_name = "list"
-		-- URL Link Handler
+
+		-- ====================================================================
+		-- FOLDING
+		-- ====================================================================
+		-- Force our folding AFTER vimwiki's ftplugin runs
+		vim.api.nvim_create_autocmd("BufEnter", {
+			pattern = "*.md",
+			callback = function()
+				if vim.bo.filetype == "vimwiki" then
+					vim.opt_local.foldmethod = "expr"
+					vim.opt_local.foldexpr = "v:lua.markdown_foldexpr()"
+					vim.opt_local.foldlevel = 99
+				end
+			end,
+		})
+
+		-- Auto-collapse Overview/Progress sections in tour index files
+		vim.api.nvim_create_autocmd("BufEnter", {
+			pattern = "*/tours/*/index.md",
+			callback = function()
+				vim.defer_fn(function()
+					local lines = vim.api.nvim_buf_get_lines(0, 0, -1, false)
+					for i, line in ipairs(lines) do
+						if line:match("^## .*Overview") or line:match("^## .*Progress") then
+							pcall(function()
+								vim.cmd(i .. "foldclose")
+							end)
+						end
+					end
+				end, 100)
+			end,
+			desc = "Collapse overview/progress sections in tour index",
+		})
+
+		-- ====================================================================
+		-- TASKWIKI SYNC
+		-- ====================================================================
+		-- Sync TaskWiki state when leaving a vimwiki buffer
+		vim.api.nvim_create_autocmd("BufLeave", {
+			pattern = "*.md",
+			callback = function()
+				if vim.bo.filetype == "vimwiki" then
+					vim.cmd("silent update")
+					vim.cmd("silent! TaskWikiBufferSave")
+				end
+			end,
+			desc = "Sync TaskWiki on leaving vimwiki buffer",
+		})
+
+		-- Refresh TaskWiki viewports when entering a vimwiki buffer
+		vim.api.nvim_create_autocmd("BufEnter", {
+			pattern = "*.md",
+			callback = function()
+				if vim.bo.filetype == "vimwiki" then
+					local lines = vim.api.nvim_buf_get_lines(0, 0, -1, false)
+					for _, line in ipairs(lines) do
+						if line:match("^%s*||") or line:match("^%s*|%s+project:") then
+							vim.cmd("silent! TaskWikiBufferLoad")
+							break
+						end
+					end
+				end
+			end,
+			desc = "Refresh TaskWiki viewports on entering vimwiki buffer",
+		})
+
+		-- ====================================================================
+		-- URL HANDLER
+		-- ====================================================================
 		vim.cmd([[
       function! VimwikiLinkHandler(link)
         if a:link =~# '^https\?://'
@@ -952,6 +1241,9 @@ return {
       endfunction
       ]])
 
+		-- ====================================================================
+		-- CUSTOM FOLD FUNCTION
+		-- ====================================================================
 		-- Leaving blank line above folded headers
 		vim.cmd([[
       function! VimwikiFoldLevelCustom(lnum)
@@ -962,7 +1254,6 @@ return {
          if getline(a:lnum) =~? '\v^\s*$'
             " Don't fold blank line BEFORE a header
             if (strlen(matchstr(getline(a:lnum + 1), '^#\+')))
-
                return '-1'
             endif
             " Don't fold blank line AFTER a header
