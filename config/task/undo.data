@@ -2716,3 +2716,726 @@ time 1769959831
 old [dep_533e9d08-e197-4702-908c-8e5b9c498317:"x" dep_ac4a0d6f-987b-462d-888d-c02a58af6e9a:"x" depends:"533e9d08-e197-4702-908c-8e5b9c498317,ac4a0d6f-987b-462d-888d-c02a58af6e9a" description:"Hospitality confirmed" entry:"1769938318" modified:"1769959268" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"4052c9b6-a094-4a6d-b091-91cda6438e5f" venue:"poplar_hall"]
 new [dep_533e9d08-e197-4702-908c-8e5b9c498317:"x" dep_ac4a0d6f-987b-462d-888d-c02a58af6e9a:"x" depends:"533e9d08-e197-4702-908c-8e5b9c498317,ac4a0d6f-987b-462d-888d-c02a58af6e9a" description:"Hospitality confirmed" end:"1769959831" entry:"1769938318" modified:"1769959831" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"4052c9b6-a094-4a6d-b091-91cda6438e5f" venue:"poplar_hall"]
 ---
+time 1769960344
+new [description:"Advance sent" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"942089a7-9a23-4705-b722-790b9178a379" venue:"space"]
+---
+time 1769960344
+new [description:"Tech pack received" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"a5a8b443-09a3-4ae4-99b7-68c063d0ce80" venue:"space"]
+---
+time 1769960344
+new [description:"Schedule confirmed" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"f98ee355-5ec9-4195-86c5-233ada65dfa2" venue:"space"]
+---
+time 1769960344
+new [description:"Parking instructions" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"5d23ce39-5fd1-406b-a869-7cd514503cc1" venue:"space"]
+---
+time 1769960344
+new [description:"Shore power \/ generator" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"1c834a08-53dd-48fb-84b1-1369c7776a9a" venue:"space"]
+---
+time 1769960344
+new [description:"Runner" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"473414da-23da-4615-828a-7f645972e633" venue:"space"]
+---
+time 1769960344
+new [description:"Merch seller" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"5f299a75-f751-4190-8a9b-d0556e2eb6de" venue:"space"]
+---
+time 1769960344
+new [description:"Dinner" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"3db1594e-bba1-40ef-bdf7-55ec77a53e6c" venue:"space"]
+---
+time 1769960344
+new [description:"Showers" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"b96b7729-e19b-4bed-afbd-be72948b58b1" venue:"space"]
+---
+time 1769960344
+new [description:"Researched" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"6245b9bb-25a2-47aa-ad5e-ebbf3a4a627e" venue:"space"]
+---
+time 1769960344
+new [description:"Booked" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"74d0e866-9539-4e3a-b253-d88eb32856ce" venue:"space"]
+---
+time 1769960344
+new [description:"Logged in Drive" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"2824b958-1dec-4a2c-b8ea-8837592ef0d0" venue:"space"]
+---
+time 1769960344
+new [description:"Logged in Master Tour" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"821ff42b-db1f-4e61-860b-da10403498db" venue:"space"]
+---
+time 1769960344
+new [dep_1c834a08-53dd-48fb-84b1-1369c7776a9a:"x" dep_5d23ce39-5fd1-406b-a869-7cd514503cc1:"x" depends:"1c834a08-53dd-48fb-84b1-1369c7776a9a,5d23ce39-5fd1-406b-a869-7cd514503cc1" description:"Bus info confirmed" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"ba56fac3-e55a-4342-944e-ec99be9c087a" venue:"space"]
+---
+time 1769960344
+new [dep_473414da-23da-4615-828a-7f645972e633:"x" dep_5f299a75-f751-4190-8a9b-d0556e2eb6de:"x" depends:"473414da-23da-4615-828a-7f645972e633,5f299a75-f751-4190-8a9b-d0556e2eb6de" description:"Personnel confirmed" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"815cecc0-e1ab-43a9-a54f-034075872141" venue:"space"]
+---
+time 1769960344
+new [dep_3db1594e-bba1-40ef-bdf7-55ec77a53e6c:"x" dep_b96b7729-e19b-4bed-afbd-be72948b58b1:"x" depends:"3db1594e-bba1-40ef-bdf7-55ec77a53e6c,b96b7729-e19b-4bed-afbd-be72948b58b1" description:"Hospitality confirmed" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"200a173a-caf2-4fe5-bbcc-f84c82d33d02" venue:"space"]
+---
+time 1769960344
+new [dep_2824b958-1dec-4a2c-b8ea-8837592ef0d0:"x" dep_6245b9bb-25a2-47aa-ad5e-ebbf3a4a627e:"x" dep_74d0e866-9539-4e3a-b253-d88eb32856ce:"x" dep_821ff42b-db1f-4e61-860b-da10403498db:"x" depends:"2824b958-1dec-4a2c-b8ea-8837592ef0d0,6245b9bb-25a2-47aa-ad5e-ebbf3a4a627e,74d0e866-9539-4e3a-b253-d88eb32856ce,821ff42b-db1f-4e61-860b-da10403498db" description:"Driver\/cleanup rooms" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"a935acb3-2605-4687-a25c-41439fede000" venue:"space"]
+---
+time 1769960370
+old [description:"Advance sent" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"942089a7-9a23-4705-b722-790b9178a379" venue:"space"]
+new [description:"Advance sent" entry:"1769960344" modified:"1769960370" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"942089a7-9a23-4705-b722-790b9178a379" venue:"space"]
+---
+time 1769960370
+old [description:"Tech pack received" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"a5a8b443-09a3-4ae4-99b7-68c063d0ce80" venue:"space"]
+new [description:"Tech pack received" entry:"1769960344" modified:"1769960370" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"a5a8b443-09a3-4ae4-99b7-68c063d0ce80" venue:"space"]
+---
+time 1769960370
+old [description:"Schedule confirmed" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"f98ee355-5ec9-4195-86c5-233ada65dfa2" venue:"space"]
+new [description:"Schedule confirmed" entry:"1769960344" modified:"1769960370" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"f98ee355-5ec9-4195-86c5-233ada65dfa2" venue:"space"]
+---
+time 1769960370
+old [description:"Parking instructions" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"5d23ce39-5fd1-406b-a869-7cd514503cc1" venue:"space"]
+new [description:"Parking instructions" entry:"1769960344" modified:"1769960370" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"5d23ce39-5fd1-406b-a869-7cd514503cc1" venue:"space"]
+---
+time 1769960370
+old [description:"Shore power \/ generator" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"1c834a08-53dd-48fb-84b1-1369c7776a9a" venue:"space"]
+new [description:"Shore power \/ generator" entry:"1769960344" modified:"1769960370" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"1c834a08-53dd-48fb-84b1-1369c7776a9a" venue:"space"]
+---
+time 1769960370
+old [description:"Runner" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"473414da-23da-4615-828a-7f645972e633" venue:"space"]
+new [description:"Runner" entry:"1769960344" modified:"1769960370" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"473414da-23da-4615-828a-7f645972e633" venue:"space"]
+---
+time 1769960370
+old [description:"Merch seller" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"5f299a75-f751-4190-8a9b-d0556e2eb6de" venue:"space"]
+new [description:"Merch seller" entry:"1769960344" modified:"1769960370" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"5f299a75-f751-4190-8a9b-d0556e2eb6de" venue:"space"]
+---
+time 1769960370
+old [description:"Dinner" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"3db1594e-bba1-40ef-bdf7-55ec77a53e6c" venue:"space"]
+new [description:"Dinner" entry:"1769960344" modified:"1769960370" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"3db1594e-bba1-40ef-bdf7-55ec77a53e6c" venue:"space"]
+---
+time 1769960370
+old [description:"Showers" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"b96b7729-e19b-4bed-afbd-be72948b58b1" venue:"space"]
+new [description:"Showers" entry:"1769960344" modified:"1769960370" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"b96b7729-e19b-4bed-afbd-be72948b58b1" venue:"space"]
+---
+time 1769960370
+old [dep_1c834a08-53dd-48fb-84b1-1369c7776a9a:"x" dep_5d23ce39-5fd1-406b-a869-7cd514503cc1:"x" depends:"1c834a08-53dd-48fb-84b1-1369c7776a9a,5d23ce39-5fd1-406b-a869-7cd514503cc1" description:"Bus info confirmed" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"ba56fac3-e55a-4342-944e-ec99be9c087a" venue:"space"]
+new [dep_1c834a08-53dd-48fb-84b1-1369c7776a9a:"x" dep_5d23ce39-5fd1-406b-a869-7cd514503cc1:"x" depends:"1c834a08-53dd-48fb-84b1-1369c7776a9a,5d23ce39-5fd1-406b-a869-7cd514503cc1" description:"Bus info confirmed" entry:"1769960344" modified:"1769960370" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"ba56fac3-e55a-4342-944e-ec99be9c087a" venue:"space"]
+---
+time 1769960370
+old [dep_473414da-23da-4615-828a-7f645972e633:"x" dep_5f299a75-f751-4190-8a9b-d0556e2eb6de:"x" depends:"473414da-23da-4615-828a-7f645972e633,5f299a75-f751-4190-8a9b-d0556e2eb6de" description:"Personnel confirmed" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"815cecc0-e1ab-43a9-a54f-034075872141" venue:"space"]
+new [dep_473414da-23da-4615-828a-7f645972e633:"x" dep_5f299a75-f751-4190-8a9b-d0556e2eb6de:"x" depends:"473414da-23da-4615-828a-7f645972e633,5f299a75-f751-4190-8a9b-d0556e2eb6de" description:"Personnel confirmed" entry:"1769960344" modified:"1769960370" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"815cecc0-e1ab-43a9-a54f-034075872141" venue:"space"]
+---
+time 1769960370
+old [dep_3db1594e-bba1-40ef-bdf7-55ec77a53e6c:"x" dep_b96b7729-e19b-4bed-afbd-be72948b58b1:"x" depends:"3db1594e-bba1-40ef-bdf7-55ec77a53e6c,b96b7729-e19b-4bed-afbd-be72948b58b1" description:"Hospitality confirmed" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"200a173a-caf2-4fe5-bbcc-f84c82d33d02" venue:"space"]
+new [dep_3db1594e-bba1-40ef-bdf7-55ec77a53e6c:"x" dep_b96b7729-e19b-4bed-afbd-be72948b58b1:"x" depends:"3db1594e-bba1-40ef-bdf7-55ec77a53e6c,b96b7729-e19b-4bed-afbd-be72948b58b1" description:"Hospitality confirmed" entry:"1769960344" modified:"1769960370" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"200a173a-caf2-4fe5-bbcc-f84c82d33d02" venue:"space"]
+---
+time 1769960410
+old [description:"Researched" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"6245b9bb-25a2-47aa-ad5e-ebbf3a4a627e" venue:"space"]
+new [description:"Researched" entry:"1769960344" modified:"1769960410" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"6245b9bb-25a2-47aa-ad5e-ebbf3a4a627e" venue:"space"]
+---
+time 1769960410
+old [description:"Booked" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"74d0e866-9539-4e3a-b253-d88eb32856ce" venue:"space"]
+new [description:"Booked" entry:"1769960344" modified:"1769960410" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"74d0e866-9539-4e3a-b253-d88eb32856ce" venue:"space"]
+---
+time 1769960410
+old [description:"Logged in Drive" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"2824b958-1dec-4a2c-b8ea-8837592ef0d0" venue:"space"]
+new [description:"Logged in Drive" entry:"1769960344" modified:"1769960410" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"2824b958-1dec-4a2c-b8ea-8837592ef0d0" venue:"space"]
+---
+time 1769960410
+old [description:"Logged in Master Tour" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"821ff42b-db1f-4e61-860b-da10403498db" venue:"space"]
+new [description:"Logged in Master Tour" entry:"1769960344" modified:"1769960410" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"821ff42b-db1f-4e61-860b-da10403498db" venue:"space"]
+---
+time 1769960410
+old [dep_2824b958-1dec-4a2c-b8ea-8837592ef0d0:"x" dep_6245b9bb-25a2-47aa-ad5e-ebbf3a4a627e:"x" dep_74d0e866-9539-4e3a-b253-d88eb32856ce:"x" dep_821ff42b-db1f-4e61-860b-da10403498db:"x" depends:"2824b958-1dec-4a2c-b8ea-8837592ef0d0,6245b9bb-25a2-47aa-ad5e-ebbf3a4a627e,74d0e866-9539-4e3a-b253-d88eb32856ce,821ff42b-db1f-4e61-860b-da10403498db" description:"Driver\/cleanup rooms" entry:"1769960344" modified:"1769960344" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"a935acb3-2605-4687-a25c-41439fede000" venue:"space"]
+new [dep_2824b958-1dec-4a2c-b8ea-8837592ef0d0:"x" dep_6245b9bb-25a2-47aa-ad5e-ebbf3a4a627e:"x" dep_74d0e866-9539-4e3a-b253-d88eb32856ce:"x" dep_821ff42b-db1f-4e61-860b-da10403498db:"x" depends:"2824b958-1dec-4a2c-b8ea-8837592ef0d0,6245b9bb-25a2-47aa-ad5e-ebbf3a4a627e,74d0e866-9539-4e3a-b253-d88eb32856ce,821ff42b-db1f-4e61-860b-da10403498db" description:"Driver\/cleanup rooms" entry:"1769960344" modified:"1769960410" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"a935acb3-2605-4687-a25c-41439fede000" venue:"space"]
+---
+time 1769961008
+new [description:"Advance sent" entry:"1769961008" modified:"1769961008" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"341435ae-9997-4d77-ae29-17f0b856c851" venue:"brown_county_music_center"]
+---
+time 1769961008
+new [description:"Tech pack received" entry:"1769961008" modified:"1769961008" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"9be6a244-a5d1-4161-812d-7212c06fc209" venue:"brown_county_music_center"]
+---
+time 1769961009
+new [description:"Schedule confirmed" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"3a3e9366-3a8f-4856-81c3-2aa51d36b2e1" venue:"brown_county_music_center"]
+---
+time 1769961009
+new [description:"Parking instructions" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"1c55a6f0-99d1-4feb-9507-393e3ba70e15" venue:"brown_county_music_center"]
+---
+time 1769961009
+new [description:"Shore power \/ generator" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"584774b8-f8f3-4904-86c6-280a1fbc9134" venue:"brown_county_music_center"]
+---
+time 1769961009
+new [description:"Runner" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"61e95803-954e-4fbf-8161-896c556d4484" venue:"brown_county_music_center"]
+---
+time 1769961009
+new [description:"Merch seller" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"53a6e13a-9699-40b7-9a50-1028ac8a84e1" venue:"brown_county_music_center"]
+---
+time 1769961009
+new [description:"Dinner" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"d944f565-fabd-4e73-a24b-97c2bac5d7d2" venue:"brown_county_music_center"]
+---
+time 1769961009
+new [description:"Showers" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"57153ae9-a896-4d7e-9375-05648a726d3c" venue:"brown_county_music_center"]
+---
+time 1769961009
+new [description:"Researched" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"70ddf755-aa3f-4295-a402-756e0f89c676" venue:"brown_county_music_center"]
+---
+time 1769961009
+new [description:"Booked" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"59fbafae-b772-4188-9599-675f617aab14" venue:"brown_county_music_center"]
+---
+time 1769961009
+new [description:"Logged in Drive" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"53dfb8aa-0359-4f74-bf67-806f8a4affd0" venue:"brown_county_music_center"]
+---
+time 1769961009
+new [description:"Logged in Master Tour" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"09515f09-4bce-4c70-a689-719bae7e7232" venue:"brown_county_music_center"]
+---
+time 1769961009
+new [dep_1c55a6f0-99d1-4feb-9507-393e3ba70e15:"x" dep_584774b8-f8f3-4904-86c6-280a1fbc9134:"x" depends:"1c55a6f0-99d1-4feb-9507-393e3ba70e15,584774b8-f8f3-4904-86c6-280a1fbc9134" description:"Bus info confirmed" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"2313b3d9-18d8-4a83-ae1f-346edccfef33" venue:"brown_county_music_center"]
+---
+time 1769961009
+new [dep_53a6e13a-9699-40b7-9a50-1028ac8a84e1:"x" dep_61e95803-954e-4fbf-8161-896c556d4484:"x" depends:"53a6e13a-9699-40b7-9a50-1028ac8a84e1,61e95803-954e-4fbf-8161-896c556d4484" description:"Personnel confirmed" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"059aaab5-a612-43a3-92c3-06273d513614" venue:"brown_county_music_center"]
+---
+time 1769961009
+new [dep_57153ae9-a896-4d7e-9375-05648a726d3c:"x" dep_d944f565-fabd-4e73-a24b-97c2bac5d7d2:"x" depends:"57153ae9-a896-4d7e-9375-05648a726d3c,d944f565-fabd-4e73-a24b-97c2bac5d7d2" description:"Hospitality confirmed" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"5454b297-0a0b-4ae1-889f-2e08d89c1400" venue:"brown_county_music_center"]
+---
+time 1769961009
+new [dep_09515f09-4bce-4c70-a689-719bae7e7232:"x" dep_53dfb8aa-0359-4f74-bf67-806f8a4affd0:"x" dep_59fbafae-b772-4188-9599-675f617aab14:"x" dep_70ddf755-aa3f-4295-a402-756e0f89c676:"x" depends:"09515f09-4bce-4c70-a689-719bae7e7232,53dfb8aa-0359-4f74-bf67-806f8a4affd0,59fbafae-b772-4188-9599-675f617aab14,70ddf755-aa3f-4295-a402-756e0f89c676" description:"Driver\/cleanup rooms" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"bd53bb81-495b-43a6-84fb-a5a933be8d81" venue:"brown_county_music_center"]
+---
+time 1769961026
+old [description:"Advance sent" entry:"1769961008" modified:"1769961008" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"341435ae-9997-4d77-ae29-17f0b856c851" venue:"brown_county_music_center"]
+new [description:"Advance sent" entry:"1769961008" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"341435ae-9997-4d77-ae29-17f0b856c851" venue:"brown_county_music_center"]
+---
+time 1769961026
+old [description:"Tech pack received" entry:"1769961008" modified:"1769961008" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"9be6a244-a5d1-4161-812d-7212c06fc209" venue:"brown_county_music_center"]
+new [description:"Tech pack received" entry:"1769961008" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"9be6a244-a5d1-4161-812d-7212c06fc209" venue:"brown_county_music_center"]
+---
+time 1769961026
+old [description:"Schedule confirmed" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"3a3e9366-3a8f-4856-81c3-2aa51d36b2e1" venue:"brown_county_music_center"]
+new [description:"Schedule confirmed" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"3a3e9366-3a8f-4856-81c3-2aa51d36b2e1" venue:"brown_county_music_center"]
+---
+time 1769961026
+old [description:"Parking instructions" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"1c55a6f0-99d1-4feb-9507-393e3ba70e15" venue:"brown_county_music_center"]
+new [description:"Parking instructions" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"1c55a6f0-99d1-4feb-9507-393e3ba70e15" venue:"brown_county_music_center"]
+---
+time 1769961026
+old [description:"Shore power \/ generator" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"584774b8-f8f3-4904-86c6-280a1fbc9134" venue:"brown_county_music_center"]
+new [description:"Shore power \/ generator" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"584774b8-f8f3-4904-86c6-280a1fbc9134" venue:"brown_county_music_center"]
+---
+time 1769961026
+old [description:"Runner" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"61e95803-954e-4fbf-8161-896c556d4484" venue:"brown_county_music_center"]
+new [description:"Runner" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"61e95803-954e-4fbf-8161-896c556d4484" venue:"brown_county_music_center"]
+---
+time 1769961026
+old [description:"Merch seller" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"53a6e13a-9699-40b7-9a50-1028ac8a84e1" venue:"brown_county_music_center"]
+new [description:"Merch seller" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"53a6e13a-9699-40b7-9a50-1028ac8a84e1" venue:"brown_county_music_center"]
+---
+time 1769961026
+old [description:"Dinner" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"d944f565-fabd-4e73-a24b-97c2bac5d7d2" venue:"brown_county_music_center"]
+new [description:"Dinner" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"d944f565-fabd-4e73-a24b-97c2bac5d7d2" venue:"brown_county_music_center"]
+---
+time 1769961026
+old [description:"Showers" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"57153ae9-a896-4d7e-9375-05648a726d3c" venue:"brown_county_music_center"]
+new [description:"Showers" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"57153ae9-a896-4d7e-9375-05648a726d3c" venue:"brown_county_music_center"]
+---
+time 1769961026
+old [dep_1c55a6f0-99d1-4feb-9507-393e3ba70e15:"x" dep_584774b8-f8f3-4904-86c6-280a1fbc9134:"x" depends:"1c55a6f0-99d1-4feb-9507-393e3ba70e15,584774b8-f8f3-4904-86c6-280a1fbc9134" description:"Bus info confirmed" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"2313b3d9-18d8-4a83-ae1f-346edccfef33" venue:"brown_county_music_center"]
+new [dep_1c55a6f0-99d1-4feb-9507-393e3ba70e15:"x" dep_584774b8-f8f3-4904-86c6-280a1fbc9134:"x" depends:"1c55a6f0-99d1-4feb-9507-393e3ba70e15,584774b8-f8f3-4904-86c6-280a1fbc9134" description:"Bus info confirmed" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"2313b3d9-18d8-4a83-ae1f-346edccfef33" venue:"brown_county_music_center"]
+---
+time 1769961026
+old [dep_53a6e13a-9699-40b7-9a50-1028ac8a84e1:"x" dep_61e95803-954e-4fbf-8161-896c556d4484:"x" depends:"53a6e13a-9699-40b7-9a50-1028ac8a84e1,61e95803-954e-4fbf-8161-896c556d4484" description:"Personnel confirmed" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"059aaab5-a612-43a3-92c3-06273d513614" venue:"brown_county_music_center"]
+new [dep_53a6e13a-9699-40b7-9a50-1028ac8a84e1:"x" dep_61e95803-954e-4fbf-8161-896c556d4484:"x" depends:"53a6e13a-9699-40b7-9a50-1028ac8a84e1,61e95803-954e-4fbf-8161-896c556d4484" description:"Personnel confirmed" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"059aaab5-a612-43a3-92c3-06273d513614" venue:"brown_county_music_center"]
+---
+time 1769961026
+old [dep_57153ae9-a896-4d7e-9375-05648a726d3c:"x" dep_d944f565-fabd-4e73-a24b-97c2bac5d7d2:"x" depends:"57153ae9-a896-4d7e-9375-05648a726d3c,d944f565-fabd-4e73-a24b-97c2bac5d7d2" description:"Hospitality confirmed" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"5454b297-0a0b-4ae1-889f-2e08d89c1400" venue:"brown_county_music_center"]
+new [dep_57153ae9-a896-4d7e-9375-05648a726d3c:"x" dep_d944f565-fabd-4e73-a24b-97c2bac5d7d2:"x" depends:"57153ae9-a896-4d7e-9375-05648a726d3c,d944f565-fabd-4e73-a24b-97c2bac5d7d2" description:"Hospitality confirmed" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"5454b297-0a0b-4ae1-889f-2e08d89c1400" venue:"brown_county_music_center"]
+---
+time 1769961033
+old [description:"Researched" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"70ddf755-aa3f-4295-a402-756e0f89c676" venue:"brown_county_music_center"]
+new [description:"Researched" entry:"1769961009" modified:"1769961033" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"70ddf755-aa3f-4295-a402-756e0f89c676" venue:"brown_county_music_center"]
+---
+time 1769961033
+old [description:"Booked" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"59fbafae-b772-4188-9599-675f617aab14" venue:"brown_county_music_center"]
+new [description:"Booked" entry:"1769961009" modified:"1769961033" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"59fbafae-b772-4188-9599-675f617aab14" venue:"brown_county_music_center"]
+---
+time 1769961033
+old [description:"Logged in Drive" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"53dfb8aa-0359-4f74-bf67-806f8a4affd0" venue:"brown_county_music_center"]
+new [description:"Logged in Drive" entry:"1769961009" modified:"1769961033" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"53dfb8aa-0359-4f74-bf67-806f8a4affd0" venue:"brown_county_music_center"]
+---
+time 1769961033
+old [description:"Logged in Master Tour" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"09515f09-4bce-4c70-a689-719bae7e7232" venue:"brown_county_music_center"]
+new [description:"Logged in Master Tour" entry:"1769961009" modified:"1769961033" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"09515f09-4bce-4c70-a689-719bae7e7232" venue:"brown_county_music_center"]
+---
+time 1769961033
+old [dep_09515f09-4bce-4c70-a689-719bae7e7232:"x" dep_53dfb8aa-0359-4f74-bf67-806f8a4affd0:"x" dep_59fbafae-b772-4188-9599-675f617aab14:"x" dep_70ddf755-aa3f-4295-a402-756e0f89c676:"x" depends:"09515f09-4bce-4c70-a689-719bae7e7232,53dfb8aa-0359-4f74-bf67-806f8a4affd0,59fbafae-b772-4188-9599-675f617aab14,70ddf755-aa3f-4295-a402-756e0f89c676" description:"Driver\/cleanup rooms" entry:"1769961009" modified:"1769961009" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"bd53bb81-495b-43a6-84fb-a5a933be8d81" venue:"brown_county_music_center"]
+new [dep_09515f09-4bce-4c70-a689-719bae7e7232:"x" dep_53dfb8aa-0359-4f74-bf67-806f8a4affd0:"x" dep_59fbafae-b772-4188-9599-675f617aab14:"x" dep_70ddf755-aa3f-4295-a402-756e0f89c676:"x" depends:"09515f09-4bce-4c70-a689-719bae7e7232,53dfb8aa-0359-4f74-bf67-806f8a4affd0,59fbafae-b772-4188-9599-675f617aab14,70ddf755-aa3f-4295-a402-756e0f89c676" description:"Driver\/cleanup rooms" entry:"1769961009" modified:"1769961033" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"bd53bb81-495b-43a6-84fb-a5a933be8d81" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [description:"Advance sent" entry:"1769961008" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"341435ae-9997-4d77-ae29-17f0b856c851" venue:"brown_county_music_center"]
+new [description:"Advance sent" end:"1769962789" entry:"1769961008" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"341435ae-9997-4d77-ae29-17f0b856c851" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [description:"Tech pack received" entry:"1769961008" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"9be6a244-a5d1-4161-812d-7212c06fc209" venue:"brown_county_music_center"]
+new [description:"Tech pack received" end:"1769962789" entry:"1769961008" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"9be6a244-a5d1-4161-812d-7212c06fc209" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [description:"Runner" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"61e95803-954e-4fbf-8161-896c556d4484" venue:"brown_county_music_center"]
+new [description:"Runner" end:"1769962789" entry:"1769961009" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"61e95803-954e-4fbf-8161-896c556d4484" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [description:"Merch seller" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"53a6e13a-9699-40b7-9a50-1028ac8a84e1" venue:"brown_county_music_center"]
+new [description:"Merch seller" end:"1769962789" entry:"1769961009" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"53a6e13a-9699-40b7-9a50-1028ac8a84e1" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [description:"Schedule confirmed" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"3a3e9366-3a8f-4856-81c3-2aa51d36b2e1" venue:"brown_county_music_center"]
+new [description:"Schedule confirmed" end:"1769962789" entry:"1769961009" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"3a3e9366-3a8f-4856-81c3-2aa51d36b2e1" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [description:"Showers" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"57153ae9-a896-4d7e-9375-05648a726d3c" venue:"brown_county_music_center"]
+new [description:"Showers" end:"1769962789" entry:"1769961009" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"57153ae9-a896-4d7e-9375-05648a726d3c" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [description:"Dinner" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"d944f565-fabd-4e73-a24b-97c2bac5d7d2" venue:"brown_county_music_center"]
+new [description:"Dinner" end:"1769962789" entry:"1769961009" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"d944f565-fabd-4e73-a24b-97c2bac5d7d2" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [description:"Shore power \/ generator" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"584774b8-f8f3-4904-86c6-280a1fbc9134" venue:"brown_county_music_center"]
+new [description:"Shore power \/ generator" end:"1769962789" entry:"1769961009" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"584774b8-f8f3-4904-86c6-280a1fbc9134" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [description:"Parking instructions" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"1c55a6f0-99d1-4feb-9507-393e3ba70e15" venue:"brown_county_music_center"]
+new [description:"Parking instructions" end:"1769962789" entry:"1769961009" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"1c55a6f0-99d1-4feb-9507-393e3ba70e15" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [description:"Logged in Drive" entry:"1769961009" modified:"1769961033" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"53dfb8aa-0359-4f74-bf67-806f8a4affd0" venue:"brown_county_music_center"]
+new [description:"Logged in Drive" end:"1769962789" entry:"1769961009" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"lodging" uuid:"53dfb8aa-0359-4f74-bf67-806f8a4affd0" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [description:"Logged in Master Tour" entry:"1769961009" modified:"1769961033" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"09515f09-4bce-4c70-a689-719bae7e7232" venue:"brown_county_music_center"]
+new [description:"Logged in Master Tour" end:"1769962789" entry:"1769961009" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"lodging" uuid:"09515f09-4bce-4c70-a689-719bae7e7232" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [description:"Researched" entry:"1769961009" modified:"1769961033" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"70ddf755-aa3f-4295-a402-756e0f89c676" venue:"brown_county_music_center"]
+new [description:"Researched" end:"1769962789" entry:"1769961009" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"lodging" uuid:"70ddf755-aa3f-4295-a402-756e0f89c676" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [description:"Booked" entry:"1769961009" modified:"1769961033" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"59fbafae-b772-4188-9599-675f617aab14" venue:"brown_county_music_center"]
+new [description:"Booked" end:"1769962789" entry:"1769961009" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"lodging" uuid:"59fbafae-b772-4188-9599-675f617aab14" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [dep_53a6e13a-9699-40b7-9a50-1028ac8a84e1:"x" dep_61e95803-954e-4fbf-8161-896c556d4484:"x" depends:"53a6e13a-9699-40b7-9a50-1028ac8a84e1,61e95803-954e-4fbf-8161-896c556d4484" description:"Personnel confirmed" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"059aaab5-a612-43a3-92c3-06273d513614" venue:"brown_county_music_center"]
+new [dep_53a6e13a-9699-40b7-9a50-1028ac8a84e1:"x" dep_61e95803-954e-4fbf-8161-896c556d4484:"x" depends:"53a6e13a-9699-40b7-9a50-1028ac8a84e1,61e95803-954e-4fbf-8161-896c556d4484" description:"Personnel confirmed" end:"1769962789" entry:"1769961009" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"059aaab5-a612-43a3-92c3-06273d513614" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [dep_57153ae9-a896-4d7e-9375-05648a726d3c:"x" dep_d944f565-fabd-4e73-a24b-97c2bac5d7d2:"x" depends:"57153ae9-a896-4d7e-9375-05648a726d3c,d944f565-fabd-4e73-a24b-97c2bac5d7d2" description:"Hospitality confirmed" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"5454b297-0a0b-4ae1-889f-2e08d89c1400" venue:"brown_county_music_center"]
+new [dep_57153ae9-a896-4d7e-9375-05648a726d3c:"x" dep_d944f565-fabd-4e73-a24b-97c2bac5d7d2:"x" depends:"57153ae9-a896-4d7e-9375-05648a726d3c,d944f565-fabd-4e73-a24b-97c2bac5d7d2" description:"Hospitality confirmed" end:"1769962789" entry:"1769961009" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"5454b297-0a0b-4ae1-889f-2e08d89c1400" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [dep_1c55a6f0-99d1-4feb-9507-393e3ba70e15:"x" dep_584774b8-f8f3-4904-86c6-280a1fbc9134:"x" depends:"1c55a6f0-99d1-4feb-9507-393e3ba70e15,584774b8-f8f3-4904-86c6-280a1fbc9134" description:"Bus info confirmed" entry:"1769961009" modified:"1769961026" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"2313b3d9-18d8-4a83-ae1f-346edccfef33" venue:"brown_county_music_center"]
+new [dep_1c55a6f0-99d1-4feb-9507-393e3ba70e15:"x" dep_584774b8-f8f3-4904-86c6-280a1fbc9134:"x" depends:"1c55a6f0-99d1-4feb-9507-393e3ba70e15,584774b8-f8f3-4904-86c6-280a1fbc9134" description:"Bus info confirmed" end:"1769962789" entry:"1769961009" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"2313b3d9-18d8-4a83-ae1f-346edccfef33" venue:"brown_county_music_center"]
+---
+time 1769962789
+old [dep_09515f09-4bce-4c70-a689-719bae7e7232:"x" dep_53dfb8aa-0359-4f74-bf67-806f8a4affd0:"x" dep_59fbafae-b772-4188-9599-675f617aab14:"x" dep_70ddf755-aa3f-4295-a402-756e0f89c676:"x" depends:"09515f09-4bce-4c70-a689-719bae7e7232,53dfb8aa-0359-4f74-bf67-806f8a4affd0,59fbafae-b772-4188-9599-675f617aab14,70ddf755-aa3f-4295-a402-756e0f89c676" description:"Driver\/cleanup rooms" entry:"1769961009" modified:"1769961033" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"bd53bb81-495b-43a6-84fb-a5a933be8d81" venue:"brown_county_music_center"]
+new [dep_09515f09-4bce-4c70-a689-719bae7e7232:"x" dep_53dfb8aa-0359-4f74-bf67-806f8a4affd0:"x" dep_59fbafae-b772-4188-9599-675f617aab14:"x" dep_70ddf755-aa3f-4295-a402-756e0f89c676:"x" depends:"09515f09-4bce-4c70-a689-719bae7e7232,53dfb8aa-0359-4f74-bf67-806f8a4affd0,59fbafae-b772-4188-9599-675f617aab14,70ddf755-aa3f-4295-a402-756e0f89c676" description:"Driver\/cleanup rooms" end:"1769962789" entry:"1769961009" modified:"1769962789" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"lodging" uuid:"bd53bb81-495b-43a6-84fb-a5a933be8d81" venue:"brown_county_music_center"]
+---
+time 1769963030
+new [description:"Advance sent" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"4c1eaa95-c102-41ae-b728-f379cfa880eb" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963030
+new [description:"Tech pack received" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"3e27fc98-54dc-4c49-87d3-e0c3901bbd2d" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963030
+new [description:"Schedule confirmed" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"71a3b34f-f8e1-4ecc-9ea9-064ed121171e" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963030
+new [description:"Parking instructions" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"82dab8a8-2fdc-4cfb-ab21-87e76cfa4f48" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963030
+new [description:"Shore power \/ generator" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"5d486d33-861c-43e5-a7a6-3e6920cacbfc" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963030
+new [description:"Runner" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"a24ec471-24c7-480e-bc0e-0c703b78725d" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963030
+new [description:"Merch seller" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"917981fe-ca96-4dd8-a7c9-ec129621f2d5" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963030
+new [description:"Dinner" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"9439df9a-6615-494f-b2ce-e1524c762d3c" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963030
+new [description:"Showers" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"7973cf80-5884-4519-8c81-b21f9781181a" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963030
+new [description:"Researched" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"efeca6e2-ba81-4960-93af-7f92ceedfb17" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963030
+new [description:"Booked" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"d9f063a4-ba69-42cc-9a0a-6cf6baba22dc" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963030
+new [description:"Logged in Drive" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"9dfc7ae0-f506-49e3-bb1c-b3bac4479097" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963030
+new [description:"Logged in Master Tour" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"786f07b8-b78e-4460-bfa6-fb34d90ab49b" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963030
+new [dep_5d486d33-861c-43e5-a7a6-3e6920cacbfc:"x" dep_82dab8a8-2fdc-4cfb-ab21-87e76cfa4f48:"x" depends:"5d486d33-861c-43e5-a7a6-3e6920cacbfc,82dab8a8-2fdc-4cfb-ab21-87e76cfa4f48" description:"Bus info confirmed" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"b1dc127d-3abc-47b9-a977-94a1fab3ed58" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963030
+new [dep_917981fe-ca96-4dd8-a7c9-ec129621f2d5:"x" dep_a24ec471-24c7-480e-bc0e-0c703b78725d:"x" depends:"917981fe-ca96-4dd8-a7c9-ec129621f2d5,a24ec471-24c7-480e-bc0e-0c703b78725d" description:"Personnel confirmed" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"43ac01c8-9d75-409a-8913-ce12d291a372" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963030
+new [dep_7973cf80-5884-4519-8c81-b21f9781181a:"x" dep_9439df9a-6615-494f-b2ce-e1524c762d3c:"x" depends:"7973cf80-5884-4519-8c81-b21f9781181a,9439df9a-6615-494f-b2ce-e1524c762d3c" description:"Hospitality confirmed" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"29f9c41f-ea4d-4325-a1eb-cd19a644caca" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963030
+new [dep_786f07b8-b78e-4460-bfa6-fb34d90ab49b:"x" dep_9dfc7ae0-f506-49e3-bb1c-b3bac4479097:"x" dep_d9f063a4-ba69-42cc-9a0a-6cf6baba22dc:"x" dep_efeca6e2-ba81-4960-93af-7f92ceedfb17:"x" depends:"786f07b8-b78e-4460-bfa6-fb34d90ab49b,9dfc7ae0-f506-49e3-bb1c-b3bac4479097,d9f063a4-ba69-42cc-9a0a-6cf6baba22dc,efeca6e2-ba81-4960-93af-7f92ceedfb17" description:"Driver\/cleanup rooms" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"b1a2ce31-ef6c-4fb9-9d69-ca11559c1cad" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963058
+old [description:"Advance sent" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"4c1eaa95-c102-41ae-b728-f379cfa880eb" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Advance sent" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"4c1eaa95-c102-41ae-b728-f379cfa880eb" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963058
+old [description:"Tech pack received" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"3e27fc98-54dc-4c49-87d3-e0c3901bbd2d" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Tech pack received" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"3e27fc98-54dc-4c49-87d3-e0c3901bbd2d" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963058
+old [description:"Schedule confirmed" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"71a3b34f-f8e1-4ecc-9ea9-064ed121171e" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Schedule confirmed" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"71a3b34f-f8e1-4ecc-9ea9-064ed121171e" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963058
+old [description:"Parking instructions" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"82dab8a8-2fdc-4cfb-ab21-87e76cfa4f48" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Parking instructions" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"82dab8a8-2fdc-4cfb-ab21-87e76cfa4f48" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963058
+old [description:"Shore power \/ generator" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"5d486d33-861c-43e5-a7a6-3e6920cacbfc" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Shore power \/ generator" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"5d486d33-861c-43e5-a7a6-3e6920cacbfc" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963058
+old [description:"Runner" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"a24ec471-24c7-480e-bc0e-0c703b78725d" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Runner" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"a24ec471-24c7-480e-bc0e-0c703b78725d" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963058
+old [description:"Merch seller" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"917981fe-ca96-4dd8-a7c9-ec129621f2d5" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Merch seller" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"917981fe-ca96-4dd8-a7c9-ec129621f2d5" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963058
+old [description:"Dinner" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"9439df9a-6615-494f-b2ce-e1524c762d3c" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Dinner" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"9439df9a-6615-494f-b2ce-e1524c762d3c" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963058
+old [description:"Showers" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"7973cf80-5884-4519-8c81-b21f9781181a" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Showers" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"7973cf80-5884-4519-8c81-b21f9781181a" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963058
+old [dep_5d486d33-861c-43e5-a7a6-3e6920cacbfc:"x" dep_82dab8a8-2fdc-4cfb-ab21-87e76cfa4f48:"x" depends:"5d486d33-861c-43e5-a7a6-3e6920cacbfc,82dab8a8-2fdc-4cfb-ab21-87e76cfa4f48" description:"Bus info confirmed" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"b1dc127d-3abc-47b9-a977-94a1fab3ed58" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [dep_5d486d33-861c-43e5-a7a6-3e6920cacbfc:"x" dep_82dab8a8-2fdc-4cfb-ab21-87e76cfa4f48:"x" depends:"5d486d33-861c-43e5-a7a6-3e6920cacbfc,82dab8a8-2fdc-4cfb-ab21-87e76cfa4f48" description:"Bus info confirmed" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"b1dc127d-3abc-47b9-a977-94a1fab3ed58" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963058
+old [dep_917981fe-ca96-4dd8-a7c9-ec129621f2d5:"x" dep_a24ec471-24c7-480e-bc0e-0c703b78725d:"x" depends:"917981fe-ca96-4dd8-a7c9-ec129621f2d5,a24ec471-24c7-480e-bc0e-0c703b78725d" description:"Personnel confirmed" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"43ac01c8-9d75-409a-8913-ce12d291a372" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [dep_917981fe-ca96-4dd8-a7c9-ec129621f2d5:"x" dep_a24ec471-24c7-480e-bc0e-0c703b78725d:"x" depends:"917981fe-ca96-4dd8-a7c9-ec129621f2d5,a24ec471-24c7-480e-bc0e-0c703b78725d" description:"Personnel confirmed" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"43ac01c8-9d75-409a-8913-ce12d291a372" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963058
+old [dep_7973cf80-5884-4519-8c81-b21f9781181a:"x" dep_9439df9a-6615-494f-b2ce-e1524c762d3c:"x" depends:"7973cf80-5884-4519-8c81-b21f9781181a,9439df9a-6615-494f-b2ce-e1524c762d3c" description:"Hospitality confirmed" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"29f9c41f-ea4d-4325-a1eb-cd19a644caca" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [dep_7973cf80-5884-4519-8c81-b21f9781181a:"x" dep_9439df9a-6615-494f-b2ce-e1524c762d3c:"x" depends:"7973cf80-5884-4519-8c81-b21f9781181a,9439df9a-6615-494f-b2ce-e1524c762d3c" description:"Hospitality confirmed" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"29f9c41f-ea4d-4325-a1eb-cd19a644caca" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963066
+old [description:"Researched" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"efeca6e2-ba81-4960-93af-7f92ceedfb17" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Researched" entry:"1769963030" modified:"1769963066" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"efeca6e2-ba81-4960-93af-7f92ceedfb17" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963066
+old [description:"Booked" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"d9f063a4-ba69-42cc-9a0a-6cf6baba22dc" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Booked" entry:"1769963030" modified:"1769963066" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"d9f063a4-ba69-42cc-9a0a-6cf6baba22dc" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963066
+old [description:"Logged in Drive" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"9dfc7ae0-f506-49e3-bb1c-b3bac4479097" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Logged in Drive" entry:"1769963030" modified:"1769963066" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"9dfc7ae0-f506-49e3-bb1c-b3bac4479097" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963066
+old [description:"Logged in Master Tour" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"786f07b8-b78e-4460-bfa6-fb34d90ab49b" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Logged in Master Tour" entry:"1769963030" modified:"1769963066" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"786f07b8-b78e-4460-bfa6-fb34d90ab49b" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963066
+old [dep_786f07b8-b78e-4460-bfa6-fb34d90ab49b:"x" dep_9dfc7ae0-f506-49e3-bb1c-b3bac4479097:"x" dep_d9f063a4-ba69-42cc-9a0a-6cf6baba22dc:"x" dep_efeca6e2-ba81-4960-93af-7f92ceedfb17:"x" depends:"786f07b8-b78e-4460-bfa6-fb34d90ab49b,9dfc7ae0-f506-49e3-bb1c-b3bac4479097,d9f063a4-ba69-42cc-9a0a-6cf6baba22dc,efeca6e2-ba81-4960-93af-7f92ceedfb17" description:"Driver\/cleanup rooms" entry:"1769963030" modified:"1769963030" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"b1a2ce31-ef6c-4fb9-9d69-ca11559c1cad" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [dep_786f07b8-b78e-4460-bfa6-fb34d90ab49b:"x" dep_9dfc7ae0-f506-49e3-bb1c-b3bac4479097:"x" dep_d9f063a4-ba69-42cc-9a0a-6cf6baba22dc:"x" dep_efeca6e2-ba81-4960-93af-7f92ceedfb17:"x" depends:"786f07b8-b78e-4460-bfa6-fb34d90ab49b,9dfc7ae0-f506-49e3-bb1c-b3bac4479097,d9f063a4-ba69-42cc-9a0a-6cf6baba22dc,efeca6e2-ba81-4960-93af-7f92ceedfb17" description:"Driver\/cleanup rooms" entry:"1769963030" modified:"1769963066" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"b1a2ce31-ef6c-4fb9-9d69-ca11559c1cad" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963353
+old [description:"Shore power \/ generator" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"5d486d33-861c-43e5-a7a6-3e6920cacbfc" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Shore power \/ generator" end:"1769963353" entry:"1769963030" modified:"1769963353" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"5d486d33-861c-43e5-a7a6-3e6920cacbfc" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963353
+old [description:"Dinner" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"9439df9a-6615-494f-b2ce-e1524c762d3c" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Dinner" end:"1769963353" entry:"1769963030" modified:"1769963353" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"9439df9a-6615-494f-b2ce-e1524c762d3c" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963353
+old [description:"Advance sent" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"4c1eaa95-c102-41ae-b728-f379cfa880eb" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Advance sent" end:"1769963353" entry:"1769963030" modified:"1769963353" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"4c1eaa95-c102-41ae-b728-f379cfa880eb" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963353
+old [description:"Schedule confirmed" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"71a3b34f-f8e1-4ecc-9ea9-064ed121171e" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Schedule confirmed" end:"1769963353" entry:"1769963030" modified:"1769963353" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"71a3b34f-f8e1-4ecc-9ea9-064ed121171e" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963353
+old [description:"Merch seller" entry:"1769963030" modified:"1769963058" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"917981fe-ca96-4dd8-a7c9-ec129621f2d5" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+new [description:"Merch seller" end:"1769963353" entry:"1769963030" modified:"1769963353" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"917981fe-ca96-4dd8-a7c9-ec129621f2d5" venue:"flagstar_strand_theatre_for_the_performing_of_arts"]
+---
+time 1769963447
+new [description:"Advance sent" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"155e4647-a6fa-4885-bd4c-0fd2119e2503" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963447
+new [description:"Tech pack received" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"7fc779a7-2d0a-4e08-bdf0-0074107ad246" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963447
+new [description:"Schedule confirmed" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"d0532147-533e-4122-986f-05974ff6b271" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963447
+new [description:"Parking instructions" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"1dabb29a-3d66-49aa-9aa0-36040b4e9fd5" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963447
+new [description:"Shore power \/ generator" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"2a25d7e6-3791-4023-9249-3e384e742b0d" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963447
+new [description:"Runner" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"db8c5cbe-b77d-4243-81d4-de02787e50e2" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963447
+new [description:"Merch seller" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"72732d69-6cbd-4fd6-855f-47ed3ee82785" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963447
+new [description:"Dinner" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"d4eb87cb-6a79-4490-bb66-c8b95f2a767a" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963447
+new [description:"Showers" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"eb741356-5318-4dfc-b694-e4d155935d49" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963447
+new [description:"Researched" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"065e155e-6ef0-4fd9-a5a9-f5b7b5ddb0c9" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963447
+new [description:"Booked" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"6786f5d5-0d15-42dc-b294-767fc7b4f5ce" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963447
+new [description:"Logged in Drive" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"4962271e-c7fd-4677-b46c-986ba036369c" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963447
+new [description:"Logged in Master Tour" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"c141b181-0a74-4805-a305-3c5321574e96" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963447
+new [dep_1dabb29a-3d66-49aa-9aa0-36040b4e9fd5:"x" dep_2a25d7e6-3791-4023-9249-3e384e742b0d:"x" depends:"1dabb29a-3d66-49aa-9aa0-36040b4e9fd5,2a25d7e6-3791-4023-9249-3e384e742b0d" description:"Bus info confirmed" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"8114986e-2f12-439e-85e2-47a9cc81a9b0" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963447
+new [dep_72732d69-6cbd-4fd6-855f-47ed3ee82785:"x" dep_db8c5cbe-b77d-4243-81d4-de02787e50e2:"x" depends:"72732d69-6cbd-4fd6-855f-47ed3ee82785,db8c5cbe-b77d-4243-81d4-de02787e50e2" description:"Personnel confirmed" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"bf998320-0239-441b-9ea5-41f9bea21a38" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963447
+new [dep_d4eb87cb-6a79-4490-bb66-c8b95f2a767a:"x" dep_eb741356-5318-4dfc-b694-e4d155935d49:"x" depends:"d4eb87cb-6a79-4490-bb66-c8b95f2a767a,eb741356-5318-4dfc-b694-e4d155935d49" description:"Hospitality confirmed" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"6d2a1802-0f02-46b9-a85c-00b8782c4b4f" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963447
+new [dep_065e155e-6ef0-4fd9-a5a9-f5b7b5ddb0c9:"x" dep_4962271e-c7fd-4677-b46c-986ba036369c:"x" dep_6786f5d5-0d15-42dc-b294-767fc7b4f5ce:"x" dep_c141b181-0a74-4805-a305-3c5321574e96:"x" depends:"065e155e-6ef0-4fd9-a5a9-f5b7b5ddb0c9,4962271e-c7fd-4677-b46c-986ba036369c,6786f5d5-0d15-42dc-b294-767fc7b4f5ce,c141b181-0a74-4805-a305-3c5321574e96" description:"Driver\/cleanup rooms" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"c87dbd8c-05b9-4951-87ef-94a5a23e9337" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963459
+old [description:"Advance sent" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"155e4647-a6fa-4885-bd4c-0fd2119e2503" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Advance sent" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"155e4647-a6fa-4885-bd4c-0fd2119e2503" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963459
+old [description:"Tech pack received" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"7fc779a7-2d0a-4e08-bdf0-0074107ad246" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Tech pack received" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"7fc779a7-2d0a-4e08-bdf0-0074107ad246" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963459
+old [description:"Schedule confirmed" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"d0532147-533e-4122-986f-05974ff6b271" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Schedule confirmed" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"d0532147-533e-4122-986f-05974ff6b271" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963459
+old [description:"Parking instructions" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"1dabb29a-3d66-49aa-9aa0-36040b4e9fd5" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Parking instructions" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"1dabb29a-3d66-49aa-9aa0-36040b4e9fd5" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963459
+old [description:"Shore power \/ generator" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"2a25d7e6-3791-4023-9249-3e384e742b0d" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Shore power \/ generator" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"2a25d7e6-3791-4023-9249-3e384e742b0d" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963459
+old [description:"Runner" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"db8c5cbe-b77d-4243-81d4-de02787e50e2" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Runner" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"db8c5cbe-b77d-4243-81d4-de02787e50e2" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963459
+old [description:"Merch seller" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"72732d69-6cbd-4fd6-855f-47ed3ee82785" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Merch seller" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"72732d69-6cbd-4fd6-855f-47ed3ee82785" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963459
+old [description:"Dinner" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"d4eb87cb-6a79-4490-bb66-c8b95f2a767a" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Dinner" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"d4eb87cb-6a79-4490-bb66-c8b95f2a767a" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963459
+old [description:"Showers" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"eb741356-5318-4dfc-b694-e4d155935d49" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Showers" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"eb741356-5318-4dfc-b694-e4d155935d49" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963459
+old [dep_1dabb29a-3d66-49aa-9aa0-36040b4e9fd5:"x" dep_2a25d7e6-3791-4023-9249-3e384e742b0d:"x" depends:"1dabb29a-3d66-49aa-9aa0-36040b4e9fd5,2a25d7e6-3791-4023-9249-3e384e742b0d" description:"Bus info confirmed" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"8114986e-2f12-439e-85e2-47a9cc81a9b0" venue:"celestia_theater_at_wadsworth_square"]
+new [dep_1dabb29a-3d66-49aa-9aa0-36040b4e9fd5:"x" dep_2a25d7e6-3791-4023-9249-3e384e742b0d:"x" depends:"1dabb29a-3d66-49aa-9aa0-36040b4e9fd5,2a25d7e6-3791-4023-9249-3e384e742b0d" description:"Bus info confirmed" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"8114986e-2f12-439e-85e2-47a9cc81a9b0" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963459
+old [dep_72732d69-6cbd-4fd6-855f-47ed3ee82785:"x" dep_db8c5cbe-b77d-4243-81d4-de02787e50e2:"x" depends:"72732d69-6cbd-4fd6-855f-47ed3ee82785,db8c5cbe-b77d-4243-81d4-de02787e50e2" description:"Personnel confirmed" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"bf998320-0239-441b-9ea5-41f9bea21a38" venue:"celestia_theater_at_wadsworth_square"]
+new [dep_72732d69-6cbd-4fd6-855f-47ed3ee82785:"x" dep_db8c5cbe-b77d-4243-81d4-de02787e50e2:"x" depends:"72732d69-6cbd-4fd6-855f-47ed3ee82785,db8c5cbe-b77d-4243-81d4-de02787e50e2" description:"Personnel confirmed" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"bf998320-0239-441b-9ea5-41f9bea21a38" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963459
+old [dep_d4eb87cb-6a79-4490-bb66-c8b95f2a767a:"x" dep_eb741356-5318-4dfc-b694-e4d155935d49:"x" depends:"d4eb87cb-6a79-4490-bb66-c8b95f2a767a,eb741356-5318-4dfc-b694-e4d155935d49" description:"Hospitality confirmed" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"6d2a1802-0f02-46b9-a85c-00b8782c4b4f" venue:"celestia_theater_at_wadsworth_square"]
+new [dep_d4eb87cb-6a79-4490-bb66-c8b95f2a767a:"x" dep_eb741356-5318-4dfc-b694-e4d155935d49:"x" depends:"d4eb87cb-6a79-4490-bb66-c8b95f2a767a,eb741356-5318-4dfc-b694-e4d155935d49" description:"Hospitality confirmed" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"6d2a1802-0f02-46b9-a85c-00b8782c4b4f" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963467
+old [description:"Researched" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"065e155e-6ef0-4fd9-a5a9-f5b7b5ddb0c9" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Researched" entry:"1769963447" modified:"1769963467" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"065e155e-6ef0-4fd9-a5a9-f5b7b5ddb0c9" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963467
+old [description:"Booked" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"6786f5d5-0d15-42dc-b294-767fc7b4f5ce" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Booked" entry:"1769963447" modified:"1769963467" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"6786f5d5-0d15-42dc-b294-767fc7b4f5ce" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963467
+old [description:"Logged in Drive" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"4962271e-c7fd-4677-b46c-986ba036369c" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Logged in Drive" entry:"1769963447" modified:"1769963467" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"4962271e-c7fd-4677-b46c-986ba036369c" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963467
+old [description:"Logged in Master Tour" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"c141b181-0a74-4805-a305-3c5321574e96" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Logged in Master Tour" entry:"1769963447" modified:"1769963467" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"c141b181-0a74-4805-a305-3c5321574e96" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963467
+old [dep_065e155e-6ef0-4fd9-a5a9-f5b7b5ddb0c9:"x" dep_4962271e-c7fd-4677-b46c-986ba036369c:"x" dep_6786f5d5-0d15-42dc-b294-767fc7b4f5ce:"x" dep_c141b181-0a74-4805-a305-3c5321574e96:"x" depends:"065e155e-6ef0-4fd9-a5a9-f5b7b5ddb0c9,4962271e-c7fd-4677-b46c-986ba036369c,6786f5d5-0d15-42dc-b294-767fc7b4f5ce,c141b181-0a74-4805-a305-3c5321574e96" description:"Driver\/cleanup rooms" entry:"1769963447" modified:"1769963447" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"c87dbd8c-05b9-4951-87ef-94a5a23e9337" venue:"celestia_theater_at_wadsworth_square"]
+new [dep_065e155e-6ef0-4fd9-a5a9-f5b7b5ddb0c9:"x" dep_4962271e-c7fd-4677-b46c-986ba036369c:"x" dep_6786f5d5-0d15-42dc-b294-767fc7b4f5ce:"x" dep_c141b181-0a74-4805-a305-3c5321574e96:"x" depends:"065e155e-6ef0-4fd9-a5a9-f5b7b5ddb0c9,4962271e-c7fd-4677-b46c-986ba036369c,6786f5d5-0d15-42dc-b294-767fc7b4f5ce,c141b181-0a74-4805-a305-3c5321574e96" description:"Driver\/cleanup rooms" entry:"1769963447" modified:"1769963467" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"c87dbd8c-05b9-4951-87ef-94a5a23e9337" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963544
+old [description:"Shore power \/ generator" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"2a25d7e6-3791-4023-9249-3e384e742b0d" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Shore power \/ generator" end:"1769963544" entry:"1769963447" modified:"1769963544" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"2a25d7e6-3791-4023-9249-3e384e742b0d" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963544
+old [description:"Dinner" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"d4eb87cb-6a79-4490-bb66-c8b95f2a767a" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Dinner" end:"1769963544" entry:"1769963447" modified:"1769963544" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"d4eb87cb-6a79-4490-bb66-c8b95f2a767a" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963544
+old [description:"Advance sent" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"155e4647-a6fa-4885-bd4c-0fd2119e2503" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Advance sent" end:"1769963544" entry:"1769963447" modified:"1769963544" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"155e4647-a6fa-4885-bd4c-0fd2119e2503" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963545
+old [description:"Merch seller" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"72732d69-6cbd-4fd6-855f-47ed3ee82785" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Merch seller" end:"1769963544" entry:"1769963447" modified:"1769963545" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"72732d69-6cbd-4fd6-855f-47ed3ee82785" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963545
+old [description:"Schedule confirmed" entry:"1769963447" modified:"1769963459" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"d0532147-533e-4122-986f-05974ff6b271" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Schedule confirmed" end:"1769963544" entry:"1769963447" modified:"1769963545" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"advance" uuid:"d0532147-533e-4122-986f-05974ff6b271" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963545
+old [description:"Logged in Drive" entry:"1769963447" modified:"1769963467" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"4962271e-c7fd-4677-b46c-986ba036369c" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Logged in Drive" end:"1769963544" entry:"1769963447" modified:"1769963545" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"lodging" uuid:"4962271e-c7fd-4677-b46c-986ba036369c" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963545
+old [description:"Logged in Master Tour" entry:"1769963447" modified:"1769963467" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"c141b181-0a74-4805-a305-3c5321574e96" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Logged in Master Tour" end:"1769963544" entry:"1769963447" modified:"1769963545" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"lodging" uuid:"c141b181-0a74-4805-a305-3c5321574e96" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963545
+old [description:"Researched" entry:"1769963447" modified:"1769963467" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"065e155e-6ef0-4fd9-a5a9-f5b7b5ddb0c9" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Researched" end:"1769963544" entry:"1769963447" modified:"1769963545" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"lodging" uuid:"065e155e-6ef0-4fd9-a5a9-f5b7b5ddb0c9" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963545
+old [description:"Booked" entry:"1769963447" modified:"1769963467" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"6786f5d5-0d15-42dc-b294-767fc7b4f5ce" venue:"celestia_theater_at_wadsworth_square"]
+new [description:"Booked" end:"1769963544" entry:"1769963447" modified:"1769963545" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"lodging" uuid:"6786f5d5-0d15-42dc-b294-767fc7b4f5ce" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963545
+old [dep_065e155e-6ef0-4fd9-a5a9-f5b7b5ddb0c9:"x" dep_4962271e-c7fd-4677-b46c-986ba036369c:"x" dep_6786f5d5-0d15-42dc-b294-767fc7b4f5ce:"x" dep_c141b181-0a74-4805-a305-3c5321574e96:"x" depends:"065e155e-6ef0-4fd9-a5a9-f5b7b5ddb0c9,4962271e-c7fd-4677-b46c-986ba036369c,6786f5d5-0d15-42dc-b294-767fc7b4f5ce,c141b181-0a74-4805-a305-3c5321574e96" description:"Driver\/cleanup rooms" entry:"1769963447" modified:"1769963467" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"c87dbd8c-05b9-4951-87ef-94a5a23e9337" venue:"celestia_theater_at_wadsworth_square"]
+new [dep_065e155e-6ef0-4fd9-a5a9-f5b7b5ddb0c9:"x" dep_4962271e-c7fd-4677-b46c-986ba036369c:"x" dep_6786f5d5-0d15-42dc-b294-767fc7b4f5ce:"x" dep_c141b181-0a74-4805-a305-3c5321574e96:"x" depends:"065e155e-6ef0-4fd9-a5a9-f5b7b5ddb0c9,4962271e-c7fd-4677-b46c-986ba036369c,6786f5d5-0d15-42dc-b294-767fc7b4f5ce,c141b181-0a74-4805-a305-3c5321574e96" description:"Driver\/cleanup rooms" end:"1769963544" entry:"1769963447" modified:"1769963545" project:"tour.tmck" run:"TMCK" status:"completed" tour_category:"lodging" uuid:"c87dbd8c-05b9-4951-87ef-94a5a23e9337" venue:"celestia_theater_at_wadsworth_square"]
+---
+time 1769963554
+new [description:"Advance sent" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"07b76da7-0d70-4269-8b71-e1f9f3f956f4" venue:"peoples_bank_theatre"]
+---
+time 1769963554
+new [description:"Tech pack received" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"907487ed-7eb1-47d1-b1c6-fb4d159d3a40" venue:"peoples_bank_theatre"]
+---
+time 1769963554
+new [description:"Schedule confirmed" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"7549aecb-46df-49ce-b23f-93deb15d9cee" venue:"peoples_bank_theatre"]
+---
+time 1769963554
+new [description:"Parking instructions" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"c227d6b7-675b-4610-ba9c-0716e8953d41" venue:"peoples_bank_theatre"]
+---
+time 1769963554
+new [description:"Shore power \/ generator" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"2cfcd9d9-76ff-4fd2-b71e-4d4acd5048f8" venue:"peoples_bank_theatre"]
+---
+time 1769963554
+new [description:"Runner" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"9ddc3408-1b1d-4daf-99ff-ef078afd7a56" venue:"peoples_bank_theatre"]
+---
+time 1769963554
+new [description:"Merch seller" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"fae6cf24-5fcb-4d36-968c-d53843df24a1" venue:"peoples_bank_theatre"]
+---
+time 1769963554
+new [description:"Dinner" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"58db8a17-e156-4c56-bbdc-f32d8a697fa7" venue:"peoples_bank_theatre"]
+---
+time 1769963554
+new [description:"Showers" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"e77ccb89-2004-4d2c-aa31-dfd684719e4d" venue:"peoples_bank_theatre"]
+---
+time 1769963554
+new [description:"Researched" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"f5da8d44-ea67-494b-94e3-2cbcdd0ef699" venue:"peoples_bank_theatre"]
+---
+time 1769963554
+new [description:"Booked" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"bcb31ed9-4c32-41cf-8e46-6aee17c87b74" venue:"peoples_bank_theatre"]
+---
+time 1769963554
+new [description:"Logged in Drive" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"711b9bb2-17ad-4b23-8e25-8bd290da5af3" venue:"peoples_bank_theatre"]
+---
+time 1769963554
+new [description:"Logged in Master Tour" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"4f68b101-724d-4035-a1b2-827e2354ec2c" venue:"peoples_bank_theatre"]
+---
+time 1769963554
+new [dep_2cfcd9d9-76ff-4fd2-b71e-4d4acd5048f8:"x" dep_c227d6b7-675b-4610-ba9c-0716e8953d41:"x" depends:"2cfcd9d9-76ff-4fd2-b71e-4d4acd5048f8,c227d6b7-675b-4610-ba9c-0716e8953d41" description:"Bus info confirmed" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"499a639f-b57a-4d9f-a544-1030a8e26377" venue:"peoples_bank_theatre"]
+---
+time 1769963554
+new [dep_9ddc3408-1b1d-4daf-99ff-ef078afd7a56:"x" dep_fae6cf24-5fcb-4d36-968c-d53843df24a1:"x" depends:"9ddc3408-1b1d-4daf-99ff-ef078afd7a56,fae6cf24-5fcb-4d36-968c-d53843df24a1" description:"Personnel confirmed" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"915db631-50b1-4413-b2f3-e0007f8b35eb" venue:"peoples_bank_theatre"]
+---
+time 1769963554
+new [dep_58db8a17-e156-4c56-bbdc-f32d8a697fa7:"x" dep_e77ccb89-2004-4d2c-aa31-dfd684719e4d:"x" depends:"58db8a17-e156-4c56-bbdc-f32d8a697fa7,e77ccb89-2004-4d2c-aa31-dfd684719e4d" description:"Hospitality confirmed" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"2524ac08-fa02-43ea-9d44-f560e011cc07" venue:"peoples_bank_theatre"]
+---
+time 1769963554
+new [dep_4f68b101-724d-4035-a1b2-827e2354ec2c:"x" dep_711b9bb2-17ad-4b23-8e25-8bd290da5af3:"x" dep_bcb31ed9-4c32-41cf-8e46-6aee17c87b74:"x" dep_f5da8d44-ea67-494b-94e3-2cbcdd0ef699:"x" depends:"4f68b101-724d-4035-a1b2-827e2354ec2c,711b9bb2-17ad-4b23-8e25-8bd290da5af3,bcb31ed9-4c32-41cf-8e46-6aee17c87b74,f5da8d44-ea67-494b-94e3-2cbcdd0ef699" description:"Driver\/cleanup rooms" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"5dd7c785-7401-48ce-9851-753bc5b94a25" venue:"peoples_bank_theatre"]
+---
+time 1769963603
+old [description:"Advance sent" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"07b76da7-0d70-4269-8b71-e1f9f3f956f4" venue:"peoples_bank_theatre"]
+new [description:"Advance sent" entry:"1769963554" modified:"1769963603" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"07b76da7-0d70-4269-8b71-e1f9f3f956f4" venue:"peoples_bank_theatre"]
+---
+time 1769963603
+old [description:"Tech pack received" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"907487ed-7eb1-47d1-b1c6-fb4d159d3a40" venue:"peoples_bank_theatre"]
+new [description:"Tech pack received" entry:"1769963554" modified:"1769963603" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"907487ed-7eb1-47d1-b1c6-fb4d159d3a40" venue:"peoples_bank_theatre"]
+---
+time 1769963603
+old [description:"Schedule confirmed" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"7549aecb-46df-49ce-b23f-93deb15d9cee" venue:"peoples_bank_theatre"]
+new [description:"Schedule confirmed" entry:"1769963554" modified:"1769963603" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"7549aecb-46df-49ce-b23f-93deb15d9cee" venue:"peoples_bank_theatre"]
+---
+time 1769963603
+old [description:"Parking instructions" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"c227d6b7-675b-4610-ba9c-0716e8953d41" venue:"peoples_bank_theatre"]
+new [description:"Parking instructions" entry:"1769963554" modified:"1769963603" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"c227d6b7-675b-4610-ba9c-0716e8953d41" venue:"peoples_bank_theatre"]
+---
+time 1769963603
+old [description:"Shore power \/ generator" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"2cfcd9d9-76ff-4fd2-b71e-4d4acd5048f8" venue:"peoples_bank_theatre"]
+new [description:"Shore power \/ generator" entry:"1769963554" modified:"1769963603" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"2cfcd9d9-76ff-4fd2-b71e-4d4acd5048f8" venue:"peoples_bank_theatre"]
+---
+time 1769963603
+old [description:"Runner" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"9ddc3408-1b1d-4daf-99ff-ef078afd7a56" venue:"peoples_bank_theatre"]
+new [description:"Runner" entry:"1769963554" modified:"1769963603" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"9ddc3408-1b1d-4daf-99ff-ef078afd7a56" venue:"peoples_bank_theatre"]
+---
+time 1769963603
+old [description:"Merch seller" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"fae6cf24-5fcb-4d36-968c-d53843df24a1" venue:"peoples_bank_theatre"]
+new [description:"Merch seller" entry:"1769963554" modified:"1769963603" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"fae6cf24-5fcb-4d36-968c-d53843df24a1" venue:"peoples_bank_theatre"]
+---
+time 1769963603
+old [description:"Dinner" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"58db8a17-e156-4c56-bbdc-f32d8a697fa7" venue:"peoples_bank_theatre"]
+new [description:"Dinner" entry:"1769963554" modified:"1769963603" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"58db8a17-e156-4c56-bbdc-f32d8a697fa7" venue:"peoples_bank_theatre"]
+---
+time 1769963603
+old [description:"Showers" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"e77ccb89-2004-4d2c-aa31-dfd684719e4d" venue:"peoples_bank_theatre"]
+new [description:"Showers" entry:"1769963554" modified:"1769963603" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"e77ccb89-2004-4d2c-aa31-dfd684719e4d" venue:"peoples_bank_theatre"]
+---
+time 1769963603
+old [dep_2cfcd9d9-76ff-4fd2-b71e-4d4acd5048f8:"x" dep_c227d6b7-675b-4610-ba9c-0716e8953d41:"x" depends:"2cfcd9d9-76ff-4fd2-b71e-4d4acd5048f8,c227d6b7-675b-4610-ba9c-0716e8953d41" description:"Bus info confirmed" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"499a639f-b57a-4d9f-a544-1030a8e26377" venue:"peoples_bank_theatre"]
+new [dep_2cfcd9d9-76ff-4fd2-b71e-4d4acd5048f8:"x" dep_c227d6b7-675b-4610-ba9c-0716e8953d41:"x" depends:"2cfcd9d9-76ff-4fd2-b71e-4d4acd5048f8,c227d6b7-675b-4610-ba9c-0716e8953d41" description:"Bus info confirmed" entry:"1769963554" modified:"1769963603" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"499a639f-b57a-4d9f-a544-1030a8e26377" venue:"peoples_bank_theatre"]
+---
+time 1769963603
+old [dep_9ddc3408-1b1d-4daf-99ff-ef078afd7a56:"x" dep_fae6cf24-5fcb-4d36-968c-d53843df24a1:"x" depends:"9ddc3408-1b1d-4daf-99ff-ef078afd7a56,fae6cf24-5fcb-4d36-968c-d53843df24a1" description:"Personnel confirmed" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"915db631-50b1-4413-b2f3-e0007f8b35eb" venue:"peoples_bank_theatre"]
+new [dep_9ddc3408-1b1d-4daf-99ff-ef078afd7a56:"x" dep_fae6cf24-5fcb-4d36-968c-d53843df24a1:"x" depends:"9ddc3408-1b1d-4daf-99ff-ef078afd7a56,fae6cf24-5fcb-4d36-968c-d53843df24a1" description:"Personnel confirmed" entry:"1769963554" modified:"1769963603" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"915db631-50b1-4413-b2f3-e0007f8b35eb" venue:"peoples_bank_theatre"]
+---
+time 1769963603
+old [dep_58db8a17-e156-4c56-bbdc-f32d8a697fa7:"x" dep_e77ccb89-2004-4d2c-aa31-dfd684719e4d:"x" depends:"58db8a17-e156-4c56-bbdc-f32d8a697fa7,e77ccb89-2004-4d2c-aa31-dfd684719e4d" description:"Hospitality confirmed" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"2524ac08-fa02-43ea-9d44-f560e011cc07" venue:"peoples_bank_theatre"]
+new [dep_58db8a17-e156-4c56-bbdc-f32d8a697fa7:"x" dep_e77ccb89-2004-4d2c-aa31-dfd684719e4d:"x" depends:"58db8a17-e156-4c56-bbdc-f32d8a697fa7,e77ccb89-2004-4d2c-aa31-dfd684719e4d" description:"Hospitality confirmed" entry:"1769963554" modified:"1769963603" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"advance" uuid:"2524ac08-fa02-43ea-9d44-f560e011cc07" venue:"peoples_bank_theatre"]
+---
+time 1769963610
+old [description:"Researched" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"f5da8d44-ea67-494b-94e3-2cbcdd0ef699" venue:"peoples_bank_theatre"]
+new [description:"Researched" entry:"1769963554" modified:"1769963610" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"f5da8d44-ea67-494b-94e3-2cbcdd0ef699" venue:"peoples_bank_theatre"]
+---
+time 1769963610
+old [description:"Booked" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"bcb31ed9-4c32-41cf-8e46-6aee17c87b74" venue:"peoples_bank_theatre"]
+new [description:"Booked" entry:"1769963554" modified:"1769963610" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"bcb31ed9-4c32-41cf-8e46-6aee17c87b74" venue:"peoples_bank_theatre"]
+---
+time 1769963610
+old [description:"Logged in Drive" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"711b9bb2-17ad-4b23-8e25-8bd290da5af3" venue:"peoples_bank_theatre"]
+new [description:"Logged in Drive" entry:"1769963554" modified:"1769963610" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"711b9bb2-17ad-4b23-8e25-8bd290da5af3" venue:"peoples_bank_theatre"]
+---
+time 1769963610
+old [description:"Logged in Master Tour" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"4f68b101-724d-4035-a1b2-827e2354ec2c" venue:"peoples_bank_theatre"]
+new [description:"Logged in Master Tour" entry:"1769963554" modified:"1769963610" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"4f68b101-724d-4035-a1b2-827e2354ec2c" venue:"peoples_bank_theatre"]
+---
+time 1769963610
+old [dep_4f68b101-724d-4035-a1b2-827e2354ec2c:"x" dep_711b9bb2-17ad-4b23-8e25-8bd290da5af3:"x" dep_bcb31ed9-4c32-41cf-8e46-6aee17c87b74:"x" dep_f5da8d44-ea67-494b-94e3-2cbcdd0ef699:"x" depends:"4f68b101-724d-4035-a1b2-827e2354ec2c,711b9bb2-17ad-4b23-8e25-8bd290da5af3,bcb31ed9-4c32-41cf-8e46-6aee17c87b74,f5da8d44-ea67-494b-94e3-2cbcdd0ef699" description:"Driver\/cleanup rooms" entry:"1769963554" modified:"1769963554" project:"tour.tmck" run:"TMCK" status:"pending" uuid:"5dd7c785-7401-48ce-9851-753bc5b94a25" venue:"peoples_bank_theatre"]
+new [dep_4f68b101-724d-4035-a1b2-827e2354ec2c:"x" dep_711b9bb2-17ad-4b23-8e25-8bd290da5af3:"x" dep_bcb31ed9-4c32-41cf-8e46-6aee17c87b74:"x" dep_f5da8d44-ea67-494b-94e3-2cbcdd0ef699:"x" depends:"4f68b101-724d-4035-a1b2-827e2354ec2c,711b9bb2-17ad-4b23-8e25-8bd290da5af3,bcb31ed9-4c32-41cf-8e46-6aee17c87b74,f5da8d44-ea67-494b-94e3-2cbcdd0ef699" description:"Driver\/cleanup rooms" entry:"1769963554" modified:"1769963610" project:"tour.tmck" run:"TMCK" status:"pending" tour_category:"lodging" uuid:"5dd7c785-7401-48ce-9851-753bc5b94a25" venue:"peoples_bank_theatre"]
+---
