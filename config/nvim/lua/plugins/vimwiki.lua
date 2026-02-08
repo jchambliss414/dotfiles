@@ -994,10 +994,6 @@ return {
 			desc = "Go to Previous Unfinished Task",
 		},
 
-		-- Tables
-		{ "<leader>wt", ":VimwikiTable ", desc = "Insert Table" },
-		{ "<leader>wT", ":VimwikiTable 2 2<CR>", desc = "Insert 2x2 Table" },
-
 		-- Back navigation (save & close buffer)
 		{
 			"<BS>",

@@ -47,6 +47,7 @@
   "venn.nvim": { "branch": "main", "commit": "b09c2f36ddf70b498281845109bedcf08a7e0de0" },
   "venv-selector.nvim": { "branch": "main", "commit": "26a6da0348dc2d0a3787e095bd4e68d976304bb2" },
   "vim-plugin-AnsiEsc": { "branch": "master", "commit": "690f820d20b6e3a79ba20499874eb7333aa4ca5c" },
+  "vim-table-mode": { "branch": "master", "commit": "bb025308a45c67c7c8f0763ba37bc2ee3f534df0" },
   "vim-taskwarrior": { "branch": "master", "commit": "8ae6c5ee2ed54d759a58a8d9f67bc76430e3bd25" },
   "vimwiki": { "branch": "dev", "commit": "72792615e739d0eb54a9c8f7e0a46a6e2407c9e8" },
   "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" }
