@@ -175,13 +175,14 @@ function y() {
 # ~~~~~~~~~ FUNCTIONS ~~~~~~~~~
 #_______________________________________
 
+
 #---------------------------------------
-# Git Sync Helpers (Cross-Device Sync)
+# Git Sync Helpers (Cross-Device Sync - base)
 #---------------------------------------
 
 # Auto-commit tracked repos on shell exit
 # Changes are captured locally; push manually or let scheduled task handle it
-# _zhuli_auto_commit() {
+# _git-sync_auto_commit() {
 #     local repos=(
 #         "/shared"
 #         "/home/zhuli/.pai"
@@ -200,15 +201,15 @@ function y() {
 
 # Register exit trap (only for interactive shells)
 if [[ $- == *i* ]]; then
-   trap _zhuli_auto_commit EXIT
+   trap _git-sync_auto_commit EXIT
 fi
 
 # Prompt indicator: show total unpushed commits across repos
 # Returns " [↑N]" for unpushed commits, " [?]" for branches without upstream
-_zhuli_unpushed() {
+_git-sync_unpushed() {
    local repos=(
       "/shared"
-      "/home/zhuli/.pai"
+      "/shared/dotfiles"
    )
    local total=0
    local has_untracked=false
@@ -234,11 +235,11 @@ _zhuli_unpushed() {
 
 # Modify PS1 to include sync status
 # Adjust to match your actual prompt style
-PS1='\u@\h:\w$(_zhuli_unpushed)\$ '
+PS1='\u@\h:\w$(_git-sync_unpushed)\$ '
 
 # Push all repos (handles branches without upstream)
-zhuli-push() {
-   for repo in /shared /home/zhuli/.pai; do
+git-sync_push() {
+   for repo in /shared /shared/dotfiles; do
       [ -d "$repo/.git" ] || continue
       echo "__________________________________________________________________________"
       echo "=========== Pushing $repo ==========="
@@ -260,8 +261,8 @@ zhuli-push() {
 }
 
 # Pull all repos
-zhuli-pull() {
-   for repo in /shared /home/zhuli/.pai; do
+git-sync_pull() {
+   for repo in /shared /shared/dotfiles; do
       [ -d "$repo/.git" ] || continue
       echo "________________________________________________________________________________"
       echo "=========== Pulling $repo... ==========="
@@ -271,14 +272,14 @@ zhuli-pull() {
 }
 
 # Full sync (pull then push)
-zhuli-sync() {
-   zhuli-pull
-   zhuli-push
+git-sync_sync() {
+   git-sync_pull
+   git-sync_push
 }
 
 # Merge current branch into main/master and push
-# Usage: zhuli-merge [repo]  (if no repo specified, uses current directory)
-zhuli-merge() {
+# Usage: zhuli_merge [repo]  (if no repo specified, uses current directory)
+git-sync_merge() {
    local target_repo="${1:-$(pwd)}"
 
    if [ ! -d "$target_repo/.git" ]; then
@@ -339,8 +340,8 @@ zhuli-merge() {
 }
 
 # Check status of all repos
-zhuli-status() {
-   for repo in /shared /home/zhuli/.pai; do
+git-sync_status() {
+   for repo in /shared /shared/dotfiles; do
       [ -d "$repo/.git" ] || continue
       echo "_______________________________________"
       echo "=== $repo ==="
@@ -349,6 +350,181 @@ zhuli-status() {
       echo ""
    done
 }
+
+#---------------------------------------
+# Git Sync Helpers (Cross-Device Sync)
+#---------------------------------------
+
+# Auto-commit tracked repos on shell exit
+# Changes are captured locally; push manually or let scheduled task handle it
+# _zhuli_auto_commit() {
+#     local repos=(
+#         "/shared"
+#         "/home/zhuli/.pai"
+#     )
+#
+#     for repo in "${repos[@]}"; do
+#         [ -d "$repo/.git" ] || continue
+#         cd "$repo" || continue
+#
+#         if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
+#             git add -A
+#             git commit -m "auto: $(whoami)@$(hostname) $(date +%Y-%m-%d_%H:%M)" --quiet
+#         fi
+#     done
+# }
+
+# # Register exit trap (only for interactive shells)
+# if [[ $- == *i* ]]; then
+#    trap _zhuli_auto_commit EXIT
+# fi
+#
+# # Prompt indicator: show total unpushed commits across repos
+# # Returns " [↑N]" for unpushed commits, " [?]" for branches without upstream
+# _zhuli_unpushed() {
+#    local repos=(
+#       "/shared"
+#       "/home/zhuli/.pai"
+#    )
+#    local total=0
+#    local has_untracked=false
+#
+#    for repo in "${repos[@]}"; do
+#       [ -d "$repo/.git" ] || continue
+#       local ahead
+#       # Check if upstream exists
+#       if (cd "$repo" && git rev-parse --abbrev-ref "@{u}" >/dev/null 2>&1); then
+#          ahead=$(cd "$repo" && git rev-list --count @{u}..HEAD 2>/dev/null) || ahead=0
+#          total=$((total + ahead))
+#       else
+#          has_untracked=true
+#       fi
+#    done
+#
+#    # Build output
+#    local output=""
+#    [ "$total" -gt 0 ] && output=" [↑$total]"
+#    [ "$has_untracked" = true ] && output="${output} [?]"
+#    echo "$output"
+# }
+#
+# # Modify PS1 to include sync status
+# # Adjust to match your actual prompt style
+# PS1='\u@\h:\w$(_zhuli_unpushed)\$ '
+#
+# # Push all repos (handles branches without upstream)
+# zhuli_push() {
+#    for repo in /shared /home/zhuli/.pai; do
+#       [ -d "$repo/.git" ] || continue
+#       echo "__________________________________________________________________________"
+#       echo "=========== Pushing $repo ==========="
+#       echo "‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾"
+#       (
+#          cd "$repo" || exit 1
+#          local branch
+#          branch=$(git symbolic-ref --short HEAD 2>/dev/null)
+#
+#          # Check if upstream exists
+#          if git rev-parse --abbrev-ref "@{u}" >/dev/null 2>&1; then
+#             git push
+#          else
+#             echo "No upstream for '$branch' - setting up tracking..."
+#             git push -u origin "$branch"
+#          fi
+#       )
+#    done
+# }
+#
+# # Pull all repos
+# zhuli_pull() {
+#    for repo in /shared /home/zhuli/.pai; do
+#       [ -d "$repo/.git" ] || continue
+#       echo "________________________________________________________________________________"
+#       echo "=========== Pulling $repo... ==========="
+#       echo "‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾"
+#       (cd "$repo" && git pull --rebase)
+#    done
+# }
+#
+# # Full sync (pull then push)
+# zhuli_sync() {
+#    zhuli_pull
+#    zhuli_push
+# }
+#
+# # Merge current branch into main/master and push
+# # Usage: zhuli_merge [repo]  (if no repo specified, uses current directory)
+# zhuli_merge() {
+#    local target_repo="${1:-$(pwd)}"
+#
+#    if [ ! -d "$target_repo/.git" ]; then
+#       echo "Error: $target_repo is not a git repository"
+#       return 1
+#    fi
+#
+#    (
+#       cd "$target_repo" || exit 1
+#
+#       local current_branch
+#       current_branch=$(git symbolic-ref --short HEAD 2>/dev/null)
+#
+#       # Detect default branch (main or master)
+#       local default_branch
+#       if git show-ref --verify --quiet refs/heads/main; then
+#          default_branch="main"
+#       elif git show-ref --verify --quiet refs/heads/master; then
+#          default_branch="master"
+#       else
+#          echo "Error: No main or master branch found"
+#          return 1
+#       fi
+#
+#       if [ "$current_branch" = "$default_branch" ]; then
+#          echo "Already on $default_branch - nothing to merge"
+#          return 0
+#       fi
+#
+#       echo "=== Merging '$current_branch' into '$default_branch' in $target_repo ==="
+#       echo "________________________________________________________________________________________"
+#       echo "=========== Merging '$current_branch' into '$default_branch' in $target_repo ==========="
+#       echo "‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾"
+#
+#       # Ensure working tree is clean
+#       if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
+#          echo "Uncommitted changes detected. Auto-committing..."
+#          git add -A
+#          git commit -m "auto: pre-merge commit $(date +%Y-%m-%d_%H:%M)"
+#       fi
+#
+#       # Switch to default branch, pull, merge, push
+#       echo "Switching to $default_branch..."
+#       git checkout "$default_branch" || return 1
+#
+#       echo "Pulling latest $default_branch..."
+#       git pull --rebase || return 1
+#
+#       echo "Merging $current_branch..."
+#       git merge "$current_branch" --no-edit || return 1
+#
+#       echo "Pushing $default_branch..."
+#       git push || return 1
+#
+#       echo "✓ Merged and pushed. Still on $default_branch."
+#       echo "  Run 'git checkout $current_branch' to return, or 'git branch -d $current_branch' to delete."
+#    )
+# }
+#
+# # Check status of all repos
+# zhuli_status() {
+#    for repo in /shared /home/zhuli/.pai; do
+#       [ -d "$repo/.git" ] || continue
+#       echo "_______________________________________"
+#       echo "=== $repo ==="
+#       echo "‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾"
+#       (cd "$repo" && git status -sb)
+#       echo ""
+#    done
+# }
 
 #---------------------------------------
 # WSL Management
