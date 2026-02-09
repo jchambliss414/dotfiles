@@ -19,7 +19,7 @@ return {
 		-- Nested checkbox behavior (completing children completes parent)
 		vim.g.bullets_nested_checkboxes = 1
 
-		-- Checkbox markers: [ ] → [.] → [o] → [O] → [X]
-		vim.g.bullets_checkbox_markers = " .oOX"
+		-- Checkbox markers: [ ] → [o] → [ ] → [ ]
+		vim.g.bullets_checkbox_markers = " o"
 	end,
 }
