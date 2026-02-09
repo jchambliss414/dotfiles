@@ -181,7 +181,7 @@ function y() {
 #---------------------------------------
 
 # commit repos 
-git-sync_commit() {
+g-c() {
     local repos=(
         "/shared"
         "/shared/dotfiles"
@@ -200,12 +200,12 @@ git-sync_commit() {
 
 # Register exit trap (only for interactive shells)
 if [[ $- == *i* ]]; then
-   trap git-sync_commit EXIT
+   trap g-c EXIT
 fi
 
 # Prompt indicator: show total unpushed commits across repos
 # Returns " [↑N]" for unpushed commits, " [?]" for branches without upstream
-_git-sync_unpushed() {
+_g-unpushed() {
    local repos=(
       "/shared"
       "/shared/dotfiles"
@@ -234,10 +234,10 @@ _git-sync_unpushed() {
 
 # Modify PS1 to include sync status
 # Adjust to match your actual prompt style
-PS1='\u@\h:\w$(_git-sync_unpushed)\$ '
+PS1='\u@\h:\w$(_g-unpushed)\$ '
 
 # Push all repos (handles branches without upstream)
-git-sync_push() {
+g-ps() {
    for repo in /shared /shared/dotfiles; do
       [ -d "$repo/.git" ] || continue
       echo "__________________________________________________________________________"
@@ -260,7 +260,7 @@ git-sync_push() {
 }
 
 # Pull all repos
-git-sync_pull() {
+g-pl() {
    for repo in /shared /shared/dotfiles; do
       [ -d "$repo/.git" ] || continue
       echo "________________________________________________________________________________"
@@ -271,14 +271,14 @@ git-sync_pull() {
 }
 
 # Full sync (pull then push)
-git-sync_sync() {
-   git-sync_pull
-   git-sync_push
+g-sy() {
+   g-pl
+   g-ps
 }
 
 # Merge current branch into main/master and push
 # Usage: zhuli_merge [repo]  (if no repo specified, uses current directory)
-git-sync_merge() {
+g-merge() {
    local target_repo="${1:-$(pwd)}"
 
    if [ ! -d "$target_repo/.git" ]; then
@@ -339,7 +339,7 @@ git-sync_merge() {
 }
 
 # Check status of all repos
-git-sync_status() {
+g-ch() {
    for repo in /shared /shared/dotfiles; do
       [ -d "$repo/.git" ] || continue
       echo "_______________________________________"
