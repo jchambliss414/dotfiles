@@ -180,28 +180,27 @@ function y() {
 # Git Sync Helpers (Cross-Device Sync - base)
 #---------------------------------------
 
-# Auto-commit tracked repos on shell exit
-# Changes are captured locally; push manually or let scheduled task handle it
-# _git-sync_auto_commit() {
-#     local repos=(
-#         "/shared"
-#         "/home/zhuli/.pai"
-#     )
-#
-#     for repo in "${repos[@]}"; do
-#         [ -d "$repo/.git" ] || continue
-#         cd "$repo" || continue
-#
-#         if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
-#             git add -A
-#             git commit -m "auto: $(whoami)@$(hostname) $(date +%Y-%m-%d_%H:%M)" --quiet
-#         fi
-#     done
-# }
+# commit repos 
+git-sync_commit() {
+    local repos=(
+        "/shared"
+        "/shared/dotfiles"
+    )
+
+    for repo in "${repos[@]}"; do
+        [ -d "$repo/.git" ] || continue
+        cd "$repo" || continue
+
+        if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
+            git add -A
+            git commit -m "$(whoami)@$(hostname) $(date +%Y-%m-%d_%H:%M)" --quiet
+        fi
+    done
+}
 
 # Register exit trap (only for interactive shells)
 if [[ $- == *i* ]]; then
-   trap _git-sync_auto_commit EXIT
+   trap git-sync_commit EXIT
 fi
 
 # Prompt indicator: show total unpushed commits across repos

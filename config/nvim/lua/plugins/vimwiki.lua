@@ -971,6 +971,8 @@ return {
 		-- ====================================================================
 		{ "<leader>w<leader>d", "<Plug>VimwikiDeleteFile", desc = "Delete Current Page" },
 		{ "<leader>w<leader>r", "<Plug>VimwikiRenameFile", desc = "Rename Current Page" },
+		{ "_", "<Plug>VimwikiMakeListH", desc = "Make list item", ft = { "vimwiki", "markdown" } },
+		{ "_", "<Plug>VimwikiMakeListH", desc = "Make list items", ft = { "vimwiki", "markdown" }, mode = "v" },
 
 		-- Task Navigation
 		{
