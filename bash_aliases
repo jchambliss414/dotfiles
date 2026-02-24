@@ -339,7 +339,7 @@ g-merge() {
 }
 
 # Check status of all repos
-g-ch() {
+g-st() {
    for repo in /shared /shared/dotfiles; do
       [ -d "$repo/.git" ] || continue
       echo "_______________________________________"
