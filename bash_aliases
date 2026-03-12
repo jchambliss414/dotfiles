@@ -339,7 +339,11 @@ g-merge() {
 }
 
 # Check status of all repos
+<<<<<<< HEAD
 g-st() {
+=======
+g-status() {
+>>>>>>> 539f23d (django@ZhuLi 2026-02-24_00:12)
    for repo in /shared /shared/dotfiles; do
       [ -d "$repo/.git" ] || continue
       echo "_______________________________________"
